@@ -1,0 +1,930 @@
+%%
+%% This is file `sample-sigconf.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `sigconf')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:mMro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigconf]{acmart}
+
+\usepackage{enumitem}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+%\setcopyright{acmcopyright}
+%\copyrightyear{2018}
+%\acmYear{2018}
+%\acmDOI{10.1145/1122445.1122456}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+%\acmConference[Woodstock '18]{Woodstock '18: ACM Symposium on Neural
+%  Gaze Detection}{June 03--05, 2018}{Woodstock, NY}
+%\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+%  June 03--05, 2018, Woodstock, NY}
+%\acmPrice{15.00}
+%\acmISBN{978-1-4503-XXXX-X/18/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{On Specifying for Trustworthiness}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Name of Author 1}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 2}
+\affiliation{%
+  \institution{Institute}
+  \streetaddress{Street address}
+  \city{City}
+  \country{Country}}
+\email{Email}
+
+\author{Name of Author 3}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 4}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 5}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 6}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 7}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 8}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 9}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 10}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 11}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+\author{Name of Author 12}
+\affiliation{%
+	\institution{Institute}
+	\streetaddress{Street address}
+	\city{City}
+	\country{Country}}
+\email{Email}
+
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Author name, et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+As autonomous systems are becoming part of our daily lives, specifying for trustworthiness of these systems is crucial. ...
+In this article, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties that contribute to trustworthiness. 
+The main contribution of this article is a set of high-level intellectual challenges related to specifying a trustworthy autonomous system without focussing on how these challenges are actually realized. We also identify their potential uses in a variety of autonomous systems domains. ...
+%
+%
+%
+%The gaol of this paper is not on the realization  of these specifications (e.g. formal model).
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+	<ccs2012>
+	<concept>
+	<concept_id>10010147.10010178</concept_id>
+	<concept_desc>Computing methodologies~Artificial intelligence</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computing methodologies~Artificial intelligence}
+
+%\begin{CCSXML}
+%<ccs2012>
+% <concept>
+%  <concept_id>10010520.10010553.10010562</concept_id>
+%  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+%  <concept_significance>500</concept_significance>
+% </concept>
+% <concept>
+%  <concept_id>10010520.10010575.10010755</concept_id>
+%  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+%  <concept_significance>300</concept_significance>
+% </concept>
+% <concept>
+%  <concept_id>10010520.10010553.10010554</concept_id>
+%  <concept_desc>Computer systems organization~Robotics</concept_desc>
+%  <concept_significance>100</concept_significance>
+% </concept>
+% <concept>
+%  <concept_id>10003033.10003083.10003095</concept_id>
+%  <concept_desc>Networks~Network reliability</concept_desc>
+%  <concept_significance>100</concept_significance>
+% </concept>
+%</ccs2012>
+%\end{CCSXML}
+%
+%\ccsdesc[500]{Computer systems organization~Embedded systems}
+%\ccsdesc[300]{Computer systems organization~Redundancy}
+%\ccsdesc{Computer systems organization~Robotics}
+%\ccsdesc[100]{Networks~Network reliability}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+%\keywords{datasets, neural networks, gaze detection, text tagging}
+\keywords{autonomous systems, trust, specification}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+%\begin{teaserfigure}
+%  \includegraphics[width=\textwidth]{sampleteaser}
+%  \caption{Seattle Mariners at Spring Training, 2010.}
+%  \Description{Enjoying the baseball game from the third-base
+%  seats. Ichiro Suzuki preparing to bat.}
+%  \label{fig:teaser}
+%%\end{teaserfigure}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+An \textit{autonomous system}is a system that involves software applications, machines and people, which is capable of taking actions with no or little human supervision \cite{TAS-Hub}. 
+Autonomous systems are no longer being confined to safety-controlled industrial settings. 
+Instead, these systems are becoming increasingly used in our daily lives having matured across different domains, such as driverless cars, unmanned aerial vehicles, and healthcare robotics. 
+As a result, specifying for \textit{trustworthiness} of these systems is crucial. 
+
+%They are not confined to 
+%These systems are not confined to safety-controlled industrial settings; instead, these systems will directly interact with the general public. 
+%Therefore, specifying for trustworthiness of these systems is crucial.
+
+%[Specification]
+According to ISO/IEC 2382:2015 standard, \textit{specification} is a detailed formulation that provides a definitive description of a system for the purpose of developing or validating the system \cite{ISO2382}. 
+Writing specifications that capture trust is challenging \cite{Kress-Gazit21}. 
+A human trusts a robot to perform its actions, if it demonstrably acts in a safe manner. 
+Here, the robot not only needs to be safe, but also needs to be perceived as safe by the human. 
+In the same manner, in shared human-robot control situations, it is equally important to ensure that the robot can trust the human. 
+This is particularly important in safety-critical scenarios when the robot needs to perform a task on behalf of the human where reasoning about trust is needed. 
+In this regard, measuring human's current state (e.g. levels of fatigue, frustration) and assessing human's ability to actually perform the task are critical factors. 
+To realize this, specification needs to consider formalisms that go beyond typical safety and liveness notions. 
+
+Different research disciplines define \textit{trust} in many ways. 
+Our study focuses on the notion that concerns the relationship between humans and autonomous systems. 
+According to \cite{TAS-Hub}, autonomous systems are trustworthy depending on several key factors, such as:  robustness in dynamic and uncertain environments; assurance of their design and operation; confidence they provide; explainability; defences against attacks; governance and regulation of their design and operation; and consideration of human values and ethics.
+
+In this article, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties that contribute to trustworthiness. 
+The main contribution of this article is a set of high-level intellectual challenges related to specifying a trustworthy autonomous system without focussing on how these challenges are actually realized. 
+In this article, we discuss approaches for specifying trustworthy autonomous systems and identify their potential uses in a variety of autonomous systems domains. 
+We conclude with a set of intellectual research challenges for the community.
+
+%This plays a role in determining under what circumstances the robot should step in and in what manner. 
+%Particularly in safety-critical scenarios, and when the robot is filling a gap in the human’s own capabilities, reasoning about trust in the human is key. 
+%Critical factors are to measurably assess the human’s ability to actually perform the task, and the human’s current state, for instance accounting for levels of fatigue. 
+%These notions of trust go beyond typical safety and liveness specifications and require specification formalisms that can capture them.
+
+
+%Trust is defined in many ways by different research disciplines. 
+%We focus 
+%We focus on those notions that concern the relationship between humans (individuals and organisations) and autonomous systems.
+%Autonomous systems are trustworthy when their design, engineering, and operation ensures they generate positive outcomes and mitigates potentially harmful outcomes trusted depends on a number of factors including but not limited to: their robustness in dynamic and uncertain environments;  the assurance of their design and operation through verification and validation processes; the confidence they inspire as they evolve their functionality; their explainability, accountability, and understandability to a diverse set of users; their defences against attacks on the systems, users, and the environment they are deployed in; their governance and the regulation of their design and operation; and the consideration of human values and ethics in their development and use.
+
+  
+%equally important to the idea of humans trusting the robot is the notion of whether and to what extent the robot can trust the human. 
+
+
+
+
+
+
+
+%[Contribution]
+%
+%How do we write specifications that capture trust? A human will only trust a robot to react in a safe way if it obviously and demonstrably does so. Hence, the robot needs to not only be safe but also be perceived as safe, which may require a considerable safety margin. On the other hand, when the interaction involves shared human-robot control, equally important to the idea of humans trusting the robot is the notion of whether and to what extent the robot can trust the human. This plays a role in determining under what circumstances the robot should step in and in what manner. Particularly in safety-critical scenarios, and when the robot is filling a gap in the human’s own capabilities, reasoning about trust in the human is key. Critical factors are to measurably assess the human’s ability to actually perform the task, and the human’s current state, for instance accounting for levels of fatigue. These notions of trust go beyond typical safety and liveness specifications and require specification formalisms that can capture them.
+%
+%%[Trust and trustworthiness]
+%Trust is defined in many ways by different research disciplines. 
+%We focus on those notions that concern the relationship between humans (individuals and organisations) and autonomous systems.
+%Autonomous systems are trustworthy when their design, engineering, and operation ensures they generate positive outcomes and mitigates potentially harmful outcomes trusted depends on a number of factors including but not limited to: their robustness in dynamic and uncertain environments;  the assurance of their design and operation through verification and validation processes; the confidence they inspire as they evolve their functionality; their explainability, accountability, and understandability to a diverse set of users; their defences against attacks on the systems, users, and the environment they are deployed in; their governance and the regulation of their design and operation; and the consideration of human values and ethics in their development and use.
+
+%The main contribution of this paper is focussed on the high-level challenges related to specifying for trustworthiness in autonomous systems. 
+%The paper specifically deals with what we need to specify rather than the how...
+
+
+
+...
+%
+%[Specification and Trustworthiness]
+%What we understand by specification that clearly define a scope and not go into formal side of things at this stage. 
+%The contribution of this paper is focussed mainly on the high level challenges what we have to say, identifying clearly what it is that we have to specify without thinking about which languages we are going to use. Scope of the paper is clear...high level what and not the how.
+%
+%[Autonomous system]
+
+
+
+
+
+%3.3895
+%specification
+%1. detailed formulation, in document form, which provides a definitive description of a system for the purpose of
+%developing or validating the system [ISO/IEC 2382:2015, Information technology — Vocabulary] 
+%2. information
+%item that identifies, in a complete, precise, and verifiable manner, the requirements, design, behavior, or other
+%expected characteristics of a system, service, or process [ISO/IEC/IEEE 15289:2015 Systems and software
+%engineering — Content of life-cycle information products (documentation), 5.24] 
+%3. a document that specifies, in a complete, precise, verifiable manner, the requirements, design, behavior, or other characteristics of a system,
+%component, product, result, or service and, often, the procedures for determining whether these provisions have
+%been satisfied. Examples are: requirement specification, design specification, product specification, and test
+%specification [A Guide to the Project Management Body of Knowledge (PMBOK® Guide) — Fifth Edition] 4. concrete
+%representation of a model in some notation [ISO/IEC 10746-2:2009 Information technology — Open Distributed
+%Processing — Reference Model: Foundations, 7.4]
+
+
+%[Scope]
+%In the context of this paper, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security, trustworthiness and other non-functional properties. 
+%We intentionally leave the discussion on realization  of these specifications (e.g. formal model) to a future paper, when our understanding of what is required to specify trustworthiness will be more mature.
+
+
+
+%[Our view of Trustworthiness]
+%Trustworthiness aspect...we need to say something about it... we are offering the others a framework, we are offering our view of trustworthiness.. other people can also contribute to our understanding... not the final version as the skeleton of the paper...
+
+%[Other views of Trustworthiness]
+
+
+
+
+
+
+% order
+%james one is new
+% meaninfully structure
+% in each high level challenges each
+% order by application area
+% order by challenge and use application area... these are evicent in these and these application areas
+
+%\section{Techniques for Specifying Trustworthy Autonomous Systems}
+
+\section{Autonomous Systems Domains and Their Unique Challenges}
+Each autonomous systems domain brings about unique specification challenges: \\
+
+
+
+\subsection{Autonomous Driving}
+\textbf{[Responsible Author:  Subramanian Ramamoorthy]}\\
+\textbf{[Source: Subramanian Ramamoorthy's presentation]}\\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
+Formal reasoning for "traffic regulation"
+Analysis of traffic regulation...
+
+The goal is to provide domain property analysis support for autonomous vehicles. 
+1) To formalise structures and logic of traffic regulations; and 2) to allow breakdown of key environment variables for vehicle operations.
+
+High way code is written in plain English. It is not formally specified as such. These type of code needs bit of interpretation. So how do we approach specification. Currently, we are taking Dutch traffic laws as examples, i.e. WVW and RVV (will move to the UK highway code later)... 
+
+The format of regulations defines constraints for the vehicle operations, e.g. overtaking and positioning. For each operation, there are two categories of constraints, 'must' (or 'prohibit', which is negation of 'must') and 'permit'.
+
+Need to reason about exceptions, rule conflicts and open texture.
+
+What are the scope of each of these rules, what are the preconditions, how do we want to deal with them, left implicit or needs further clarification. That is a specification challenge.
+
+
+%\noindent\textbf{[Responsible Author:  Greg Chance]}\\
+%\noindent \textbf{[Source: Breakout Room-1 (Subramanian Ramamoorthy, Yiannis Demiris, Greg Chance, Shane Windsor)]}\\\\
+%\noindent\textbf{[\textit{Author Guidelines: Word count: 150-300 (maximum); format/structure: introductory sentences on the domain; specification challenges unique to this domain}]}\\
+%Challenge: competing demands/negotiation, this conflicts with rules they are working with...
+%
+%Initial discussion around highway code and how to interpret this into a logical format that can be tested.
+%
+%Difficult to interpret rules such as "you shouldn't cause others to slow down" which requires insight into the causal effect of your driving on other drivers around you.
+%
+%Yiannis said he's be working on pedestrian problems and discussed the crowded market street problem, where there are so many people walking in the road looking at the market than any driver has a hard time making any progress.
+%
+%So what do you do, just pressing ahead slowly (against the known rules of driving) pushing against the pressure of the crowd conventional to normal driving behaviour. This becomes more case of managed conflict rather than any normal driving behaviour. 
+%
+%There are a number of ways in which we could interpret this situation one of them being game theory and another one being formal models. There is also the consideration of social convention and how to be fair in the driving situation. An aggressive driver would make more progress in this situation above a driver that is being fair and considerate.
+%
+%Greg commented on how 5AI use a "3 second rule" as a performance metric for driving behaviour and that if the vehicle takes longer than three seconds to pull out at a junction or a roundabout then this will have scored badly in its performance metric.
+
+
+%\noindent\textbf{\noindent [Kerstin Eder]}\\ ...
+\subsection{Emergency Responders}
+\textbf{[Responsible Author:  Amel Bennaceur]}\\
+\textbf{[Source: Amel Bennaceur's presentation] }\\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
+\textbf{Emergency Responders: } Amel described a use case using drones or autonomous agents to assist users...Why use an emergency scenario? because by definition a disruption of usual operations...
+Require speed and adaptation of response to deal with critical situations...
+Lot of work done in assisting first responders (fire fighters, doctors)... 
+- 0: Coordinate human zero responders
+- 1:  Interact with emergency response team to optimize the emergency response. ...
+We are interested in how to make zero responders (passers by those who don't have training) help other people... 
+For that drones or autonomous agents move from simple sharing information with people into something like coordinating  them, helping them collaborate.
+There is a very big requirement around how you communicate with those in order to ensure collaboration between them and collaboration with the autonomous agents. This actually encourage pro-social behaviour. ...
+Role of the autonomous  agent is to coordinate the response and help them collaborate. There is also another requirement: collaborate between autonomous agents or helping the whole system (coordinate with other agents)... For this one of the things is to specify...\\
+
+\noindent\textbf{[Responsible Author:  Luke Moffat]}\\
+\noindent\textbf{[Source: Luke Moffat's presentation]}\\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
+\textbf{Public Protection and Disaster Relief:} Luke provided an example which was in the domain of public protection and disaster relief. 
+This was a project with a consortium of developers where we essentially did creative method based workshops to try and address (specify) what potential ethical issues might be in the field when using a Pan-European 5G network for public protection disaster relief for emergency responders. For this we used creative exercises like what you see in Figure. 
+During the lock down we sent a series of exercises by post and then collaborated online. 
+The aim of this is not just to breakdown the monotony of doing online interaction but also to see how addressing ethical issues which can be a creative exercise.  
+
+\subsection{Interactive Robot Systems}
+%An example: cataloging the findings - a radiologist's process This is based on automated interpretation of radiology imaging. What you find best models in terms of machine learning is subsymbolic neural networks based models. What  the models are looking for is essentially small cues integrated together through some sort of  probabilistic fusion or other forms of integrating information towards an overall diagnosis. This is very different from how the human experts are being trained. A neural network is picking up cues completely different from that. So if you want to make a ave to first understand what is going on, and also the ways in which these systems fail (e.g. machine learning not picking up images accurately)  need to pay attention to right cues. But you do not know what precisely to specify because all the measures that I apply in the model such as accuracy, recall and precision and sensitivity,  these all can be fooled if you don't get it right. 
+%
+%An example: cataloging the findings - a radiologist's process This is based on automated interpretation of radiology imaging. What you find best models in terms of machine learning is subsymbolic neural networks based models. What  the models are looking for is essentially small cues integrated together through some sort of  probabilistic fusion or other forms of integrating information towards an overall diagnosis. This is very different from how the human experts are being trained. A neural network is picking up cues completely different from that. So if you want to make we have to first understand what is going on, and also the ways in which these systems fail (e.g. machine learning not picking up images accurately)  need to pay attention to right cues. But you do not know what precisely to specify because all the measures that
+%An example: cataloging the findings - a radiologist's process This is based on automated interpretation of radiology imaging. What you find best models in terms of machine learning is subsymbolic neural networks based models. What  the models are looking for is essentially small cues integrated together through some sort of  probabilistic fusion or other forms of integrating information towards an overall diagnosis. This is very different from how the human experts are being trained. A neural network is picking up cues completely different from that. So if you want to make a ave to first understand what is going on, and also the ways in which these systems fail (e.g. machine learning not picking up images accurately)  need to pay attention to right cues. But you do not know what precisely to specify because all the measures that I apply in the model such as accuracy, recall and precision and sensitivity,  these all can be fooled if you don't get it right. 
+%
+%An example: cataloging the findings - a radiologist's process This is based on automated interpretation of radiology imaging. What you find best models in terms of machine learning is subsymbolic neural networks based models. What  the models are looking for is essentially small cues integrated together through some sort of  probabilistic fusion or other forms of integrating information towards an overall diagnosis. This is very different from how the human experts are being trained. A neural network is picking up cues completely different from that. So if you want to make we have to first understand what is going on, and also the ways in which these systems fail (e.g. machine learning not picking up images accurately)  need to pay attention to right cues. to pay 
+\textbf{[Responsible Author:  Yiannis Demiris]}\\
+\noindent\textbf{[Source: Yiannis Demiris's presentation]}\\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\ 
+\textbf{Trustworthy Interactive Robot Systems:} Yannis described three examples: 
+1) Kids with disability learning to move around with intelligent wheel chairs; 2) Robots that interact with humans in hospitals; and 3) Robots that help one to get dressed in activities of daily living.
+
+Figure shows "healthcare applications with close proximity: trust is a core requirement for these applications".
+
+\subsection{Healthcare Robotics}
+\textbf{[Responsible Author:  Subramanian Ramamoorthy]}\\
+\noindent\textbf{[Source: Subramanian Ramamoorthy's presentation]}\\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenges unique to this domain}}\\\\
+\textbf{AI-based Medical Diagnosis:} Subramanian Ramamoorthy mentioned that from the ground up, this is a machine learning problem. 
+An example: cataloging the findings - a radiologist's process...
+This is based on automated interpretation of radiology imaging. 
+What you find best models in terms of machine learning is subsymbolic neural networks based models. What  the models are looking for is essentially small cues integrated together through some sort of  probabilistic fusion or other forms of integrating information towards an overall diagnosis. This is very different from how the human experts are being trained. A neural network is picking up cues completely different from that. So if you want to make a specification we have to first understand what is going on, and also the ways in which these systems fail (e.g. machine learning not picking up images accurately).. you need to pay attention to right cues. But you do not know what precisely to specify because all the measures that I apply in the model such as accuracy, recall and precision and sensitivity,  these all can be fooled if you don't get it right....
+
+Deep learning has revolutionised what is possible in terms of segmentation, classification and prognostics. However many caveats!
+Usual and unprecedented forms of edge cases, e.g. did the model even look for disease in the first place?!
+
+How to specify with respect to black box models?:
+1) The design domain for operation and notions of coverage: camera properties. model features, semantics of biological features; 2) role of explainability and faithfulness of interpretation of semantics; 3) role of pre-trained models in pipelines
+
+
+\subsection{Swarm Robots}
+\textbf{[Responsible Author:  Dhaminda Abeywickrama]}\\
+\textbf{[Source: Dhaminda Abeywickrama's presentation]} \\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
+Previous investigations have shown that users are open to adopting swarm robotic solutions, if the swarms are implemented in a trustworthy manner. 
+One of the main goals of our work is to identify the best manner in which to deploy a trustworthy swarm...
+For example, let us take an example of a case study that describes a public cloakroom where swarm of robots assist customers looking to deposit their jackets at an event. 
+...
+%It describes cases where customers are depositing jackets, handing a jacket to a robot for storing, and retrieval of jackets back to the customer. 
+
+\subsection{Unmanned Aerial Vehicles}
+\textbf{[Responsible Author:  Dhaminda Abeywickrama]}\\
+\textbf{[Source: Dhaminda Abeywickrama's presentation]} 
+\\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
+Today the operation of UAVs in applications like parcel delivery is very challenging with complex and uncertain flight conditions (such as wind gradients), and highly dynamic and uncertain air space (such as other UAVs). 
+ ...
+
+\subsection{Policy Development}
+%[Luke] 
+%1)Was in the domain of public protection and disaster relief...
+%Consortium of developers...
+%ethical practitioner evaluation team for Pan-European 5G network for public protection disaster relief ...for emergency responders...
+
+\textbf{[Responsible Author:  Luke Moffat]}\\
+\textbf{[Source: Luke Moffat's presentation]} 
+\\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
+%Designing and facilitating online/offline remote collaboration:
+%Creative exercises.. during lock down... serious of physical exercises, collaborated online... address ethical issues...
+Project Luke works with TAS-S....
+isITethical...
+Ethical framework adapted to secure TAS framework where both we aim to work with engineers, designers, programmers, policy advocates and publics and non-governmental organizations. To get many voices in to the same room as possible in thinking about not just how these technologies should be used when they arrive, but how these devices should be designed in the first place.. whether they are worthy of our trust and whether they are worthy of their use.
+
+
+\section{Intellectual Challenges for Research Community}
+[Overview paragraph]\newline
+
+\noindent[Note: For guiding the initial writing process, we have organized the different contributions to different subsections. Final version will be organized in a more logical manner. ]
+
+\subsection{TAS Regulation and Governance}
+%Specification Gaps and Connections to Governance: 
+\noindent\textbf{[Responsible Author:  Subramanian Ramamoorthy]}\\
+\noindent\textbf{[Source: Subramanian Ramamoorthy's presentation]}\\\\
+\noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\\\
+Two issues most salient within the two case studies described previously are:
+\begin{enumerate}
+	\item \textbf{Environment and other agents' dynamics can be unknown, but crucial}
+	\item \textbf{How to establish real intent behind requirements, vagueness and preferences?}
+\end{enumerate}
+
+%for e.g., Fairness. 20 valid definitions. concern for governance and regulation...data-driven machine learning methods...
+How and why are AI-based systems different?... we are concerned more specifically about data-driven machine learning methods, more specifically neural networks etc which are becoming the norm...
+
+Shift from specification -> design to data -> specifications many gaps!...task is implicitly specified in data and specifications are implicit inside that data, or derived from that data....if you take the design processes that involve continuous deployment pipeline, it is challenging traditional modes of regulation...The issue in some of the models is inscrutability with respect to performance, error characteristics, etc.; contingency in any statements about behaviour.
+
+To try to be more specific, 1) environment and other agents' dynamics can be unknown, but critical; 2) how to establish real intent behind requirements, vagueness and preferences. ...We are interested in open environments and open systems. There are other decision makers or entities in our environment and we have to take them into account. Typically these other environments are humans or machines operated by humans. This means we don't have very good models of what they do. We have to specify something in the absence of this....conservative approximations do not make sense in domains like autonomous vehicles... conservative approximations can be too conservative and not very useful functionality wise. Other issue is the real intention is vague (fairness which is not vague but it is difficult). Hard to pin it down and when we try to pin it down, it does not capture what we try to say...these are high-level issues.
+
+\noindent\textbf{[Source: Subramanian Ramamoorthy's abstract of talk]}\\
+Computer scientists treat specifications as precise objects, often derived from requirements by purging features such that they are defined with respect to environment properties that can be relied on regardless of the machine's behaviour. Emerging autonomous systems applications can sometimes challenge this way of thinking, particularly so because the environment properties may not be fully understood, or because it is hard to establish if the real intent behind a requirement can be verified. These gaps should be addressed in governance frameworks. I'll try to quickly develop this idea using two use case examples - one from autonomous vehicles, and another from AI-based medical diagnostics.
+%Initial discussion around highway code and how to interpret this into a logical format that can be tested. 
+%Difficult to interpret rules such as "you shouldn't cause others to slow down" which requires insight into the causal effect of your driving on other drivers around you. 
+%Yiannis said he's be working on pedestrian problems and discussed the crowded market street problem, where there are so many people walking in the road looking at the market than any driver has a hard time making any progress. 
+%So what do you do, just pressing ahead slowly (against the known rules of driving) pushing against the pressure of the crowd conventional to normal driving behaviour. This becomes more case of managed conflict rather than any normal driving behaviour.  
+%There are a number of ways in which we could interpret this situation one of them being game theory and another one being formal models. There is also the consideration of social convention and how to be fair in the driving situation. An aggressive driver would make more progress in this situation above a driver that is being fair and considerate. 
+%I commented on how 5AI use a "3 second rule" as a performance metric for driving behaviour and that if the vehicle takes longer than three seconds to pull out at a junction or a roundabout then this will have scored badly in its performance metric. 
+%Shane mentioned there may be a case to codify the others behaviour but there is a question on how this can be achieved we cannot regulate all other people or have models to predict how they will behave. I said that we can only look at this situation in terms of rational agents else we end up with an Infinity problem where we postulate every possible human error that could occur. 
+%So then we come back to the issue of being overly compliant and we end up making no progress in the market problem. Subramanian discussed an issue with his Roomba vacuum cleaner and his three year old son. This autonomous agent cannot have a model of the behaviour of his three year old son and therefore it must take a conservative approach to its behaviour, always taking the less risky approach. 
+%Subramanian also mentioned a hierarchy of safety concerns where the pinnacle of this hierarchy would be something like avoid collisions at all costs and below this might be to observe red lights but not at the expense of colliding with a pedestrian. Below this we may have social conventions and an area that is more grey in terms of the interpretation of rules (trolly problem). 
+%One of the issues with pedestrians in this context is that they are poorly defined in terms of their predictable behaviour essentially being somewhat random within some loosely defined boundaries. 
+%Subramanian was interested in receiving a copy of our archive paper on the assertion testing. 
+%Yiannis was interested in collaborating in his work on sensors to detect pedestrians and predict their behaviour and the human factors associated with this.  
+
+%2 case studies:
+%we are interested in open environments...
+%Analysis of traffic regulation...
+%
+%Traffic regulation. goal is to provide domain property analysis support for autonomous vehicles. To formalise structures and logic of traffic regulations; to allow breakdown of 
+
+%AI based medical diagnosis
+%It is a machine learning problem. 
+%Automated interpretation of radiology imaging. 
+%Best models in terms of machine learning... integration to overall diagnosis...
+%neural network.. make a specification first to understand what is going on, in which the systems fail.. pay attention to right queues. 
+
+%\textbf{Explainability by design}
+\subsection{TAS Functionality (Specification)}
+\noindent\textbf{[Responsible Author:  Dhaminda Abeywickrama]}\\
+\noindent\textbf{[Source: Dhaminda Abeywickrama's presentation]}
+\begin{enumerate}[start=3]
+	\item \textbf{On the lack of industry standards on autonomous systems with emergent behaviour and learning}
+	\item \textbf{How do you ensure safety of an autonomous system in situations where it’s behaviour is an “emergent” consequence of the interaction of individual agents with each other and their environment?}
+	\item \textbf{How do you specify an autonomous system should deal with situations that go beyond the limits of its training?}
+\end{enumerate}
+
+\subsection{TAS Hub}
+\noindent\textbf{[Responsible Author:  Luc Moreau]}\\
+\noindent\textbf{[Source: Luc Moreau's presentation]}
+\begin{enumerate}[start=6]
+	\item \textbf{How do you incorporate explainability requirements in autonomous systems designs?}
+\end{enumerate}
+We need to think about explainability from the start when we specify and design the system. This is illustrated using the animation (video)...
+Video---
+we need to be able to challenge the decision of the computer.. to understand whether they were fairly made...
+What was the provenance of the decision (what data was used)?..where the data come from? how was it used to make the decision? was the decision fully automated without any human involved?
+In response to growing demand for transparency around automated decision-making, PLEAD is developing an explanation assistance. It turns descriptions of the flow of data in a decision making system into meaningful explanations. The explanation assistant helps organizations demonstrate that they comply with legal regulations and makes it easier to explain complex decisions to their customers reassuring them that their data was processed as expected. 
+More transparency improves customer satisfaction, a win-win for all. ...
+---
+PLEAD project is done by an interdisciplinary team. 
+An explanation is a targeted, personalised textual or visual artifact that provides a focused description of the behaviour of the system based on data, processes, people and organisations that have influenced an outcome or a decision. 
+Targeted: addressing a specific purpose for the individual(s) targeted; personalised: referring to circumstances of the individual(s) targeted; description: explanation describes aspects of a system's behaviour. 
+
+Why provenance?
+WWW consortium defines provenance as:
+Provenance is a record that describes the people, institutions, entities and activities, involved in producing, influencing, or delivery a piece of data or a thing in the world.
+W3C PROV - provides a strong foundation to derive explanations from the provenance of decisions. 
+
+PLEAD methodology overview....
+Methodology steps: application, explanation requirements (policy analysis, requirements classification, minimum content determination), application data (collection of data categories, comparison to data flows), explanation plans, modelled provenance, explanations, explanation assistant. 
+Explanation requirements: policy analysis, requirements classification, minimum content determination...
+Each step is described by small card. 
+Selected (sub-)steps: analyse policy requirements, apply classification framework, determine minimum content that we need to find in explanations, compare to data flows in a system, explanation plans explanation validation.
+
+Explainability by design is crucial for TAS. We are writing up the methodology (from CS and legal perspectives). Still collecting data (interviews, costs etc). We are interested in exploring further applications.
+
+What about TAS?
+What are the legal/regulatory requirements or business needs to be met? Apply PLEAD methodology. Incorporate explainability requirements in TAS designs. 
+
+\noindent\textbf{[Source: Luc Moreau's abstract of talk]}\\
+Explainability of computer-based systems, and specifically autonomous systems, is a key aspect to make them trustworthy. We argue that explainability is not an afterthought, but it needs to be weaved in the application design.
+
+In the PLEAD project (Provenance-based and Legally-driven Explanations for Automated Decisions), we have designed a socio-technical methodology to elicit explanation requirements from laws and regulatory frameworks, to specify explanations with a clear purpose targeting a specific audience, and to construct explanations programmatically by means of explanation plans and queries over provenance logged by the system being designed.
+
+We have applied the methodology to systems providing explanations about decisions related to credit card applications and school allocations. These decisions are taken with various degrees of autonomy, in partnership with humans.  Preliminary evaluations are showing positive feedback from the participants.
+
+
+%\textbf{Specifying (and reasoning about) Cooperation between Autonomous Systems and Humans}
+\subsection{TAS Resilience}
+\noindent\textbf{[Responsible Authors:  Amel Bennaceur \& Anastasia Kordoni]}\\
+\noindent\textbf{[Source: Amel Bennaceur's presentation]}
+\begin{enumerate}[start=7]
+	\item \textbf{How to specify humans to enable cooperation with autonomous systems?}
+	\item \textbf{How to specify identities for human-autonomous system cooperation?}
+\end{enumerate}
+%Specifying resilience for human cooperation, more specifically, identities for human-autonomous system cooperation...\\
+
+One specific challenge and one application in resilience.
+Challenge: Corporation between autonomous systems and humans
+Context (example): resilience in emergency scenarios. 
+%Why emergency scenario? because by definition a disruption of usual operations...
+Require speed and adaptation of response to deal with critical situations...
+We need to specify functional and SLEEC (social-legal-ethical-empathy-cultural) requirements...
+
+%Use case: using drones or autonomous agents to assist users...
+%First responders (fire fighters, doctors)... 
+%They are interested in zero responders (passers by who don't have training)...
+%Interested in how to make those passers by i.e. zero responders help other people. 
+%For that drones or autonomous agents move from simple sharing information with people into something like coordinating  them, helping them collaborate.
+%There is a very big requirement around how you communicate with those h... in order to ensure collaboration between them and collaboration with the autonomous agents.  
+%Actually encourage pro-social behaviour. 
+%1:  Interact with emergency response team to optimize the emergency response. ...
+%Role of the autonomous systems agent is to coordinate the response and help them collaborate...
+%Another requirement: collaborate between autonomous agents or helping the whole system (coordinate with other agents). 
+
+About SC:
+How to specify (how to model humans to enable cooperation)?
+
+Look at from a behaviour view (behaviourist of the user). This is a very restrictive way of viewing it. 
+Humans don't behave the way we expect them to also the computers also don't behave the way we expect them. ...
+Evolution to an ontological view (from behaviourist view)... (i) opportunity the user can have (e.g. user is less than 5m away); (ii) their willingness to take certain actions; capability of each user (e.g. user can hear the robot). Here specifying little more details.... But, this ontological view is still not enough...as it does not show the dynamics between different people. ...
+Another way to looking at from a "Joint cognition perspective"...
+It is not only how the autonomous system see the system, also it is important to understand how the human sees the autonomous agent...this may help in specifications such as explainability.. 
+Joint cognition: 1) e.g. user understand how robots behave and is willing to cooperate; 2) could it be translated into other variables (e.g. social identity markers, cooperation index)...
+Cooperation is not only a reaction to actions. Actually, it goes further. There is a joint cognition almost a social identity shared between the autonomous agents and humans. Its is a matter of understanding what are the markers for this identity and for this com..??
+To sum up, there is multiple ways of looking at cooperation between humans and autonomous agents...Behaviour is only one facet. A view only on behaviour is not enough. Need for trade off between multiple requirements. ... lot of questions about what are the markers we need, how do we reason about them, and how we make trade off between multiple requirements such as safety, explainability.. what builds trust in autonomous systems...
+
+
+\noindent\textbf{[Source: Amel Bennaceur's abstract of talk]}\\
+REASON aims to expand the ability of autonomous agents to cooperate with peer agents and humans, and to proactively seek such cooperation for mutual benefit—opening up significant new opportunities for enhanced resilience through the pooling of information and functional capabilities. While significant progress has been made for specifying and enabling cooperation between autonomous systems, cooperation with humans raises additional challenges which this talk explores.
+
+\noindent \textbf{[Source: Breakout Room-2 (Amel Bennaceur, Anastasia Kordoni, Adrian Bodenmann, Kerstin Eder)]}\\
+Amel Bennaceur to summarise the outcome of their breakout room mentioned: we went deeper to corporation.. once you want to model the corporation what are the highlights? So they talked about... there is lot of social theories that specifically the identity so how to represent it, how to understand it, how to translate it  to something that computer scientists understand and can implement. 
+
+%Anastasia
+
+
+%in healthcare robots operating in close proximity to humans, 
+
+\subsection{TAS Trust}
+\noindent\textbf{[Responsible Author:  Yiannis Demiris]}\\
+\noindent\textbf{[Source: Yiannis Demiris's presentation]}
+\begin{enumerate}[start=9]
+	\item \textbf{How to incorporate human factors and data-driven adaptation processes where safety and reliability are of particular importance?}
+\end{enumerate}
+Yiannis presented from his work through assistive robotics lab, and the node.
+Trustworthy interactive robot systems.
+
+Focussed today specification challenges specifically dealing with on how trust is acquired over time, how it is adapted to context, errors, the environment and the "user", and adapt systems accordingly. (Trust for user...)
+
+%"Trustworthy interactive robot systems":
+%1) Kids with disability learning to move around with intelligent wheel chairs.
+%2) Robots that interact with humans in hospitals.
+%3) Robots that help one to get dressed in daily living.
+%
+%Figure: healthcare applications with close proximity: trust is a core requirement for these applications...
+
+Specification challenge:
+Robot systems need to adapt to their perceptual, reasoning and behavioural processes to calibrate human users' trust, so we don't want the robots to  untrust...
+
+The particular difficulty for us is that all systems are essentially are data-driven interactive systems with multiple sources of uncertainty in healthcare-related settings in terms of safety, reliability, privacy...
+
+Specifying an assistive cognitive architecture.
+We don't use formal specifications. 
+We specify the architecture using control-theoretic ensemble approach, hierarchical representations...
+usually through ensemble model...
+Specifying an assistive cognitive architecture... Ensemble model...
+usually we use Simulation approach.. digital twin..
+
+
+***Specific specification challenges for an assistive cognitive architecture:
+
+Sensing - large variability in human (cognitive and emotional) processes cannot easily be inferred by sensor-observable behaviour....
+Perceive user states and actions through multimodal interfaces...
+
+Learning - requirement for a (sparse-data driven) user model (needs, skills, preferences...) that can change over time... Understand and predict user needs and intentions by building user models...
+
+Assisting - specifying appropriate robot behaviours considering (personalised) human short-term and long-term goals...
+Adapt robot behaviour to improve interaction and assistance effectiveness.
+
+%Specific challenges: 
+\noindent \textbf{[Source: Yiannis Demiris's abstract of talk]}\\
+Interactive robotic systems are a challenging domain for formal specification research. The robot systems typically rely on noisy sensory channels and need to adapt their perceptual, reasoning and behavioural responses – for example, action execution parameters or explanation modalities – to calibrate the level of trust the human users should have when interacting with them. A particular specification challenge is the principled incorporation of human factors and data-driven adaptation processes in healthcare robots operating in close proximity to humans, where safety and reliability are of particular importance. 
+
+\subsection{TAS Security}
+\noindent\textbf{[Responsible Author:  Luke Moffat]}\\
+\noindent\textbf{[Source: Luke Moffat's presentation]}
+\begin{enumerate}[start=10]
+	\item \textbf{How to reach the middle ground between the technical possibilities and innovations related to the actual systems and social perspective?}
+\end{enumerate}
+Main challenge in terms of specification is how to reach this middle ground between the technical possibilities and innovations related to the actual systems and the social perspective which engages with that technical landscape in a way that can be understood and digested by the publics who will end up using the technology. 
+
+Luke goes through how he has used the ELSI framework in the past with some examples.
+
+TECHNICAL - Systems:
+
+On the technical side, there are fairly specific definitions for specification which you all know. 
+From our (Luke) perspective, the interested ones concern is where data is shared between systems what we called as social-material interactions ... that is whenever an autonomous system communicates with a human being or an aspect of the environment and these have technical answers. So there is a certain ways you can specify how those practices operate on the technical level but to understand how they interact with the social level requires collaboration. 
+
+Specification challenge: how do autonomous vehicle systems communicate with other networked systems, with users, and with the environment?
+
+SOCIAL - Actors:
+
+So as soon as you introduce human-beings as you have seen in the picture already, things get complicated, now you are not just dealing with instructions that you give to a device but dealing with believes, desires and fears sometimes misinformation so he is trying to understand how  autonomous vehicles (he is working with highways England), how they are understood, regarded and perceived by  publics. And the way in which pedestrians can be considered as passive users of autonomous vehicles. 
+
+TECHNO-SOCIAL (approach) - Accountabilities:
+
+What are the ethical challenges? also, the legal and social ones. 
+So how can you have regulation but also a social space that is responsive to new technologies in a way that is neither simply techno-phobic nor passively accepting but  something that involves innovation public input. So the technology that you receive is what works for everyone. So, how you make ethical and accountable autonomous systems. 
+
+Engagements: 
+An answer to this is to engage with many stakeholders as possible throughout the design process... ELSI is one method of doing it. Other methods: creative methods, ethics through design...
+
+%Example:
+%1)Was in the domain of public protection and disaster relief...
+%Consortium of developers...
+%ethical practitioner evaluation team for Pan-European 5G network for public protection disaster relief ...for emergency responders...
+%
+%2) Designing and facilitating online/offline remote collaboration
+%Creative exercises.. during lock down... serious of physical exercises, collaborated online... address ethical issues...
+%
+%3) Project he works with TAS-S....
+%isITethical...
+%Designed to work with engineers, designers, programmers, policy advocates and publics and non-governmental organization. In thinking about not just how these technologies should be used when they arrive, but how these devices should be designed in the first place.. whether they are worthy of our trust and whether they are worthy of their use...
+
+\noindent\textbf{[Source: Luke Moffat's abstract of talk]}\\
+As autonomous systems become increasingly complex and pervasive, the task of ensuring their security and trustworthiness can be aided by considering ethical, legal, and social implications (ELSI) of AS use. In this presentation, I outline some of the challenges and opportunities in combining technical specification and social specification.
+
+Sharing some methods used by isITethical Exchange, a community platform for emergency response and disaster and risk management, I offer some possibilities for tackling the complex and unpredictable social dimensions in which AS come to operate. I advocate for participatory specification, drawing on multiple voices and perspectives to ensure that technical specifications of AS can also incorporate what is ethical, socially responsible, and legally warranted.
+
+\subsection{TAS Verifiability}
+\noindent\textbf{[Responsible Author:  Jan Ringert]}\\
+\noindent[\textbf{Source: Jan Ringert's presentation}]
+\begin{enumerate}[start=11]
+	\item \textbf{Specifications for verifiability}
+\end{enumerate}
+Literature reviews for testing, validation and verification of robotic and autonomous systems.
+
+Research questions:
+1) Types of models
+2) How are they evaluating efficiency, effectiveness, coverage measures
+3) Tools and availability
+4) Evidence of applicability
+
+Lack of domain, specific, standardized measures of intervention
+Lack of comparable interfaces of tools, good measures...
+
+\noindent\textbf{[Source: Jan Ringert's abstract of talk] }
+\\We present the vision of the verifiability node: our vision is to enable domain experts use the most suitable abstractions and specifications for the verification task at hand. We provide a verifiability framework that connects these different abstractions and provides holistic and system-level verification results.  To achieve this flexibility the verifiability node is developing a unifying framework for specification languages, their semantics, compositions, and transformations. We provide a brief overview of a systematic review of specification languages for autonomous systems and identify gaps in current literature. We conclude with a call for collaboration with other nodes, the hub, and domain experts to provide their specification requirements for our unifying framework.
+
+
+%[BR1-1] Looked into various aspects of what do you want do about other agents in interactions of.. in particular they were talking about what happens with autonomous vehicles. That is not the exclusive use case you can think about domestic robots and what happens with our people in the home. In both cases and many more, you have this difficulty of specification of behaviour involves other agents and what their behaviour is which is fundamentally unknown. Possibly also non-deterministic and random in some form.
+
+%[BR3-1] We went deeper to Corporation.. once you want to model the corporation what are the highlights? So they talked about... there is lot of social theories that specifically the identity so how to represent it, how to understand it, how to translate it  to something that computer scientists understand and can implement. 
+
+\subsection{Incompleteness of specifications}
+\noindent\textbf{[Responsible Authors:  Jan Ringert \& James Wilson]}\\
+\noindent \textbf{[Source: Breakout Room-3 (Jan Ringert, James Wilson, Carlos Gavidia-Calderon, Luke Moffat, Dhaminda Abeywickrama)]}\
+
+%James, Jan, Dhaminda, Luke, Carlos
+\begin{enumerate}[start=12]
+	\item \textbf{Incompleteness of specifications}
+\end{enumerate}
+James Wilson to summarise the outcome of the breakout room mentioned that we discussed conversation about human implicit knowledge and the writing specification for something autonomous like a self-driving car or autonomous car. There are things that you need to include in that you don't necessarily have to include in one for a standard car. The example Jan gave was that autonomous vehicle might not know if you don't want to hit a wall, that you cant ask that wall to move, but then you may need to move backwards or move out of the way. There are things that are fundamental to humans knowledge and human understand that you need to specify under particular conditions and a difficulty you might encounter is identifying what you might have forgotten to specify and what might be important for an autonomous system to sort of know. 
+
+During the breakout session, James Wilson mentioned that there are specifications for lot of these systems, but the difficulty with that is, in order to obtain a specification, we need to come to a consensus...sampling correct ideas... how to create specification within unprecedented cases?...
+
+Jan Ringert mentioned that incomplete specifications and evolving specification are two aspects which are related to each other. 
+One needs to question whether the specifications for robots and self-autonomous cars, are these specifications would be good enough through certification? Somebody makes a partial specification just to check whether their process is the right one. 
+
+Jan Ringert mentioned that:  a lot of things are unknown, not formalized and implicit in the humans...we worked on reactive synthesis... first thing we noticed is that people not writing assumptions about the environment... If you are a developer if you drive to a wall, you need to turn around or back up to get the wall away from you. If you don't specify this explicitly as an assumption for synthesis, the synthesis has to assume the wall will follow the robot. It does not know otherwise right? Many things like that, if you write a specification, many people will forget to write that walls are stationary. They think it is not required to write as it is common knowledge of developers and user, but not of the autonomous systems which try to find a solution for the task of not hitting the wall. So there is something about analyzability of specifications we need to debug them, troubleshoot them. 
+
+Carlos Gavidia-Calderon mentioned about automated synthesis.. from software engineering area he talked about a tool to  automatically fix bugs..
+
+Jan Ringert said simply going by data there might be shortcuts as Carlos mentioned. What we had was missing implicit knowledge... there can be missing stuff in data too as Carlos mentioned. Carlos mentioned if we specify something it needs to go through quality control by experts which know. James Wilson following up on that raised a counter argument -- this can provide solutions which were not thought before which can be beneficial.   
+
+Jan Ringert queried how do we know what we are specifying or what we have forgotten to specify? This knowledge is very difficult to obtain. He mentioned about some program synthesis (excel flashfield...) to come up with small programs some transformation. There is a disambiguation task with user to double check your intention for a case (this is one way to fill a knowledge gap which was not specified or under specified)...\\
+
+\noindent\textbf{[Responsible Authors:  Jan Ringert \& James Wilson]}\\
+\noindent \textbf{[Source: Breakout Room-3 (Jan Ringert, James Wilson, Carlos Gavidia-Calderon, Luke Moffat, Dhaminda Abeywickrama)]}
+
+\subsection{Evolution of specifications}
+\begin{enumerate}[start=13]
+	\item \textbf{Evolution of specifications}
+\end{enumerate}
+James Wilson to summarise the outcome of the breakout room mentioned the fact that you may need to complete the specification as you move along... With these evolvable systems, you start of specifying may not be the things you specify later (you may need to add additional specification). So having a specification that can adapt and evolve along the system you have that is changing is also quite crucial.
+
+James Wilson queried that does it imply that specifications need to adapt and evolve?
+Jan Ringert said they need to adapt and sometimes the environment adapts, some existing assumptions are no longer valid... You change the system which has better sensors for example... He said that specifications need to be evolvable and maintainable. One thing he was looking into is how to understand the evolution? What is the impact of that to the system?. To get some kind of tool support... 
+
+James Wilson queried how do you go about getting an evolving specification? Jan Ringert mentioned about \textit{runtime monitoring }as an example.  Also, he mentioned about \textit{learning specifications} where you start without a specification but you have observations from a system or you have a simulation of the system and you try to learn a specification from it. Learning from data but it may be incomplete, you need to generalize because otherwise it is not learning...
+
+Carlos Gavidia-Calderon mentioned that in industry also requirements change over time, and queried whether it is radically different in  robotics/autonomous systems? Jan Ringert mentioned it is not that different..
+
+Jan Ringert mentioned about having very different, let's say hard constraints and also constraints that can evolve.. so you can have a heterogeneous specification which you can relate to them... Luke Moffat said you know they are evolving but do not know in what direction. \\
+
+\noindent\textbf{[Responsible Author:  Greg Chance]}\\
+\noindent \textbf{[Source: Breakout Room-1 (Subramanian Ramamoorthy, Yiannis Demiris, Greg Chance, Shane Windsor)]}
+\begin{enumerate}[start=14]
+ 	\item \textbf{Specifying competing demands and other agents behaviour}
+ \end{enumerate}
+Subramanian Ramamoorthy to summarise the outcome of their breakout room mentioned that they looked into various aspects of what do you want to do about other agents in interactions of.. in particular we were talking about what happens with autonomous vehicles. That is not the exclusive use case you can think about domestic robots and what happens with our people in the home. In both cases and many more, you have this difficulty of specification of behaviour involves other agents and what their behaviour is which is fundamentally unknown. Possibly also non-deterministic and random in some form.\\
+
+During the breakout room discussion... specification challenge: competing demands/negotiation, this conflicts with rules they are working with...
+
+Initial discussion around highway code and how to interpret this into a logical format that can be tested.
+
+Difficult to interpret rules such as "you shouldn't cause others to slow down" which requires insight into the causal effect of your driving on other drivers around you.
+
+Yiannis said he's be working on pedestrian problems and discussed the crowded market street problem, where there are so many people walking in the road looking at the market than any driver has a hard time making any progress.
+
+So what do you do, just pressing ahead slowly (against the known rules of driving) pushing against the pressure of the crowd conventional to normal driving behaviour. This becomes more case of managed conflict rather than any normal driving behaviour. 
+
+There are a number of ways in which we could interpret this situation one of them being game theory and another one being formal models. There is also the consideration of social convention and how to be fair in the driving situation. An aggressive driver would make more progress in this situation above a driver that is being fair and considerate.
+
+Greg commented on how 5AI use a "3 second rule" as a performance metric for driving behaviour and that if the vehicle takes longer than three seconds to pull out at a junction or a roundabout then this will have scored badly in its performance metric.
+\\
+
+\noindent\textbf{[Responsible Author:  Shane Windsor]}\\
+\noindent \textbf{[Source: Breakout Room-1 (Subramanian Ramamoorthy, Yiannis Demiris, Greg Chance, Shane Windsor)]}
+\begin{enumerate}[start=15]
+	\item \textbf{Role of code/codification in open environments and how to specify them?}
+\end{enumerate}
+Subramanian Ramamoorthy to summarise the outcome of their breakout room mentioned: the other issue that came up for us was there are some domains that are amenable to there being a code and codification and there are some that are not. So mobility is a nice thing in some sense is that there is a desire for people to follow a code and with very rare there is an exception you go through a licensing regime that make sure everyone is somewhat aware of the code. Even if they were violating it, there is reason to believe those models exist and you can make some progress with that.
+If you think about home robots in particular we were thinking about a Roomba vacuum cleaner and a  3 year old child, you can't the 3 year old to do a particular thing or there is no guarantee of compliance. So what should the robot actually do in that case? It could take a very conservative stance but then that could be bad for functionality and there nothing happens.
+It could try to nudge? and play a game as if were but that could become more complex.
+So we discussed aspects of this. 
+Certainly there is business of what do we want to do in an open environments what is the role of the code and what are the specifications in that kind of setting... 
+
+During the breakout room, Shane Windsor mentioned there may be a case to codify the others behaviour but there is a question on how this can be achieved we cannot regulate all other people or have models to predict how they will behave. 
+Greg said that we can only look at this situation in terms of rational agents else we end up with an Infinity problem where we postulate every possible human error that could occur. 
+So then we come back to the issue of being overly compliant and we end up making no progress in the market problem. 
+Subramanian Ramamoorthy discussed an issue with his Roomba vacuum cleaner and his three year old son. 
+This autonomous agent cannot have a model of the behaviour of his three year old son and therefore it must take a conservative approach to its behaviour, always taking the less risky approach. 
+Subramanian Ramamoorthy also mentioned a hierarchy of safety concerns where the pinnacle of this hierarchy would be something like avoid collisions at all costs and below this might be to observe red lights but not at the expense of colliding with a pedestrian. Below this we may have social conventions and an area that is more grey in terms of the interpretation of rules (trolly problem). 
+One of the issues with pedestrians in this context is that they are poorly defined in terms of their predictable behaviour essentially being somewhat random within some loosely defined boundaries. 
+\\
+
+
+\noindent\textbf{[Responsible Author:  Kerstin Eder]}\\
+\noindent \textbf{[Source: Breakout Room-2 (Amel Bennaceur, Anastasia Kordoni, Adrian Bodenmann, Kerstin Eder)]}
+\begin{enumerate}[start=16]
+	\item \textbf{Why is the system produced still not trusted once it has been tested/verified/simulated?}
+\end{enumerate}
+Amel Bennaceur to summarise the outcome of their breakout room mentioned: taking us back to rethinking trustworthiness, so once you test / verify / simulate why people still don't trust the system you produced. So that kind of understanding different facets of trustworthiness is also very important. 
+
+%[BR3-1] We went deeper to Corporation.. once you want to model the corporation what are the highlights? So they talked about... there is lot of social theories that specifically the identity so how to represent it, how to understand it, how to translate it  to something that computer scientists understand and can implement. 
+
+%git repository 
+%paper outline
+%git based one or
+\section{Conclusion}
+
+%\section{Acknowledgments}
+%This article is a result of fruitful discussions at the Specifying for Trustworthiness workshop in conjunction with the TAS All Hands Meeting. The authors thank all speakers and fellow participants, and the TAS Hub and EPSRC for their support.
+%%This article is a result of fruitful discussions at the Dagstuhl seminar on Verification and Synthesis of Human-Robot Interaction.1 The authors thank all fellow participants and the Schloss Dagstuhl—Leibniz Center for Informatics, for their support.
+%
+%%Identification of funding sources and other support, and thanks to individuals and groups that assisted in the research and the preparation of the work should be included in an acknowledgment section, which is placed just before the reference section in your document.
+
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+\begin{acks}
+This article is a result of the fruitful discussions at the Specifying for Trustworthiness workshop held in conjunction with the Trustworthy Autonomous Systems (TAS) All Hands Meeting. The authors thank all the speakers and fellow participants, and the TAS Hub and EPSRC for their support.
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf.tex'.

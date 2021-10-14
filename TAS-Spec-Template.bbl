@@ -1,0 +1,92 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{3}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{for Standardization}{for
+  Standardization}{2015}]%
+        {ISO2382}
+\bibfield{author}{\bibinfo{person}{International~Organization for
+  Standardization}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{title}{ISO/IEC 2382:2015 Information technology —
+  Vocabulary}.
+\newblock \bibinfo{howpublished}{Online}.
+\newblock
+\urldef\tempurl%
+\url{https://www.iso.org/standard/63598.html}
+\showURL{%
+Retrieved October 13, 2021 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hub}{Hub}{2020}]%
+        {TAS-Hub}
+\bibfield{author}{\bibinfo{person}{UKRI Trustworthy Autonomous~Systems Hub}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{Our definitions}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.tas.ac.uk/our-definitions/}
+\showURL{%
+Retrieved October 9, 2021 from \tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kress-Gazit, Eder, Hoffman, Admoni, Argall,
+  Ehlers, Heckman, Jansen, Knepper, K\v{r}et\'{\i}nsk\'{y}, Levy-Tzedek, Li,
+  Murphey, Riek, and Sadigh}{Kress-Gazit et~al\mbox{.}}{2021}]%
+        {Kress-Gazit21}
+\bibfield{author}{\bibinfo{person}{Hadas Kress-Gazit}, \bibinfo{person}{Kerstin
+  Eder}, \bibinfo{person}{Guy Hoffman}, \bibinfo{person}{Henny Admoni},
+  \bibinfo{person}{Brenna Argall}, \bibinfo{person}{R\"{u}diger Ehlers},
+  \bibinfo{person}{Christoffer Heckman}, \bibinfo{person}{Nils Jansen},
+  \bibinfo{person}{Ross Knepper}, \bibinfo{person}{Jan K\v{r}et\'{\i}nsk\'{y}},
+  \bibinfo{person}{Shelly Levy-Tzedek}, \bibinfo{person}{Jamy Li},
+  \bibinfo{person}{Todd Murphey}, \bibinfo{person}{Laurel Riek}, {and}
+  \bibinfo{person}{Dorsa Sadigh}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Formalizing and Guaranteeing Human-Robot
+  Interaction}.
+\newblock \bibinfo{journal}{\emph{Commun. ACM}} \bibinfo{volume}{64},
+  \bibinfo{number}{9} (\bibinfo{date}{Aug.} \bibinfo{year}{2021}),
+  \bibinfo{pages}{78–84}.
+\newblock
+\showISSN{0001-0782}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3433637}
+\showDOI{\tempurl}
+
+
+\end{thebibliography}
