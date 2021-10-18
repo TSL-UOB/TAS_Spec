@@ -1,8 +1,8 @@
 # TAS_Spec
 
-This is the github repository for the "On Specifying for Trustworthiness" journal article. The paper source code is in LaTex. 
+This is the github repository created for the "On Specifying for Trustworthiness" journal article. The paper source code is in LaTex. 
 The code is hosted at the GitHub account for the Trustworthy Systems Lab (https://github.com/TSL-UOB), University of Bristol. 
-This paper is based on the ideas discussed during the Specifying for Trustworthiness workshop at the TAS All Hands Meeting on Sep. 15. 
+This paper is based on the ideas discussed during the "Specifying for Trustworthiness" workshop at the TAS All Hands Meeting on Sep. 15. 
 
 Template tex file: source/TAS-Spec-Template.tex
 
