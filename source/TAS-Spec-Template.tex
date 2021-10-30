@@ -347,14 +347,13 @@ The aim of this is not just to breakdown the monotony of doing online interactio
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Interactive Robot Systems}
 \textbf{[Responsible Author:  Yiannis Demiris]}\\
-\noindent\textbf{[Source: Yiannis Demiris's presentation]}\\\\
+\noindent\textbf{[Source: Updated by YD on 30 Oct 2021}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\ 
-\textbf{Trustworthy Interactive Robot Systems:} Robot systems that adapt their perceptual, reasoning and behavioural processes to calibrate human users' trust. Data-driven interactive systems with multiple sources of uncertainty in healthcare-related settings.
+\textbf{Trustworthy Interactive Robot Systems:} 
 
-Yiannis Demiris described three examples: 
-1) Kids with disability learning to move around with intelligent wheel chairs; 2) Robots that interact with humans in hospitals; and 3) Robots that help one to get dressed in activities of daily living.
+Trustworthy Interactive Robot Systems aim to complete their tasks while explicitly considering states, goals and intentions of the human agents they collaborate with, and aiming to calibrate the trust humans have for them to an appropriate level.  This form of human-in-the-loop real-time interaction is required in several application domains including assistive robotics for activities of daily living, healthcare robotics, shared control of smart mobility devices, and collaborative manufacturing among others. Most specification challenges arise from the need to provide specifications for the perceptual, reasoning and behavioural processes of robot systems that will need to acquire models of, and deal with, the high variability exhibited in human behaviour. The necessity to infer human internal states (such as beliefs and intentions) interactively, typically through sparse and/or sensor data from multimodal interfaces, imposes further challenges for the principled incorporation of human factors and data-driven adaptation processes in robots operating in close proximity to humans, where safety and reliability are of particular importance. 
 
-Figure shows "healthcare applications with close proximity: trust is a core requirement for these applications".
+
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Healthcare Robotics}
@@ -509,36 +508,15 @@ The social identity approach~\cite{spears2021social} induces this concept of a s
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{TAS Trust}
 \noindent\textbf{[Responsible Author:  Yiannis Demiris]}\\
-\noindent\textbf{[Source: Yiannis Demiris's presentation]}\\\\
+\noindent\textbf{[Source: Updated by YD on 30 Oct 21]}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
 \begin{itemize}
 	\item \textbf{How to incorporate human factors and data-driven adaptation processes where safety and reliability are of particular importance?}
 \end{itemize}
-Yiannis Demiris presented from his work through his lab which works on assistive robotics mainly, and from the Trust node he is working on as a co-investigator.
 
-Focussed today on specification challenges specifically on: can we define a set of principles of how trust is acquired over time,  how it is adapted to context, errors, the environment and the "user", and adapt systems accordingly. (Trust for user...)
+Designing, implementing and deploying interactive robot systems that are trustworthy for use in scenarios where humans and robots collaborate in close proximity is challenging, given that safety and reliability are of particular importance. Example scenarios include assisting people with activities of daily living such as mobility and dressing, rehabilitation robotics, adaptive assistance in intelligent vehicles, robot assistants in care homes and hospital environments, among others. The intellectual challenge this research community faces is the design and implementation of trustworthy perceptual, cognitive, and behaviour generation processes that explicitly incorporate parametrizable models of human skills, beliefs, and intentions. These models are necessary for interactive assistive systems since they need to decide not only how but also when to assist.  Given the large variability of human behaviour, the parameters of these user models need to be acquired interactively, typically from sparse and potentially noisy sensor data, a particularly challenging inverse problem. An additional challenge is introduced in the case of long-term human-robot interaction, where the assistive system needs to learn and take into consideration human developmental aspects, typically manifested in computational learning terms as model drift. As an example, consider the case of an assistive mobility device for children with disabilities: as the child’s perceptual, cognitive, emotional and motor skills develop over time, their requirements for the type, amount and frequency of the provided assistance will need to evolve. Similarly, when assisting an elderly person or someone recovering from surgery, the distributions of the human data that the robot sensors collect will vary not only according to the context but also over time.  Depending on the human participant, and their underlying time-varying physiological and behavioural particularities, model drift can be sudden, gradual, or recurring, posing significant challenges to the underlying modelling methods. Principled methods for incorporating long-term human factors into the design and implementation of assistive systems, that adapt and personalise their behaviour for the benefit of their human collaborator, remain an open research challenge. 
 
-Trustworthy Interactive Robot Systems: specification challenge for us here is that robot systems need to adapt to their perceptual, reasoning and behavioural processes to calibrate the human users' trust, so we don't want the humans to over trust the robots or under trust them. The particular difficulty for us is that all systems are essentially data-driven interactive systems with multiple sources of uncertainty in healthcare-related settings in terms of safety, reliability, privacy...
 
-Specifying an assistive cognitive architecture.
-We don't use formal specifications...
-We specify the architecture using control-theoretic ensemble approach, hierarchical representations...
-usually through ensemble model...
-Specifying an assistive cognitive architecture... Ensemble model...
-usually we use simulation approach.. digital twin..
-
-***Specific specification challenges for an assistive cognitive architecture:
-
-[Sensing] Large variability in human (cognitive and emotional) processes cannot easily be inferred by sensor-observable behaviour....
-Perceive user states and actions through multimodal interfaces...
-
-[Learning] Requirement for a (sparse-data driven) user model (needs, skills, preferences...) that can change over time... Understand and predict user needs and intentions by building user models...
-
-[Assisting] Specifying appropriate robot behaviours considering (personalised) human short-term and long-term goals...
-Adapt robot behaviour to improve interaction and assistance effectiveness.
-
-\noindent \textbf{[Source: Yiannis Demiris's abstract of talk]}\\
-Interactive robotic systems are a challenging domain for formal specification research. The robot systems typically rely on noisy sensory channels and need to adapt their perceptual, reasoning and behavioural responses – for example, action execution parameters or explanation modalities – to calibrate the level of trust the human users should have when interacting with them. A particular specification challenge is the principled incorporation of human factors and data-driven adaptation processes in healthcare robots operating in close proximity to humans, where safety and reliability are of particular importance. 
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{TAS Security}
