@@ -440,38 +440,59 @@ Computer scientists treat specifications as precise objects, often derived from 
 \end{itemize}
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{TAS Hub}
+\subsection{TAS Hub} %%% I would prefer a mention of explainability requirement, as i don't think i speak on behalf of the hub
 \noindent\textbf{[Responsible Author:  Luc Moreau]}\\
-\noindent\textbf{[Source: Luc Moreau's presentation]}\\\\
-\noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
-\begin{itemize}
-	\item \textbf{How do you incorporate explainability requirements in autonomous systems designs?}
-\end{itemize}
-Luc Moreau said we need to think about explainability from the start when we specify and design a system. This is illustrated using the animation (plays a video)...Every day organizations use computers to make decisions that impact our lives. These could be life defining decisions like what schools our children are allocated to or whether our mortgage application is accepted or rejected. What if the computer says no? We have the right to challenge these decisions and to understand whether they were fairly made. What was the provenance of the decision (what data was used)? Where did that data come from? How was it used to make the decision? Was the decision fully automated without any human involvement? In response to growing demand for transparency and accountability around automated decision-making, PLEAD is developing the Explanation Assistance. It turns descriptions of the flow of data in a decision making system into meaningful explanations. The Explanation Assistant helps organizations demonstrate that they comply with legal regulations and makes it easier to explain complex decisions to their customers reassuring them that their data was processed as expected. More transparency improves customer satisfaction, a win-win for all. End of video.
 
-Luc Moreau introduced the PLEAD project which is done by an interdisciplinary team. 
-An explanation is a targeted, personalised textual or visual artifact that provides a focused description of the behaviour of the system based on data, processes, people and organisations that have influenced an outcome or a decision. 
-Targeted: addressing a specific purpose for the individual(s) targeted; personalised: referring to circumstances of the individual(s) targeted; description: explanation describes aspects of a system's behaviour. 
 
-Why provenance?...
-WWW consortium defines provenance as: provenance is a record that describes the people, institutions, entities and activities, involved in producing, influencing, or delivery a piece of data or a thing in the world. W3C PROV - provides a strong foundation to derive explanations from the provenance of decisions. 
 
-PLEAD methodology overview....
-Methodology steps: application, explanation requirements (policy analysis, requirements classification, minimum content determination), application data (collection of data categories, comparison to data flows), explanation plans, modelled provenance, explanations, explanation assistant. 
-Explanation requirements: policy analysis, requirements classification, minimum content determination...
-Each step is described by small card. 
-Selected (sub-)steps: analyse policy requirements, apply classification framework, determine minimum content that we need to find in explanations, compare to data flows in a system, explanation plans, and explanation validation. This is all packaged in the Explanation Assistant we described earlier.
+Increasingly, calls for explainability~\cite{Hamon:2020,gchq:2021}, as well as  emerging frameworks~\cite{Hamon:2020} and guidance ~\cite{ico:2020}  point to the need for Artificial Intelligence (AI) to provide explanations about the decisions it makes.  A challenge with existing frameworks and guidance is that they are not prescriptive: what is an actual explanation?   how   should an explanation be constructed? can it be constructed  computationally?  Furthermore,  frameworks and guidance tend to be concerned with AI in general, and not Autonomous Systems, which have a substantial overlap with AI but are distinct from AI.
 
-In conclusion, "Explainability by design" is crucial for TAS. We are writing up the methodology (from computer science and legal perspectives). We are still collecting data (interviews, costs etc). We are interested in exploring further applications.
 
-What about TAS? What are the legal/regulatory requirements or business needs to be met? Apply PLEAD methodology. Incorporate explainability requirements in TAS designs. 
+A case study addressing regulatory requirements on explainability of automated decisions in the context of a  loan application~\cite{Huynh:DGOV21} provided foundations for a systematic approach. Within this context, explanations  can act as external detective controls~\cite{Tsakalakis:CLSR21}, as they provide
+specific information to justify the decision reached and help the user take corrective actions: ``The aim of these explanations is to provide data subjects with an adequate understanding about the decision so that they can exercise their corrective rights''~\cite{Tsakalakis:CLSR21}. But explanations can also act as internal detective controls~\cite{Tsakalakis:CLSR21}, i.e.,  a mechanism for organisations to demonstrate compliance to the regulatory frameworks they have to implement. 
+Both~\cite{Huynh:DGOV21} and~\cite{Tsakalakis:CLSR21} provide   systematic questions that an explanation designer needs to consider: What is the purpose of an explanation? What is the audience of an explanation?  What is the information that it should contain? However, to adequately address these questions, explainability should not be seen as an after-thought, but as an integral part of the design of an application, leading to explainability requirements to be included in its design, like all its other aspects.  
 
-\noindent\textbf{[Source: Luc Moreau's abstract of talk]}\\
-Explainability of computer-based systems, and specifically autonomous systems, is a key aspect to make them trustworthy. We argue that explainability is not an afterthought, but it needs to be weaved in the application design.
 
-In the PLEAD project (Provenance-based and Legally-driven Explanations for Automated Decisions), we have designed a socio-technical methodology to elicit explanation requirements from laws and regulatory frameworks, to specify explanations with a clear purpose targeting a specific audience, and to construct explanations programmatically by means of explanation plans and queries over provenance logged by the system being designed.
+The PLEAD project (\href{https://plead-project.org/}{https://plead-project.org/}), ``Provenance-based and Legally-grounded Explanations for Automated Decisions'' project adopts a two-pronged approach to address this challenge. (1) Technologically, PLEAD decomposes the problem of explainability in two distinct parts,   logging “a record that describes the people, institutions, entities, and activities involved in producing, influencing, or delivering”~\cite{Moreau:prov-dm:20130430} an automated decision, and using that record to construct ``An explanation, as a targeted, personalised textual or visual artifact that provides a focused description of the behaviour of the system''.  A structure for this record already exists in the form of  PROV, a Recommmendation of the World Wide Web Consortium~\cite{Moreau:prov-dm:20130430}.  (2) Methodologically, PLEAD offers a socio-technical approach, involving autonomous systems stakeholders to understand various dimensions of an explanation (purpose, audience, trigger, minimum content, explanation examplar, ...), to which an ``explainability by design'' methodology is applied to construct the system able to generate explanations that can be evaluated by stakeholders, before  deployment and integration with the application.
+
+Explainability by design is a methodology that takes the stakeholder requirements for explainability as input, models application provenance, design queries, and constructs explanation plans, which can be all bundled up in a standalone component able to receive applications data and generate explanations addressing the requirements identified by the PLEAD socio-technical analysis.
+
 
 We have applied the methodology to systems providing explanations about decisions related to credit card applications and school allocations. These decisions are taken with various degrees of autonomy, in partnership with humans.  Preliminary evaluations are showing positive feedback from the participants.
+
+In the context of Trustworthy Autonomous Systems, emerging AS regulations could be used to drive the socio-technical analysis of explainability.  A particular emphasis would have to be on the autonomy and the hand-over between systems and humans that characterise  TAS systems.  The audience of explanations will also be criticial, from users and consumers to businesses, organisations and regulators.  Finally, considerations for post-mortem explanations, in case of crash or disaster situation involving autonomous systems, should lead to adequate architectural design.
+
+
+%% \noindent\textbf{[Source: Luc Moreau's presentation]}\\\\
+%% \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
+%% \begin{itemize}
+%% 	\item \textbf{How do you incorporate explainability requirements in autonomous systems designs?}
+%% \end{itemize}
+%% Luc Moreau said we need to think about explainability from the start when we specify and design a system. This is illustrated using the animation (plays a video)...Every day organizations use computers to make decisions that impact our lives. These could be life defining decisions like what schools our children are allocated to or whether our mortgage application is accepted or rejected. What if the computer says no? We have the right to challenge these decisions and to understand whether they were fairly made. What was the provenance of the decision (what data was used)? Where did that data come from? How was it used to make the decision? Was the decision fully automated without any human involvement? In response to growing demand for transparency and accountability around automated decision-making, PLEAD is developing the Explanation Assistance. It turns descriptions of the flow of data in a decision making system into meaningful explanations. The Explanation Assistant helps organizations demonstrate that they comply with legal regulations and makes it easier to explain complex decisions to their customers reassuring them that their data was processed as expected. More transparency improves customer satisfaction, a win-win for all. End of video.
+
+%% Luc Moreau introduced the PLEAD project which is done by an interdisciplinary team. 
+%% An explanation is a targeted, personalised textual or visual artifact that provides a focused description of the behaviour of the system based on data, processes, people and organisations that have influenced an outcome or a decision. 
+%% Targeted: addressing a specific purpose for the individual(s) targeted; personalised: referring to circumstances of the individual(s) targeted; description: explanation describes aspects of a system's behaviour. 
+
+%% Why provenance?...
+%% WWW consortium defines provenance as: provenance is a record that describes the people, institutions, entities and activities, involved in producing, influencing, or delivery a piece of data or a thing in the world. W3C PROV - provides a strong foundation to derive explanations from the provenance of decisions. 
+
+%% PLEAD methodology overview....
+%% Methodology steps: application, explanation requirements (policy analysis, requirements classification, minimum content determination), application data (collection of data categories, comparison to data flows), explanation plans, modelled provenance, explanations, explanation assistant. 
+%% Explanation requirements: policy analysis, requirements classification, minimum content determination...
+%% Each step is described by small card. 
+%% Selected (sub-)steps: analyse policy requirements, apply classification framework, determine minimum content that we need to find in explanations, compare to data flows in a system, explanation plans, and explanation validation. This is all packaged in the Explanation Assistant we described earlier.
+
+%% In conclusion, "Explainability by design" is crucial for TAS. We are writing up the methodology (from computer science and legal perspectives). We are still collecting data (interviews, costs etc). We are interested in exploring further applications.
+
+%% What about TAS? What are the legal/regulatory requirements or business needs to be met? Apply PLEAD methodology. Incorporate explainability requirements in TAS designs. 
+
+%% \noindent\textbf{[Source: Luc Moreau's abstract of talk]}\\
+%% Explainability of computer-based systems, and specifically autonomous systems, is a key aspect to make them trustworthy. We argue that explainability is not an afterthought, but it needs to be weaved in the application design.
+
+%% In the PLEAD project (Provenance-based and Legally-driven Explanations for Automated Decisions), we have designed a socio-technical methodology to elicit explanation requirements from laws and regulatory frameworks, to specify explanations with a clear purpose targeting a specific audience, and to construct explanations programmatically by means of explanation plans and queries over provenance logged by the system being designed.
+
+%% We have applied the methodology to systems providing explanations about decisions related to credit card applications and school allocations. These decisions are taken with various degrees of autonomy, in partnership with humans.  Preliminary evaluations are showing positive feedback from the participants.
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{TAS Resilience}
