@@ -521,7 +521,7 @@ In the context of Trustworthy Autonomous Systems, emerging AS regulations could 
 %Amel Bennaceur to summarise the outcome of their breakout room mentioned: we went deeper to corporation.. once you want to model the corporation what are the highlights? So they talked about... there is lot of social theories that specifically the identity so how to represent it, how to understand it, how to translate it  to something that computer scientists understand and can implement. 
 
 How to model human behaviour to enable cooperation with an autonomous systems is challenging but crucial for the resilience of the system as a whole. It is the diversity in human enactment that drives the uncertainty about what people do and don’t do, and, subsequently, the way human behaviour can be specified. Knowing the mental state of others enables autonomous systems to steer a cooperation that is consistent with the needs of the autonomous systems, as well as to respond to the needs of human agents in an appropriate manner. This knowledge guides an optimal course of action in a given context and can be used to identify mutually beneficial solutions. 
-Different theories of human behaviours explain diversity in human action in different ways and by detecting various determinants of human behaviour. For example, a behaviourist approach suggests that every behaviour is a response to a certain stimulus~\cite{heimlich2008understanding}. Albeit true, this approach is restrictive in addressing the complexity of human behaviour~\cite{taylor2021explanation}, as well as the different ways that human behaviour develops during cooperation. To gasp that humans are embodied with purposes and goals that affect each other, the concept of joint-action was introduced as ``a social interaction whereby two or more individuals coordinate their actions in space and time to bring about change in the environment''~\cite{sebanz2006joint}. Adapting it to human-robot interaction, this approach is suggestive of an interplay between humans and autonomous systems, such that what matters is not only how the autonomous system understands the system but also how humans understand the way the autonomous agent behaves and is willing to cooperate. Thus, cooperation does not result from a reaction to actions but from a shared understanding between agents. 
+Different theories of human behaviours explain diversity in human action in different ways and by detecting various determinants of human behaviour. For example, a behaviourist approach suggests that every behaviour is a response to a certain stimulus~\cite{heimlich2008understanding}. Albeit true, this approach is restrictive in addressing the complexity of human behaviour~\cite{taylor2021explanation}, as well as the different ways that human behaviour develops during cooperation. To grasp that humans are embodied with purposes and goals that affect each other, the concept of joint-action was introduced as ``a social interaction whereby two or more individuals coordinate their actions in space and time to bring about change in the environment''~\cite{sebanz2006joint}. Adapting it to human-robot interaction, this approach is suggestive of an interplay between humans and autonomous systems, such that what matters is not only how the autonomous system understands the system but also how humans understand the way the autonomous agent behaves and is willing to cooperate. Thus, cooperation does not result from a reaction to actions but from a shared understanding between agents. 
 The social identity approach~\cite{spears2021social} induces this concept of a shared understanding by providing an explanation of human behaviour focusing on how social structures act upon cognition. It proposes that, alongside our personal identity, our personality-who we are, we also have multiple social identities based on social categories and groups. We act in line with our social identity when this social identity is salient at a particular time~\cite{tajfel1982social}. Previous research has shown that social identities influence people’s relation with technology~\cite{lee2001effect}. Sharing a social identity initiates pro-social behaviours, such as helping behaviours in emergency situations~\cite{drury2018role}. People adapt their behaviour in line with their shared identities, which in turn, enhances resilience. Specifying social identities to enable cooperation is challenging. It requires an answer to a series of yet to be answered questions. How do we represent different identities and how do we reason about them? Following the social identity approach to specify identities for human-autonomous agent cooperation requires an investigation of how to operationalise social identity, i.e.~a psychological state, into software embedded within autonomous systems.
 
 
@@ -582,24 +582,21 @@ Sharing some methods used by isITethical Exchange, a community platform for emer
 \noindent\textbf{[Responsible Author:  Jan Ringert]}\\
 \noindent[\textbf{Source: Jan Ringert's presentation}]\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
-\begin{itemize}
-	\item \textbf{Specifications for verifiability}
-\end{itemize}
-%Please describe "specific specification challenges" with respect to your node.
-%
-%Literature reviews for testing, validation and verification of robotic and autonomous systems.
-%
-%Research questions:
-%1) Types of models
-%2) How are they evaluating efficiency, effectiveness, coverage measures
-%3) Tools and availability
-%4) Evidence of applicability
-%
-%Lack of domain, specific, standardized measures of intervention
-%Lack of comparable interfaces of tools, good measures...
 
-\noindent\textbf{[Source: Jan Ringert's abstract of talk] }
-\\We present the vision of the verifiability node: our vision is to enable domain experts use the most suitable abstractions and specifications for the verification task at hand. We provide a verifiability framework that connects these different abstractions and provides holistic and system-level verification results.  To achieve this flexibility the verifiability node is developing a unifying framework for specification languages, their semantics, compositions, and transformations. We provide a brief overview of a systematic review of specification languages for autonomous systems and identify gaps in current literature. We conclude with a call for collaboration with other nodes, the hub, and domain experts to provide their specification requirements for our unifying framework.
+The vision of the verifiability node is to enable domain experts to use the most suitable abstractions, specifications, and tools for the verification task at hand. 
+Many aspects of autonomous systems, e.g., functionality, security, or reliability, require their own formalisms and abstractions. Existing tools work with particular abstraction to provide verification results. 
+However, we must be able to verify different aspect of these systems and how they operate together to enable trust:
+Our goal is to develop a \textbf{unifying framework that will integrate and coalesce rigorous verification techniques of autonomous systems to quickly and easily verify complex autonomous systems}. 
+We will achieve this outcome through a multi-disciplinary technical \textbf{research  programme} that seeks to: 
+
+\begin{enumerate}
+  \item[\textbf{(a)}] \textbf{Classify} and relate verifiability concepts, notations, and techniques for autonomous systems.
+  \item[\textbf{(b)}] \textbf{Design} the algorithms and techniques to integrate verification  across disciplinary domains.
+  \item[\textbf{(c)}]  \textbf{Create} an ecosystem of verification techniques concerning aspects such as functionality, resilience, security, and ethics. 
+\end{enumerate} 
+
+
+To achieve this flexibility the verifiability node is developing a unifying framework for specification languages, their semantics, compositions, and transformations. 
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Incompleteness of Specifications}
@@ -607,42 +604,34 @@ Sharing some methods used by isITethical Exchange, a community platform for emer
 \noindent \textbf{[Source: Breakout Room-3 (Jan Ringert, James Wilson, Carlos Gavidia-Calderon, Luke Moffat, Dhaminda Abeywickrama)]}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
 
-\begin{itemize}
-	\item \textbf{Incompleteness of specifications}
-\end{itemize}
-James Wilson to summarise the outcome of the breakout room mentioned that we discussed conversation about human implicit knowledge and the writing specification for something autonomous like a self-driving car or autonomous car. There are things that you need to include in that you don't necessarily have to include in one for a standard car. The example Jan gave was that autonomous vehicle might not know if you don't want to hit a wall, that you cant ask that wall to move, but then you may need to move backwards or move out of the way. There are things that are fundamental to humans knowledge and human understand that you need to specify under particular conditions and a difficulty you might encounter is identifying what you might have forgotten to specify and what might be important for an autonomous system to sort of know. 
+Incompleteness is a necessary property of specifications. Only the use of suitable abstractions allows for coping with the complexity of systems~\citep{Kramer07}. However, there is an important difference in the incompleteness introduced by choosing abstractions, e.g., focusing on behavioral, structural, or security-related aspects of a system, and incompleteness with respect to the purpose of the specification, i.e., the faithful representation of the system given the chosen abstraction\footnote{The case where a chosen abstraction does not fit the purpose of the specification, e.g., the purpose is to rule out collisions of robots, but the abstraction ignores actuator inaccuracies, is out of the scope of this discussion.}. 
 
-During the breakout room session, James Wilson mentioned that there are specifications for lot of these systems, but the difficulty with that is, in order to obtain a specification, we need to come to a consensus...sampling correct ideas... how to create specification within unprecedented cases?...
+On the one hand, if the purpose of creating and analysing a specification is to explore a system and to learn about possible constraints, e.g., as done with lightweight formal methods tools like Alloy~\cite{Jackson19}, then incompleteness of the representation in the specification is important as it allows for flexibility and quick gains. On the other hand, if the purpose of the specification is to prove a property and certify a system, then incompleteness of the representation may lead to incorrect analyses results. These incorrect analysis results may lead to false positives or false negatives. False positives can usually be fixed by adding the missing knowledge to the specification. As an example for a false positive consider the specification of an insulin pump from~\cite{HarrisonMCC17} and the property that all actions are reversible. The specification reported a false positive due to an advanced handling of overflows in the insulin pump and the specification had to be extended.
 
-Jan Ringert mentioned that incomplete specifications and evolving specification are two aspects which are related to each other. 
-One needs to question whether the specifications for robots and self-autonomous cars, are these specifications would be good enough through certification? Somebody makes a partial specification just to check whether their process is the right one. 
+In addition to analysis tasks, specifications are also used in synthesis tasks. In those cases the incompleteness of specifications may manifest in building biased or incorrect systems. Prominent examples include the bias of AI systems making autonomous decisions in health care~\cite{science.aax2342}. Other examples were observed in the area of program repair~\cite{GazzolaMM19} where initial work mainly relied on sets test cases (which in many cases represent incomplete specifications) producing incorrect repairs~\cite{QiLAR15,SmithBGB15}. 
 
-Jan Ringert mentioned that:  a lot of things are unknown, not formalized and implicit in the humans...we worked on reactive synthesis... first thing we noticed is that people not writing assumptions about the environment... If you are a developer if you drive to a wall, you need to turn around or back up to get the wall away from you. If you don't specify this explicitly as an assumption for synthesis, the synthesis has to assume the wall will follow the robot. It does not know otherwise right? Many things like that, if you write a specification, many people will forget to write that walls are stationary. They think it is not required to write as it is common knowledge of developers and user, but not of the autonomous systems which try to find a solution for the task of not hitting the wall. So there is something about analyzability of specifications we need to debug them, troubleshoot them. 
+More general, the synthesis of autonomous systems from incomplete specifications may simply fail if assumptions on the environment are incomplete. As an example consider a simple robot to operate in a warehouse. The robot has sensors to detect obstacles and the specification requires the robot to never hit a wall. The synthesizer would report that the specification is not realizable and no implementation exists. The worst-case expectation of synthesis, if nothing else is specifies, would be for walls to move and hit the robot. The environment needs to be further constrained by adding the natural assumption that walls cannot move\footnote{Additional challenges of writing specifications for reactive synthesis are described in~\cite{MaozR18}.}. In the case of verification we can similarly expect a false positive result without this assumption. 
+Interestingly, when formulating requirements to be read and understood by humans one would likely not formalize these assumptions necessary in specifications for autonomous systems. 
 
-Carlos Gavidia-Calderon mentioned about automated synthesis.. from software engineering area he talked about a tool to  automatically fix bugs..
-
-Jan Ringert said simply going by data there might be shortcuts as Carlos mentioned. What we had was missing implicit knowledge... there can be missing stuff in data too as Carlos mentioned. Carlos mentioned if we specify something it needs to go through quality control by experts which know. James Wilson following up on that raised a counter argument -- this can provide solutions which were not thought before which can be beneficial.   
-
-Jan Ringert queried how do we know what we are specifying or what we have forgotten to specify? This knowledge is very difficult to obtain. He mentioned about some program synthesis (excel flashfield...) to come up with small programs some transformation. There is a disambiguation task with user to double check your intention for a case (this is one way to fill a knowledge gap which was not specified or under specified)...\\
+To summarize, one challenge arising from automated analysis of specifications is to capture and encode implicit knowledge and common understanding available to humans into formal specifications. This includes to detect issues that were forgotten to specify 
+%(without relying on false positives and then fitting the specification to the implementation) 
+and to disambiguate multiple plausible interpretations.
+%(without extensive simulation and updating the specification only when incorrect behavior was discovered).
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Evolution of Specifications}
 \noindent\textbf{[Responsible Authors:  Jan Ringert \& James Wilson]}\\
 \noindent \textbf{[Source: Breakout Room-3 (Jan Ringert, James Wilson, Carlos Gavidia-Calderon, Luke Moffat, Dhaminda Abeywickrama)]}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
-\begin{itemize}
-	\item \textbf{Evolution of specifications}
-\end{itemize}
-James Wilson to summarise the outcome of the breakout room mentioned the fact that you may need to complete the specification as you move along... With these evolvable systems, you start of specifying may not be the things you specify later (you may need to add additional specification). So having a specification that can adapt and evolve along the system you have that is changing is also quite crucial.
 
-During the breakout room session, James Wilson queried that does it imply that specifications need to adapt and evolve?
-Jan Ringert said they need to adapt and sometimes the environment adapts, some existing assumptions are no longer valid... You change the system which has better sensors for example... He said that specifications need to be evolvable and maintainable. One thing he was looking into is how to understand the evolution? What is the impact of that to the system?. To get some kind of tool support... 
+Every non-trivial system undergoes changes over its lifetime. The evolution of trusted autonomous systems may concern changes of the requirements of their functional or non-functional properties, changes of the environment that it operates in, and changes in the trust of users towards the system. Initial specifications of the system may no longer reflect the desired properties of the system and fail to represent its actual environment.
+Self-adaptive systems~\cite{SalehieT09} constitute are a special case of evolving systems where adaptation of the system is initiated from within itself. These systems require a tight coupling between the specification and implementation.
 
-James Wilson queried how do you go about getting an evolving specification? Jan Ringert mentioned about \textit{runtime monitoring }as an example.  Also, he mentioned about \textit{learning specifications} where you start without a specification but you have observations from a system or you have a simulation of the system and you try to learn a specification from it. Learning from data but it may be incomplete, you need to generalize because otherwise it is not learning...
+While a lot of work has been done to analyse, repair, explain, or simulate specifications little work has been to compare specifications, detect differences, and analyse their impact on the specified system. The comparison of complex specifications where small syntactic changes may have a large impact on their semantics semantics calls for a semantic rather than syntactic comparison~\cite{MaozRR14j}. These semantic comparisons, e.g., as explored for Alloy~\cite{RingertW20}, may determine semantic equality despite syntactic changes, refinement of specifications, and concrete witnesses of changes.
 
-Carlos Gavidia-Calderon mentioned that in industry also requirements change over time, and queried whether it is radically different in  robotics/autonomous systems? Jan Ringert mentioned it is not that different..
-
-Jan Ringert mentioned about having very different, let's say hard constraints and also constraints that can evolve.. so you can have a heterogeneous specification which you can relate to them... Luke Moffat said you know they are evolving but do not know in what direction. 
+To summarize, one challenge in evolving specifications is to discover and faithfully represent changes to the system or its environment in specifications. 
+%Approaches include \cite{0041035} 
+Another challenge is the analysis of changes to specifications to explore and understand the impact of changes to specifications.
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Competing Demands and Other Agents' Behaviour}
