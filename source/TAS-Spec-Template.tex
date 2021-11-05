@@ -271,7 +271,7 @@ Instead, these systems are becoming increasingly used in our daily lives having 
 As a result, specifying for \textit{trustworthiness} of these systems is crucial. 
 
 According to ISO/IEC 2382:2015 standard, \textit{specification} is a detailed formulation that provides a definitive description of a system for the purpose of developing or validating the system \cite{ISO2382}. 
-Writing specifications that capture trust is challenging \cite{Kress-Gazit21}. 
+Writing specifications that capture trust is challenging \cite{Kress-Gazit2021}. 
 A human trusts a robot to perform its actions, if it demonstrably acts in a safe manner. 
 Here, the robot not only needs to be safe, but also needs to be perceived as safe by the human. 
 In the same manner, in shared human-robot control situations, it is equally important to ensure that the robot can trust the human. 
@@ -378,20 +378,40 @@ How to specify with respect to black box models?:
 1) The design domain for operation and notions of coverage: camera properties. model features, semantics of biological features; 2) role of explainability and faithfulness of interpretation of semantics; 3) role of pre-trained models in pipelines
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{Swarm Robots}
+\subsection{Swarm Robotics}
 \textbf{[Responsible Author:  Dhaminda Abeywickrama]}\\
 \textbf{[Source: Dhaminda Abeywickrama's presentation]} \\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
-Previous investigations have shown that users are open to adopting swarm robotic solutions, if the swarms are implemented in a trustworthy manner. 
-For example, let us take an example of a case study that describes a public cloakroom where swarm of robots assist customers looking to deposit their jackets at an event. Specification challenges...
+%Previous investigations have shown that users are open to adopting swarm robotic solutions, if the swarms are implemented in a trustworthy manner. 
+%For example, let us take an example of a case study that describes a public cloakroom where swarm of robots assist customers looking to deposit their jackets at an event. Specification challenges...
 
+Swarm robotics provides an approach to the coordination of large numbers of robots, which is inspired from the observation of social insects \cite{Sahin2005}. 
+Three desirable properties in any swarm robotics system are robustness, flexibility and scalability. 
+In \cite{Sahin2005}, a set of criteria is proposed for distinguishing swarm robotic research from multi-robot systems. 
+The individual robots that make up the swarm need to be autonomous. Also, there need to be a large number of robots; a few homogenous groups of robots; relatively incapable or inefficient robots; and robots with local sensing and communication capabilities. 
+
+The functionality of a swarm is emergent (e.g. aggregation, coherent ad hoc network, taxis, obstacle avoidance and object encapsulation \cite{Winfield2006}), and evolves based on the capabilities of the robots and the numbers of robots used. 
+The overall desired behaviours of a swarm are not explicitly engineered in the system, but they are an emergent consequence of the interaction of individual agents with each other and the environment.
+This evolving functionality across many individual robots poses a challenge in how to specify a swarm that is safe, trustworthy by design, useful, and acceptable to users?
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Unmanned Aerial Vehicles}
 \textbf{[Responsible Author:  Dhaminda Abeywickrama]}\\
 \textbf{[Source: Dhaminda Abeywickrama's presentation]} 
 \\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
-Today the operation of UAVs in applications like parcel delivery is very challenging with complex and uncertain flight conditions (such as wind gradients), and highly dynamic and uncertain air space (such as other UAVs in operation). Specification challenges....
+%Today the operation of UAVs in applications like parcel delivery is very challenging with complex and uncertain flight conditions (such as wind gradients), and highly dynamic and uncertain air space (such as other UAVs in operation). Specification challenges....
+
+A unmanned aerial vehicle (UAV) or drone is a type of aerial vehicle that is capable of autonomous flight without a  pilot on board.
+As UAVs are increasingly being applied in diverse areas of applications \cite{Ukaegbu2021}, such as logistics services, agriculture, emergency response, and security, ensuring their trustworthiness is crucial.  
+Specification of operational environments of UAVs is challenging mainly for two reasons. 
+First, the unclear and uncertain government regulations make it challenging, as these rules may change over time. 
+Second, the complexity and uncertainty of the operational environment of the UAV itself is a challenge. 
+For example, in parcel delivery using UAVs in urban environments, we could mention uncertain flight conditions (e.g. wind gradients), and highly dynamic and uncertain airspace (e.g. other UAVs in operation).
+
+The recent advances in machine learning offer the potential to increase the autonomy of UAVs by allowing them to learn from experience. For example, machine learning can be used to stabilize the flight which can greatly improve performance in gusty urban wind conditions. 
+When one considers the conventional flight controller of a UAV, it can include several measures, such as risetime, overshoot, settling time, and steady-state error \cite{Kada2011}.
+The goals of these specification measures are to ensure that the control system is stable and robust; disturbance attenuation against environmental uncertainty; smooth and rapid responses to set-point changes; and steady-state accuracy. 
+In this context, a key challenge is how do we specify a UAV should deal with situations that go beyond the limits of its training?
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Policy Development}
@@ -437,16 +457,37 @@ We are interested in open environments and open systems. There are other decisio
 Computer scientists treat specifications as precise objects, often derived from requirements by purging features such that they are defined with respect to environment properties that can be relied on regardless of the machine's behaviour. Emerging autonomous systems applications can sometimes challenge this way of thinking, particularly so because the environment properties may not be fully understood, or because it is hard to establish if the real intent behind a requirement can be verified. These gaps should be addressed in governance frameworks. I'll try to quickly develop this idea using two use case examples - one from autonomous vehicles, and another from AI-based medical diagnostics.
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{TAS Functionality}
+\subsection{TAS Functionality (Specification)}
 \noindent\textbf{[Responsible Author:  Dhaminda Abeywickrama]}\\
 \noindent\textbf{[Source: Dhaminda Abeywickrama's presentation]}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
 \begin{itemize}
-	\item \textbf{On the lack of industry standards on autonomous systems with emergent behaviour and learning}
-	\item \textbf{How do you ensure safety of an autonomous system in situations where it’s behaviour is an “emergent” consequence of the interaction of individual agents with each other and their environment?}
-	\item \textbf{How do you specify an autonomous system should deal with situations that go beyond the limits of its training?}
+	\item \textbf{On standards for autonomous systems with evolving functionality}
 \end{itemize}
 
+Autonomous systems with \textit{evolving functionality} (i.e. the ability to change in function over time) pose significant challenges to current processes for specifying functionality. 
+Most conventional processes for defining system requirements and characteristics assume that these are fixed and can be defined in a complete and precise manner before the system goes into operation. 
+Existing standards and regulations do not satisfactorily address issues raised by autonomous systems with evolving functionality, which is a key limitation \cite{Fisher2020}. We discuss this using two application areas of autonomous systems -- swarm robotics and UAVs.
+
+In the robotics domain, several safety standards have been developed by a technical committee of the ISO for the non-industrial (service) robotics sector (e.g. ISO 13482 \cite{ISO13482}, ISO 23482-1 \cite{ISO23482-1}, ISO 23482-2  \cite{ISO23482-2}), as well as for the industrial robotics sector (e.g. ISO 10218-1\cite{ISO10218-1}, ISO 10218-2\cite{ISO10218-2}, ISO/TS 15066 \cite{ISO15066}). 
+Different legal and regulatory requirements apply to different robot categories. 
+In service robotics, ISO 13482 covers the hazards presented by the robots and devices for applications in non-industrial environments for providing services. 
+ISO 23482-1 and ISO 23482-2 standards extend ISO 13482 with guidance and methods that can be used to test personal care robots.
+On the other hand, in the industrial sector, ISO 10218-1 and ISO 10218-2 standards provide safety requirements for industrial robots and their integration.
+Meanwhile, ISO/TS 15066 provides safety requirements for collaborative industrial robot systems
+and work environment. 
+Although these industry standards focus on ensuring safety of robots at the individual robot level, there are no standards to ensure safety or any other extra-functional property for \textit{swarms}.
+
+Meanwhile, for the airborne systems and in particular for UAVs, several industry standards and regulations have been introduced to ensure their safe operation. 
+DO-178C \cite{DO-178C} is the primary standard for commercial avionics software development, which provides software considerations for the production of airborne systems and equipment. On the other hand, DO-254 \cite{DO-254} provides guidance for the development of airborne electronic hardware. ED279 \cite{ED279} standard provides a framework to support designers when performing a functional hazard assessment process for an unmanned aircraft system. 
+ARP4761 \cite{ARP4761} provides guidelines and methods for conducting the safety assessment process on civil airborne systems and equipment. 
+NATO STANAG 4671 \cite{STANAG4761} is intended to allow military UAVs to operate in other NATO members airspace. 
+As for regulations within the UK, CAP 722 \cite{CAP722} is the primary guidance document for the operation of unmanned aircraft systems. 
+However, none of these standards or regulations provide safety considerations for machine learning components that enable evolving functionality.
+
+Furthermore, when one considers the existing industry standards, they are either implicitly or explicitly based on the V-model, which moves from requirements through design onto implementation and testing \cite{Jia2021}. 
+For systems with the ability to adapt their functionality, this approach is unlikely to be suitable. 
+For instance, the development of machine learning-based components of a UAV follows a different, much more iterative life-cycle. Therefore, there is a need for new standards and guidance that better reflect the life-cycle of autonomous systems with evolving functionality \cite{Hawkins2021}.
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Explainability by Design} %%% I would prefer a mention of explainability requirement, as i don't think i speak on behalf of the TAS HUB
 \noindent\textbf{[Responsible Author:  Luc Moreau]}\\
@@ -626,7 +667,7 @@ On the one hand, if the purpose of creating and analysing a specification is to 
 
 In addition to analysis tasks, specifications are also used in synthesis tasks. In those cases the incompleteness of specifications may manifest in building biased or incorrect systems. Prominent examples include the bias of AI systems making autonomous decisions in health care~\cite{science.aax2342}. Other examples were observed in the area of program repair~\cite{GazzolaMM19} where initial work mainly relied on sets test cases (which in many cases represent incomplete specifications) producing incorrect repairs~\cite{QiLAR15,SmithBGB15}. 
 
-More general, the synthesis of autonomous systems from incomplete specifications may simply fail if assumptions on the environment are incomplete. As an example consider a simple robot to operate in a warehouse. The robot has sensors to detect obstacles and the specification requires the robot to never hit a wall. The synthesizer would report that the specification is not realizable and no implementation exists. The worst-case expectation of synthesis, if nothing else is specifies, would be for walls to move and hit the robot. The environment needs to be further constrained by adding the natural assumption that walls cannot move\footnote{Additional challenges of writing specifications for reactive synthesis are described in~\cite{MaozR18}.}. In the case of verification we can similarly expect a false positive result without this assumption. 
+More general, the synthesis of autonomous systems from incomplete specifications may simply fail if assumptions on the environment are incomplete. As an example, consider a simple robot operating in a warehouse. The robot has sensors to detect obstacles and the specification requires the robot to never hit a wall. The synthesizer would report that the specification is not realizable and no implementation exists. The worst-case expectation of synthesis, if nothing else is specified, would be for walls to move and hit the robot. The environment needs to be further constrained by adding the natural assumption that walls cannot move\footnote{Additional challenges of writing specifications for reactive synthesis are described in~\cite{MaozR18}.}. In the case of verification we can similarly expect a false positive result without this assumption. 
 Interestingly, when formulating requirements to be read and understood by humans one would likely not formalize these assumptions necessary in specifications for autonomous systems. 
 
 To summarize, one challenge arising from automated analysis of specifications is to capture and encode implicit knowledge and common understanding available to humans into formal specifications. This includes to detect issues that were forgotten to specify 
@@ -641,9 +682,12 @@ and to disambiguate multiple plausible interpretations.
 \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
 
 Every non-trivial system undergoes changes over its lifetime. The evolution of trusted autonomous systems may concern changes of the requirements of their functional or non-functional properties, changes of the environment that it operates in, and changes in the trust of users towards the system. Initial specifications of the system may no longer reflect the desired properties of the system and fail to represent its actual environment.
-Self-adaptive systems~\cite{SalehieT09} constitute are a special case of evolving systems where adaptation of the system is initiated from within itself. These systems require a tight coupling between the specification and implementation.
 
-While a lot of work has been done to analyse, repair, explain, or simulate specifications little work has been to compare specifications, detect differences, and analyse their impact on the specified system. The comparison of complex specifications where small syntactic changes may have a large impact on their semantics semantics calls for a semantic rather than syntactic comparison~\cite{MaozRR14j}. These semantic comparisons, e.g., as explored for Alloy~\cite{RingertW20}, may determine semantic equality despite syntactic changes, refinement of specifications, and concrete witnesses of changes.
+Self-adaptive systems~\cite{SalehieT09} constitute a special case of evolving systems where adaptation of the system is initiated from within itself. These systems require a tight coupling between the specification and implementation.
+
+Pursuing particular methods of evolution can make the task of specification easier. Some approaches, such as \cite{francesca2014automode}, allow systems to evolve behaviours from sets of predefined modules. These sub-modules can be independently specified and once the behaviour is evolved these independent specifications could be aggregated to form a valid overarching specification for the system. Similarly, adaptation can be limited to a number of specified behaviour states or traits which are modified reactively \cite{wilson2019amalgamation}. If configured effectively, such systems should remain within the envelope of initial specification as the system evolves or adapts within its given constraints. Designing evolvable systems in this way will not only make specifying a system an easier task but will also make the system more transparent, understandable and potentially more trustworthy.
+
+While a lot of work has been done to analyse, repair, explain, or simulate specifications little work has been to compare specifications, detect differences, and analyse their impact on the specified system. The comparison of complex specifications where small syntactic changes may have a large impact on their semantics calls for a semantic rather than syntactic comparison~\cite{MaozRR14j}. These semantic comparisons, e.g., as explored for Alloy~\cite{RingertW20}, may determine semantic equality despite syntactic changes, refinement of specifications, and concrete witnesses of changes.
 
 To summarize, one challenge in evolving specifications is to discover and faithfully represent changes to the system or its environment in specifications. 
 %Approaches include \cite{0041035} 
