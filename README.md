@@ -11,4 +11,4 @@ This paper is based on the ideas discussed during the "Specifying for Trustworth
 We hope to submit this research paper (8 pages) to the Communications of the ACM as a contributed article (https://cacm.acm.org/about-communications/author-center/author-guidelines#2.3.4). As in the workshop, we intend to take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security, trustworthiness and other non-functional properties. We would also like to leave the discussion on formalisation of these specifications to a future paper, when our understanding of what is required to specify trustworthiness will be more mature.
 
 Please push your edited source files (i.e. .tex and .bib files, any figures) to the repository by **October 31**. 
-Also, I would appreciate if you could email me (dhaminda.abeywickrama@bristol.ac.uk) when you have uploaded the files. We hope to edit the paper from Nov 1-5.
+Also, I would appreciate if you could email me (dhaminda.abeywickrama@bristol.ac.uk) when you have uploaded the files. We hope to edit the paper once we receive contributions. 
