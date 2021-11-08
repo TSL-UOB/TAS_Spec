@@ -718,13 +718,33 @@ There are a number of ways in which we could interpret this situation one of the
 Greg Chance commented on how 5AI use a "3 second rule" as a performance metric for driving behaviour and that if the vehicle takes longer than three seconds to pull out at a junction or a roundabout then this will have scored badly in its performance metric.
 
 % GC Notes:
-Trust may depend on several factors, like to pick up on some of these: assurance of operation (eg. following the rules of road conduct for an AV), confidence they provide (I can trust the AV to overtake this broken down vehicle on the side of the road rather than sitting behind it waiting to be fixed), and consideration of human values and ethics (social norms eg. drivers giving way to other drivers waiting to pull-out counter to legal entitlement). 
+% Trust may depend on several factors, like to pick up on some of these: assurance of operation (eg. following the rules of road conduct for an AV), confidence they provide (I can trust the AV to overtake this broken down vehicle on the side of the road rather than sitting behind it waiting to be fixed), and consideration of human values and ethics (social norms eg. drivers giving way to other drivers waiting to pull-out counter to legal entitlement). 
 %
-If we are to trust autonomous systems then each of the facets of trust must be demonstrable. 
+% If we are to trust autonomous systems then we must be able to specify and demonstrate each of these facets of trustworthiness. 
+%
+% The difficulty of specification of behaviour involves other agents and what their behaviour is which is fundamentally unknown. Possibly also non-deterministic and random in some form.
+
+Conventional approaches to verification and validation for autonomous systems may seek to attain coverage against a set of requirements to demonstrate assurance or operation, safety and compliance with existing legal frameworks. 
+%
+This may take the form of a style of \emph{box ticking} exercise where behaviour is demonstrated against a set of safety properties for example. 
+%
+While some authors have been successful in demonstrating concepts or frameworks that may be suitable for logically proving correct adherence to existing safety rules for autonomous vehicles~\cite{rizaldi,harper2021}, there remains a challenge where these rules cannot be interpreted or where they conflict with other rules. 
+%
+Can demonstrate in a few driving examples where there is a conflict of competing drivers that must be resolved...crowded marketplace (pushing against the pressure of the crowd, managed conflict) - good example but maybe not that frequent..UKHC~\cite{highwayCode} for overtaking can conflict between safety and performance ("move back as soon as you can without cutting in", and maintaining minimum speed on motorways)...In these examples and aggressive driver will make more progress toward their mission goals than a more risk-adverse approach. 
+%
+Some authors have attempted to move the formal definitions of driving safety forward with mathematical models such as Responsibility-Sensitive Safety (RSS)~\cite{shalevshwartz2018formal}, going beyond that of existing human-readable rules which were never intended to be used for autonomous systems, e.g. Vienna convention~\cite{vienna}. Although this approach does make a start at challenging the dichotomy between formal rules and the reality of how people actually drive and is also written in a language that is readily interpretable by autonomous systems, it does not go far enough to ensure trustworthiness as far as our definitions extend. 
+%
+How then, can autonomous systems be specified without accounting for other agents and their behaviours or without a framework to resolve competing goals or mission parameters. 
+%
+The framework of game theory~\cite{schecter2016game} could be useful to understand the implications of more nuanced behaviour such as reciprocity, fairness~\cite{gintis2006foundations} and social convention and may help us specify for contexts which rely more on interpreting human behaviour (that may seem random, inconsistent or even irrational) than logical rules or safety properties. 
+
+
+
+
 
 Harper et al. [ref Harper2021] suggest a methodology to demonstrate compliance of an autonomous system against a set of objective rules of the road. The UK Highway Code [ref] is used as an exemplar document describing best driving practice for safe and mutually cooperative driving behaviour and can be considered a stable and valid reference upon which to base an assessment of operational validation. Conversion of the human-readable rules into an objective set of logical computer expressions is a non-trivial task but the methodology describes a potential a route to demonstrate safety assurance in autonomous systems. 
 %
-We must also have assurance that the autonomous system is competent and can, at least, perform as good as an equivalent human in the same situation [ref - AI needs to be as good as us if not better] if not exceed out capabilities. 
+% We must also have assurance that the autonomous system is competent and can, at least, perform as good as an equivalent human in the same situation [ref - AI needs to be as good as us if not better] if not exceed out capabilities. 
 %Lapses in concentration, distraction or poor judgement [ref Graham parkhurst?] account for [xx\%] of driving accidents, all of which an autonomous system should at least be more consistent if not overall safer. 
 %
 The term \emph{liveness} is used in autonomous vehicles to describe the ability of the vehicle to make progress through a busy road network, at a roundabout or during an overtaking manoeuvrer. These are all good examples of where the autonomous system will aim to maximise mission performance without compromising safety. One could classify achievement of task goals (performance validation) as being orthogonal to avoidance of task hazards (safety validation) and a trustworthy system must achieve an acceptable balance between the two properties~[Harper2021]. 
@@ -757,7 +777,7 @@ Game theory may offer insight along with a means of exploring or testing indepen
 %
 However, no such rulebook for social norms for driving has been posited as this is a uniquely human trait derived from the principles of inclusive  fitness and social rationality [gintis].
 
-A unique challenge to the development of specifications for autonomous systems then, is the creation of objective rule-sets that can be expressed into a machine readable form without ambiguity. What is also needed is an understanding of the acceptable trade-off between safety and performance if autonomous systems are to co-exit with humans in a responsible manner. 
+A unique challenge to the development of specifications for autonomous systems then, is the creation of objective rule-sets that can be expressed into a machine readable form without ambiguity. What is also needed is an understanding of the acceptable trade-off between seemingly orthogonal properties such as safety and performance if autonomous systems are to co-exit with humans in a responsible and trustworthy way. 
 %
 A final challenge, and perhaps the most ambitions, is the specification of human values and ethics and the interplay of these rules with the more objective properties of safety and performance.
 
