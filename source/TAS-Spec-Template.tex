@@ -724,9 +724,9 @@ Another challenge is the analysis of changes to specifications to explore and un
 %
 % The difficulty of specification of behaviour involves other agents and what their behaviour is which is fundamentally unknown. Possibly also non-deterministic and random in some form.
 
-Conventional approaches to verification and validation for autonomous systems may seek to attain coverage against a set of requirements to demonstrate assurance of operation, safety or compliance with existing legal frameworks. 
+Conventional approaches to verification and validation for autonomous systems may seek to attain coverage against a set of requirements to demonstrate assurance of operation and compliance with safety regulations or existing legal frameworks. 
 %
-This may take the form of a style of \emph{box ticking} exercise where behaviour is demonstrated in physical testing or simulated experiments against a set of pre-defined properties, for example. 
+This may take the form of a type of \emph{box ticking} exercise where behaviour is demonstrated in physical testing or simulated experiments against a set of pre-defined properties, for example. 
 %
 Harper et al.~\cite{harper2021safety} suggest a methodology to demonstrate compliance of an autonomous system against a set of objective rules (UK Highway Code~\cite{highwayCode}) by converting the human-readable rules into an objective set of logical computer expressions that can be monitored using existing database technology. 
 %
@@ -734,30 +734,32 @@ Some authors have been successful in demonstrating other frameworks that may be 
 %
 But there remains a challenge where these rules simply cannot be interpreted directly or where they conflict with other rules or expected behaviours. 
 
-An example of this conflict is clearly illustrated in the balance between performance and safety in a driving scenario. Consider a car trying to make progress through a busy market square full of people slowly walking between the stalls, or a vehicle waiting to pull out at a busy roundabout junction. 
+An example of this conflict between performance and safety can be illustrated in a driving scenario. Consider an autonomous vehicle trying to make progress through a busy market square full of people slowly walking between the stalls, or alternatively where an autonomous vehicle is waiting to pull out at a busy roundabout junction. 
 %
-In these cases the safest option is to wait until the road ahead is completely clear before moving but better performance may be to \emph{inch ahead} to show others your intent and hope someone will allow you to make progress by giving way to you. 
+In these cases the \emph{safest} option is to wait until the road ahead is completely clear before moving on, as by taking this option you do not endanger any other road user. However, \emph{better performance} may be to creep forward (move very slowly) to show others your intent, in a bid to promote your likelihood of success or in hoping a compassionate agent will give way to you allowing you to make progress. 
 %
-Here we can see the conflict between adherence to formal \emph{safety properties} and a key \emph{mission parameter} to maximise performance.
+Here we can see the conflict between adherence to formal \emph{safety properties} and \emph{mission goals}. 
 %
-In this example we can see that driving is much more than following the rules of the road correctly and that awareness of when a modified set of driving principles may come into play that are more about human traits than formal rules. 
+One could classify achievement of mission goals (better performance) as being orthogonal to avoidance of task hazards (safety validation) and a trustworthy system must achieve an acceptable balance between the two~\cite{harper2021safety}.
 %
+In this example we can see that driving is much more than following the rules of the road correctly and that in this scenario a more aggressive driving style would make progress more than a risk-adverse one. 
 
-Another example in the UK Highway Code demonstrates where a careful trade-off between safety and performance are required.
+
+Another example in the UK Highway Code demonstrates where a careful trade-off between safety and performance is required. 
 %
-Rule 163 concerns the correct behaviour for overtaking another vehicle and states ``[after overtaking] move back to the left as soon as you can but do not cut in". 
+Rule 163 concerns the correct behaviour for overtaking another vehicle and states ``move back to the left as soon as you can but do not cut in". 
 %
 Here we see the balance between a number of safety and performative properties; a) do no endanger oncoming vehicles by being in the wrong lane (safety), b) move back into the correct lane as quickly as possible (performance), and c) when moving back into the correct lane leave sufficient space for the vehicle being passed, i.e. do not `cut-in' (safety). 
 %
 We can see the atomic properties of Rule 163 a) and c) are actually in conflict with each other; 
 %
-to maximise safety of a) you would move to the correct lane and to maximise safety with respect to c) you should remain in the oncoming traffic lane for as long as possible. 
+to maximise safety of a) you would move to the correct driving lane and to maximise safety with respect to c) you should remain in the oncoming traffic lane for as long as possible. 
 %
 To mediate this, we must enact part b) to find the optimal driving behaviour without conflicting with part c). 
 %
-This clearly demonstrates that a trad-off between performance and safety will play a part in correct driving behaviour in this scenario. 
+This clearly demonstrates that a trade-off between performance and safety will play a part in correct driving behaviour in this scenario. 
 %
-One of the key challenges is then ``How can we balance formal \emph{safety properties} against \emph{mission parameters} for optimal trustworthiness?". 
+One of the key challenges is then ``How can we balance formal \emph{safety properties} against \emph{mission goals} for optimal trustworthiness?". 
 
 % Can demonstrate in a few driving examples where there is a conflict of competing drivers that must be resolved...crowded marketplace (pushing against the pressure of the crowd, managed conflict) - good example but maybe not that frequent..UKHC~\cite{highwayCode} for overtaking can conflict between safety and performance ("move back as soon as you can without cutting in", and maintaining minimum speed on motorways)...In these examples and aggressive driver will make more progress toward their mission goals than a more risk-adverse approach. 
 %
@@ -781,7 +783,8 @@ How then, can autonomous systems be specified taking account of other agents and
 % Can we explore this scenario as a bout of competing demands? Each road user, human or autonomous, has their own specific needs whilst driving (goals) and acceptable risks (safety). 
 %
 
-Human drivers may also have Kantian compassion for others, which is why we sometimes give-way to other drivers at busy junctions when we have right of way.\footnote{Quote from [ref]... "Immanuel Kant’s categorical imperative says that we should act only upon maxims which we could rationally generalise so that they apply equally to everyone; or in other words, only do what we could rationally want any other person to do in the same circumstances"} 
+Human drivers may also have Kantian compassion for others\footnote{From Immanuel Kant in Groundwork of the Metaphysic of Morals "Act only according to that maxim whereby you can, at the same time, will that it should become a universal law." from \url{https://en.wikipedia.org/wiki/Categorical_imperative}} 
+, which is why we sometimes give-way to other drivers at busy junctions when we have right of way, which is irrational in the sense of a self-interested agent.
 %
 You could argue this is formally incorrect driving behaviour, i.e. not described in any rules or guidelines, and yet is commonly observed as a social norm in many cultures. This type of action is ostensibly counter to a self-interested agent as it does not benefit the driver in terms of their journey time or any other objective measure. 
 %
@@ -791,9 +794,9 @@ If autonomous systems lived independently to humans then this argument would be 
 %
 Co-existence with humans may be constrained or limited in certain areas, e.g. drone air corridors, but unavoidable in others, pedestrians and cyclists with AVs.
 %
-Game theory may offer insight along with a means of exploring or testing independent agents that have competing demands to find optimal solutions. 
+Game theory may offer insight along with a means of exploring or testing independent agents that have competing demands to find optimal solutions, prove compliance or demonstrate cooperation. 
 %
-However, no such rulebook for social norms for driving has been posited as this is a uniquely human trait derived from the principles of inclusive  fitness and social rationality [gintis]. 
+% ***However, no such rulebook of social norms for driving has been posited as this is a uniquely human trait derived from the principles of inclusive  fitness and social rationality [gintis]. See Pete Winter for notes on Goffman for social convention)***
 % 
 The framework of game theory~\cite{schecter2016game} could be useful to understand the implications of more nuanced behaviour such as reciprocity, fairness~\cite{gintis2006foundations} and social convention and may help us specify for contexts which rely more on interpreting human behaviour (that may seem random, inconsistent or even irrational) than logical rules or safety properties. 
 %
