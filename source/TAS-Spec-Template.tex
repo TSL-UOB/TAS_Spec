@@ -724,21 +724,21 @@ Another challenge is the analysis of changes to specifications to explore and un
 %
 % The difficulty of specification of behaviour involves other agents and what their behaviour is which is fundamentally unknown. Possibly also non-deterministic and random in some form.
 
-Conventional approaches to verification and validation for autonomous systems may seek to attain coverage against a set of requirements to demonstrate assurance of operation and compliance with safety regulations or existing legal frameworks. 
+Conventional approaches to verification and validation for autonomous systems may seek to attain coverage against a set of requirements to demonstrate assurance of operation and compliance with safety regulations or legal frameworks. 
 %
-This may take the form of a type of \emph{box ticking} exercise where behaviour is demonstrated in physical testing or simulated experiments against a set of pre-defined properties, for example. 
+This may take the form of a type of box ticking exercise where behaviour is demonstrated in physical testing or simulated experiments against a set of pre-defined properties. 
 %
-Harper et al.~\cite{harper2021safety} suggest a methodology to demonstrate compliance of an autonomous system against a set of objective rules (UK Highway Code~\cite{highwayCode}) by converting the human-readable rules into an objective set of logical computer expressions that can be monitored using existing database technology. 
+Harper et al.~\cite{harper2021safety} suggest a methodology to demonstrate compliance of an autonomous system against a set of objective rules (UK Highway Code~\cite{highwayCode}) by converting the human-readable rules into an objective set of logical computer expressions that can be monitored during simulation or runtime using existing database technology. 
 %
 Some authors have been successful in demonstrating other frameworks that may be suitable for logically proving correct adherence to driving rules using Higher Order Logic (HOL)~\cite{rizaldi} or Linear Temporal Logic (LTL)~\cite{esterle2020}. 
 %
-But there remains a challenge where these rules simply cannot be interpreted directly or where they conflict with other rules or expected behaviours. 
+But there remains a challenge where these rules simply cannot be interpreted directly or where they conflict with other rules or expected behaviours. In this case, proving trustworthiness may be about checking off coverage points against a set of requirements but also include metrics with non-binary outcomes where optimum performance may be based around a local minima.
 
-An example of this conflict between performance and safety can be illustrated in a driving scenario. Consider an autonomous vehicle trying to make progress through a busy market square full of people slowly walking between the stalls, or alternatively where an autonomous vehicle is waiting to pull out at a busy roundabout junction. 
+An example of this conflict can be found between performance and safety and illustrated in a driving scenario. Consider an autonomous vehicle trying to make progress through a busy market square full of people who are slowly walking between the stalls, or alternatively where an autonomous vehicle is waiting to pull out at a busy junction or roundabout. 
 %
 In these cases the \emph{safest} option is to wait until the road ahead is completely clear before moving on, as by taking this option you do not endanger any other road user. However, \emph{better performance} may be to creep forward (move very slowly) to show others your intent, in a bid to promote your likelihood of success or in hoping a compassionate agent will give way to you allowing you to make progress. 
 %
-Here we can see the conflict between adherence to formal \emph{safety properties} and \emph{mission goals}. 
+Here we can see the conflict between adherence to formal \emph{safety properties} against the pressure of achieving \emph{mission goals}. 
 %
 One could classify achievement of mission goals (better performance) as being orthogonal to avoidance of task hazards (safety validation) and a trustworthy system must achieve an acceptable balance between the two~\cite{harper2021safety}.
 %
@@ -759,11 +759,11 @@ To mediate this, we must enact part b) to find the optimal driving behaviour wit
 %
 This clearly demonstrates that a trade-off between performance and safety will play a part in correct driving behaviour in this scenario. 
 %
-One of the key challenges is then ``How can we balance formal \emph{safety properties} against \emph{mission goals} for optimal trustworthiness?". 
+One of the key challenges is then how can we balance formal \emph{safety properties} against \emph{mission goals} for optimal trustworthiness. 
 
 % Can demonstrate in a few driving examples where there is a conflict of competing drivers that must be resolved...crowded marketplace (pushing against the pressure of the crowd, managed conflict) - good example but maybe not that frequent..UKHC~\cite{highwayCode} for overtaking can conflict between safety and performance ("move back as soon as you can without cutting in", and maintaining minimum speed on motorways)...In these examples and aggressive driver will make more progress toward their mission goals than a more risk-adverse approach. 
 %
-Some authors have attempted to move the formal definitions of driving safety forward with advanced mathematical models such as Responsibility-Sensitive Safety (RSS)~\cite{shalevshwartz2018formal}, going beyond that of existing driving principles, e.g. Vienna convention~\cite{vienna}, which were never intended to be used for autonomous systems. Although this approach does make a start at challenging the dichotomy between formal rules and the reality of how people actually drive and is also written in a language that is readily interpretable by autonomous systems, it does not go far enough to ensure trustworthiness as far as our definitions extend and given the apparent need to have more than just awareness of the formal rules of driving. 
+Shalev-Shwartz et al. have attempted to move the formal definitions of driving safety forward with advanced mathematical models such as Responsibility-Sensitive Safety (RSS)~\cite{shalevshwartz2018formal}, going beyond that of existing driving principles, e.g. Vienna convention~\cite{vienna}, which were never intended to be used for autonomous systems. Although this approach does make a start at challenging the dichotomy between formal rules and the reality of how people actually drive and is also written in a language that is readily interpretable by autonomous systems, it does not go far enough to ensure trustworthiness as far as our definitions extend and given the apparent need to have more than just awareness of the formal rules of driving. 
 %
 How then, can autonomous systems be specified taking account of other agents and their behaviours and also including a framework to resolve competition between formal safety properties and mission parameters. 
 
@@ -782,27 +782,30 @@ How then, can autonomous systems be specified taking account of other agents and
 %
 % Can we explore this scenario as a bout of competing demands? Each road user, human or autonomous, has their own specific needs whilst driving (goals) and acceptable risks (safety). 
 %
-
-Human drivers may also have Kantian compassion for others\footnote{From Immanuel Kant in Groundwork of the Metaphysic of Morals "Act only according to that maxim whereby you can, at the same time, will that it should become a universal law." from \url{https://en.wikipedia.org/wiki/Categorical_imperative}} 
-, which is why we sometimes give-way to other drivers at busy junctions when we have right of way, which is irrational in the sense of a self-interested agent.
+A note here to say how driving is a form of social engagement/interaction...
 %
-You could argue this is formally incorrect driving behaviour, i.e. not described in any rules or guidelines, and yet is commonly observed as a social norm in many cultures. This type of action is ostensibly counter to a self-interested agent as it does not benefit the driver in terms of their journey time or any other objective measure. 
+The fact that drivers give way to each other in certain driving scenarios is a sign of Kantian compassion\footnote{From Immanuel Kant in Groundwork of the Metaphysic of Morals "Act only according to that maxim whereby you can, at the same time, will that it should become a universal law." from \url{https://en.wikipedia.org/wiki/Categorical_imperative}} 
+, which is why we sometimes observe this behaviour at busy junctions even though the right of way is clearly defined by the road network or signs.
 %
-So can we argue a policy which finds a solution which is "best for the world", a careful balance of safety, performance and reciprocity? 
+You could argue this is formally incorrect driving behaviour, i.e. not described in any rules or guidelines, and yet reciprocity is commonly observed as a social norm in many cultures. This type of action is ostensibly counter to a self-interested agent (irrational) as it does not benefit the driver in terms of their journey time or any other objective measure other than a form of sympathy or pity for another's predicament. 
 %
-If autonomous systems lived independently to humans then this argument would be largely academic, as a logical rule-set would be sufficient for optimal efficiency and co-existence between autonomous agents. 
+% So can we argue a policy which finds a solution which is "best for the world", a careful balance of safety, performance and reciprocity? 
 %
-Co-existence with humans may be constrained or limited in certain areas, e.g. drone air corridors, but unavoidable in others, pedestrians and cyclists with AVs.
+% If autonomous systems lived independently to humans then this argument would be largely academic, as a logical rule-set would be sufficient for optimal efficiency and co-existence between autonomous agents. 
+%
+% Co-existence with humans may be constrained or limited in certain areas, e.g. drone air corridors, but unavoidable in others, pedestrians and cyclists with AVs.
 %
 Game theory may offer insight along with a means of exploring or testing independent agents that have competing demands to find optimal solutions, prove compliance or demonstrate cooperation. 
 %
 % ***However, no such rulebook of social norms for driving has been posited as this is a uniquely human trait derived from the principles of inclusive  fitness and social rationality [gintis]. See Pete Winter for notes on Goffman for social convention)***
 % 
-The framework of game theory~\cite{schecter2016game} could be useful to understand the implications of more nuanced behaviour such as reciprocity, fairness~\cite{gintis2006foundations} and social convention and may help us specify for contexts which rely more on interpreting human behaviour (that may seem random, inconsistent or even irrational) than logical rules or safety properties. 
+The frameworks of game theory~\cite{myerson2013game} and multi-agent systems~\cite{ferber1999multi} could be useful as a means of exploring or testing independent agents that have competing demands and to understand the implications of more nuanced behaviour such as reciprocity~\cite{schecter2016game}, fairness~\cite{gintis2006foundations}, politeness~\cite{godoy2020c} and social convention~\cite{riaz2018collision,gupta2019scaling}. 
+%
+This may help us specify for contexts which rely more on interpreting human behaviour, that may seem random, inconsistent or even irrational, than logical rules or safety properties. 
 %
 A unique challenge to the development of specifications for autonomous systems then, is the creation of objective rule-sets that can be expressed into a machine readable form without ambiguity. What is also needed is an understanding of the acceptable trade-off between seemingly orthogonal properties such as safety and performance if autonomous systems are to co-exit with humans in a responsible and trustworthy way. 
 %
-A final challenge, and perhaps the most ambitions, is the specification of human values and ethics and the interplay of these rules with the more objective properties of safety and performance.
+A final challenge, and perhaps the most ambitions, is the specification of human values and ethics and the interplay of these rules with the more objective properties such as safety and performance. 
 
 
 
