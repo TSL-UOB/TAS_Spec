@@ -469,7 +469,7 @@ Autonomous systems with \textit{evolving functionality} (i.e. the ability to cha
 Most conventional processes for defining system requirements and characteristics assume that these are fixed and can be defined in a complete and precise manner before the system goes into operation. 
 Existing standards and regulations do not satisfactorily address issues raised by autonomous systems with evolving functionality, which is a key limitation \cite{Fisher2020}. We discuss this using two application areas of autonomous systems -- swarm robotics and UAVs.
 
-In the robotics domain, several safety standards have been developed by a technical committee of the ISO for the non-industrial (service) robotics sector (e.g. ISO 13482 \cite{ISO13482}, ISO 23482-1 \cite{ISO23482-1}, ISO 23482-2  \cite{ISO23482-2}), as well as for the industrial robotics sector (e.g. ISO 10218-1\cite{ISO10218-1}, ISO 10218-2\cite{ISO10218-2}, ISO/TS 15066 \cite{ISO15066}). 
+In the robotics domain, several safety standards have been developed by a technical committee of the ISO for the non-industrial (service) robotics sector (e.g. ISO 13482, ISO 23482-1 , ISO 23482-2 , as well as for the industrial robotics sector (e.g. ISO 10218-1, ISO 10218-2, ISO/TS 15066). 
 Different legal and regulatory requirements apply to different robot categories. 
 In service robotics, ISO 13482 covers the hazards presented by the robots and devices for applications in non-industrial environments for providing services. 
 ISO 23482-1 and ISO 23482-2 standards extend ISO 13482 with guidance and methods that can be used to test personal care robots.
@@ -479,14 +479,14 @@ and work environment.
 Although these industry standards focus on ensuring safety of robots at the individual robot level, there are no standards to ensure safety or any other extra-functional property for \textit{swarms}.
 
 Meanwhile, for the airborne systems and in particular for UAVs, several industry standards and regulations have been introduced to ensure their safe operation. 
-DO-178C \cite{DO-178C} is the primary standard for commercial avionics software development, which provides software considerations for the production of airborne systems and equipment. On the other hand, DO-254 \cite{DO-254} provides guidance for the development of airborne electronic hardware. ED279 \cite{ED279} standard provides a framework to support designers when performing a functional hazard assessment process for an unmanned aircraft system. 
-ARP4761 \cite{ARP4761} provides guidelines and methods for conducting the safety assessment process on civil airborne systems and equipment. 
-NATO STANAG 4671 \cite{STANAG4761} is intended to allow military UAVs to operate in other NATO members airspace. 
-As for regulations within the UK, CAP 722 \cite{CAP722} is the primary guidance document for the operation of unmanned aircraft systems. 
+DO-178C is the primary standard for commercial avionics software development, which provides software considerations for the production of airborne systems and equipment. On the other hand, DO-254 provides guidance for the development of airborne electronic hardware. ED279 standard provides a framework to support designers when performing a functional hazard assessment process for an unmanned aircraft system. 
+ARP4761 provides guidelines and methods for conducting the safety assessment process on civil airborne systems and equipment. 
+NATO STANAG 4671 is intended to allow military UAVs to operate in other NATO members airspace. 
+As for regulations within the UK, CAP 722 is the primary guidance document for the operation of unmanned aircraft systems. 
 However, none of these standards or regulations provide safety considerations for machine learning components that enable evolving functionality.
 
 Furthermore, when one considers the existing industry standards, they are either implicitly or explicitly based on the V-model, which moves from requirements through design onto implementation and testing \cite{Jia2021}. 
-For systems with the ability to adapt their functionality, this approach is unlikely to be suitable. 
+For systems with the ability to adapt their functionality, this approach alone is unlikely to be suitable. 
 For instance, the development of machine learning-based components of a UAV follows a different, much more iterative life-cycle. Therefore, there is a need for new standards and guidance that better reflect the life-cycle of autonomous systems with evolving functionality \cite{Hawkins2021}.
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Explainability by Design} %%% I would prefer a mention of explainability requirement, as i don't think i speak on behalf of the TAS HUB
