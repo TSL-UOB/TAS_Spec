@@ -15,4 +15,4 @@ Also, I would appreciate if you could email to: dhaminda.abeywickrama@bristol.ac
 
 **Update on November 25, 2021:**
 
-Please note that, we are still waiting for some authors to upload their contributions. Therefore, we thought of using this time to allow all other authors to revise any part of their contributions within the guidelines until **December 5, 2021, if needed**. We hope to start editing the paper soon after we receive the remaining contributions.
+Please note that, we are still waiting for some authors to upload their contributions. Therefore, we thought of using this time to allow all other authors to revise any part of their contributions within the guidelines until **December 5, 2021 (extended till December 8th Wednesday), if needed**. We hope to start editing the paper soon after we receive the remaining contributions.
