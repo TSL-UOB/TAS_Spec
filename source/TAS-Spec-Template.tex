@@ -694,7 +694,7 @@ To summarize, one challenge in evolving specifications is to discover and faithf
 Another challenge is the analysis of changes to specifications to explore and understand the impact of changes to specifications.
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{Competing Demands and Other Agents' Behaviour}
+\subsection{Specifications with Competing Demands}% and Other Agents' Behaviour}
 \noindent\textbf{[Responsible Author:  Greg Chance]}\\
 \noindent \textbf{[Source: Breakout Room-1 (Subramanian Ramamoorthy, Yiannis Demiris, Greg Chance, Shane Windsor)]}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\
@@ -723,55 +723,62 @@ Another challenge is the analysis of changes to specifications to explore and un
 % If we are to trust autonomous systems then we must be able to specify and demonstrate each of these facets of trustworthiness. 
 %
 % The difficulty of specification of behaviour involves other agents and what their behaviour is which is fundamentally unknown. Possibly also non-deterministic and random in some form.
+%
+% Harper et al.~\cite{harper2021safety} suggest a methodology to demonstrate compliance of an autonomous vehicle against a set of objective rules (UK Highway Code~\cite{highwayCode}) by converting the human-readable rules into an objective set of logical computer expressions that can be monitored during simulation or operation using geographical relational database technology. 
+%
+% Some authors have been successful in demonstrating other assessment frameworks that may be suitable for logically proving correct adherence to driving rules using Higher Order Logic (HOL)~\cite{rizaldi} or Linear Temporal Logic (LTL)~\cite{esterle2020}. 
+%
+% This may take the form of a coverage collection exercise where system behaviour is assessed in physical testing or simulated experiments against a set of pre-defined properties. 
+% Here we can see the conflict between adherence to formal \emph{safety properties} against the desire to achieve \emph{mission goals}. 
+% %
+% One could classify achievement of mission goals (better performance) as being orthogonal to avoidance of task hazards (safety compliance) and an optimal system must achieve an acceptable balance between the two~\cite{harper2021safety}. 
+
 
 Conventional approaches to verification and validation for autonomous systems may seek to attain coverage against a set of requirements to demonstrate assurance of functionality and compliance with safety regulations or legal frameworks. 
 %
-This may take the form of a coverage collection exercise where behaviour is assessed in physical testing or simulated experiments against a set of pre-defined properties. 
-%
-Harper et al.~\cite{harper2021safety} suggest a methodology to demonstrate compliance of an autonomous vehicle against a set of objective rules (UK Highway Code~\cite{highwayCode}) by converting the human-readable rules into an objective set of logical computer expressions that can be monitored during simulation or operation using geographical relational database technology. 
-%
-Some authors have been successful in demonstrating other assessment frameworks that may be suitable for logically proving correct adherence to driving rules using Higher Order Logic (HOL)~\cite{rizaldi} or Linear Temporal Logic (LTL)~\cite{esterle2020}. 
+Such properties may be derived from existing legal or regulatory frameworks, e.g. the UK Highway Code~\cite{highwayCode} for driving, which can then be converted into logical computer expressions used as a tool for assessment using; geospatial database queries~\cite{harper2021safety}, higher order logic~\cite{rizaldi}, or linear temporal logic~\cite{esterle2020}.
 
 
-
-But optimal safety does not imply optimal trust, and just because an autonomous system can follow rules does not mean that it will integrate well into human society. 
+But optimal safety does not imply optimal trust, and just because an autonomous system follows rules does not mean that it will be accepted as a trustworthy system in human society. 
 %
-We can also say that strictly following safety rules may even be detrimental to overall performance. 
+We can also say that strictly following safety rules may even be detrimental to other properties, e.g. performance. 
 %
-An example of this conflict can be found between performance and safety and illustrated in a driving scenario. Consider an autonomous vehicle trying to make progress through a busy market square full of people who are slowly walking between the stalls.  
+Consider an autonomous vehicle trying to make progress through a busy market square full of people slowly walking across the road uncommitted to the usual observation of road conduct. 
 %
-In this case the \emph{safest} option is to wait until the road ahead is completely clear before moving on, as by taking this option you do not endanger any other road user. However, \emph{better performance} may be to creep forward (move very slowly) to show others your intent in the safest possible manner, in a bid to promote your likelihood of success or in hoping a compassionate agent will give way to you and allowing you to make progress. 
+The \emph{safest} option for the autonomous system is to wait until the route ahead is completely clear before moving on, as by taking this option you do not endanger any other road user. However, \emph{better performance} may be to creep forward in a bid to promote your likelihood of success.
 %
-Driving then, is much more than following the rules of the road correctly and that in this scenario a more aggressive driving style would make more progress than a risk-adverse one
-%
-Here we can see the conflict between adherence to formal \emph{safety properties} against the desire to achieve \emph{mission goals}. 
-%
-One could classify achievement of mission goals (better performance) as being orthogonal to avoidance of task hazards (safety validation) and an optimal system must achieve an acceptable balance between the two~\cite{harper2021safety}. 
-%
-In reality there will be significantly more considerations than just safety and performance but this illustrates the principle of conflicting demands between assessment standards. 
-%
-Might we also consider the other agents in this situation and would this lead to a more trustworthy system?. Determining what the fairest action to take is and how this could be assessed goes significantly beyond functionality or safety assessments. And should we be including any other properties in our assessment of trustworthiness?
-
-
-
-Trustworthiness is a meta-property comprised of many criteria including safety but also reliability, security, adoption and fairness amongst others~\cite{10.1145/3448248}. 
-%
-It is correct to focus on safety and operational functionality of autonomous systems as these will form the basis of usefulness to people. But earning trust will require satisfaction of these additional criteria and along with it must come the standards by which they are judged. 
-%
-For example, there are existing standards for driving safely which we can use to form an assessment of safe driving behaviour of an autonomous system. Safe driving is therefore one aspect of trustworthiness that we can currently provide a testable assessment of, but is only a part of the entire trust meta-property. 
+Driving then, is much more than following safety rules and in this scenario an aggressive driving style would make more progress than a risk-adverse one. 
 %
 
-Specifying for ethical behaviour or fairness is currently immature in comparison to driving safety or functionality. By what standard do we or should we deem something ethical or fair? 
-%
-There are many aspects of human driving behaviour that can be categorised under \emph{driving norms} of which there is no written standard by which it can be judged. Will the task of specification first require a codex of social interaction norms to be drawn together to add to the standards by which trust can be measured? 
-%
-Specifications will need to be written with reference to these standards, regulations and ethical principles, many of which may not currently exist, in order to ensure that any assessment captures the full spectrum of these trustworthiness criteria.
 
-A further challenge to specification will not just be to capture the full gamut of trustworthiness properties, but also in deciding a hierarchy across the meta-trustworthiness stack. 
+In reality there will be significantly more considerations than just safety and performance but this example illustrates the principle of conflicting demands between assessment standards. 
 %
-Similar to the Asimov law of robotics, where safety to humans will outrank that of self-preservation, a similar system of hierarchy is required that should carefully consider the implications of actions based on each property. 
+Consideration of other agents, such as properties of fairness or cooperation, would lead to a more trustworthy system. 
 %
-It may also be useful to consider which aspects of the specification are permeable and which are inviolable. This approach will allow conflicts between properties to be more easily resolved.
+In the language of game theory, assessing the payoff between a number of possible outcomes may indicate the fairest action to take. An assessment of the above \emph{busy market scenario} using game theory naturally lends itself to providing such an insight and may also give specification writers more freedom to express such complex properties. 
+
+
+Additionally, the interaction of autonomous systems with people may require insight into \emph{social norms} of which there is no written standard by which it can be judged. Will the task of specification first require a codex of social interaction norms to be drawn together to add to the standards by which trust can be measured? 
+%
+Specifications will need to be written with reference to these standards, regulations and ethical principles, some of which do not currently exist, in order to ensure that any assessment captures the full spectrum of these trustworthiness criteria.
+
+
+Trustworthiness could therefore be seen as a \emph{meta-property}, comprised of many criteria including safety but also reliability, security, usability, adoption and fairness amongst others~\cite{10.1145/3448248}. 
+%
+Earning trust will require satisfaction of these additional trustworthy criteria and along with it must come the standards by which they are judged. 
+%
+The existing standards for driving safety can be used to assess safe driving behaviour of an autonomous system. Safe driving is therefore one aspect of trustworthiness that we can currently provide a testable assessment of, but is only a part of the entire trust meta-property. 
+%
+Specifying for trustworthiness will inevitably overlap with laws, societal norms, regulations, human factors, standards on personal data collection and use, cybersecurity and committees to ensure unbiased and ethical standards are upheld. 
+%
+
+A further challenge to specification will not just be to capture the full gamut of trustworthiness properties, but also in deciding a hierarchy through the meta-trustworthiness stack. 
+%
+Similar to the Asimov law of robotics, where safety to humans will outrank that of self-preservation of the robot, a similar system of hierarchy is required.
+%
+It may also be useful to consider which aspects of the specification have soft or hard limits, i.e which are inviolable and which may be traded-off against other properties as in the case of safety versus performance or other competing demands. 
+%
+% This approach may allow conflicts between properties to be more easily resolved.
 
 
 
