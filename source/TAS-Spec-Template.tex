@@ -298,20 +298,23 @@ Each autonomous systems domain brings about unique specification challenges:
 \textbf{[Responsible Author:  Subramanian Ramamoorthy]}\\
 \textbf{[Source: Subramanian Ramamoorthy's presentation]}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenge/s unique to this domain}}\\\\
-Formal reasoning for "traffic regulation"...
-Analysis of traffic regulation...
-high-way code (e.g. when is it safe to make the turn and not to make the turn etc)...
 
-The goal is to provide domain property analysis support for autonomous vehicles. 
-1) To formalise structures and logic of traffic regulations; and 2) to allow breakdown of key environment variables for vehicle operations.
+Autonomous driving refers to a class of autonomous systems that vary in the extent to which they make decisions independently (SAE J3016 standard taxonomy). The higher levels of autonomy, levels 3-5, refer to functionality ranging from traffic jam chauffeur to completely hand-free driving in all conditions. Despite an explosion of activity in this domain in recent years, the majority of systems being considered for deployments depend on careful delineation of the operating design domain (ODD) to make the specification of appropriate behaviour tractable. Even so, the specification problem remains difficult for a number of reasons. Firstly, the traffic regulations which were originally written in plain English, assuming human interpretation rather than machine implementation. So, although the highway codes are written with a view to legal enforcement, they are not formal specifications. This means that the code contains many exceptions, rule conflicts and guidance of an `open texture', requiring interpretation in context. An example might be the specification of ``right of way''. Secondly, driving in urban environments is an intrinsically interactive and multi-agent activity, involving several actors whose internal states may be opaque to the autonomous vehicle. As an example, the UK highway code asks drivers to not ``pull out into traffic so as to cause another driver to slow down''. Without further constraint on what the other drivers could possibly do, specifying appropriate behaviour would be difficult, and any assumptions made in that process would call into question the safety of the overall system when those assumptions are violated. 
 
-High way code is written in plain English. It is written reasonably precisely. It is not formally specified as such. These kinds of code needs bit of interpretation. So how do we approach specification. Currently, we are taking Dutch traffic laws as examples, i.e. WVW and RVV (will move to the UK highway code later)... 
-
-The format of regulations defines constraints for the vehicle operations, e.g. overtaking and positioning. For each operation, there are two categories of constraints, 'must' (or 'prohibit', which is negation of 'must') and 'permit'.
-
-Need to reason about exceptions, rule conflicts and open texture.
-
-What are the scope of each of these rules, what are the preconditions, how do we want to deal with them, left implicit or needs further clarification in some other bit of the code. That is a specification challenge.
+%Formal reasoning for "traffic regulation"...
+%Analysis of traffic regulation...
+%high-way code (e.g. when is it safe to make the turn and not to make the turn etc)...
+%
+%The goal is to provide domain property analysis support for autonomous vehicles. 
+%1) To formalise structures and logic of traffic regulations; and 2) to allow breakdown of key environment variables for vehicle operations.
+%
+%High way code is written in plain English. It is written reasonably precisely. It is not formally specified as such. These kinds of code needs bit of interpretation. So how do we approach specification. Currently, we are taking Dutch traffic laws as examples, i.e. WVW and RVV (will move to the UK highway code later)... 
+%
+%The format of regulations defines constraints for the vehicle operations, e.g. overtaking and positioning. For each operation, there are two categories of constraints, 'must' (or 'prohibit', which is negation of 'must') and 'permit'.
+%
+%Need to reason about exceptions, rule conflicts and open texture.
+%
+%What are the scope of each of these rules, what are the preconditions, how do we want to deal with them, left implicit or needs further clarification in some other bit of the code. That is a specification challenge.
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Emergency Responders}
@@ -362,20 +365,23 @@ Trustworthy Interactive Robot Systems aim to complete their tasks while explicit
 
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{Healthcare Robotics}
+\subsection{AI in Healthcare}
 \textbf{[Responsible Author:  Subramanian Ramamoorthy]}\\
 \noindent\textbf{[Source: Subramanian Ramamoorthy's presentation]}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 150-300 (maximum); \\Format/structure: introductory sentences on the domain; specification challenges unique to this domain}}\\\\
-\textbf{AI-based Medical Diagnosis:} Subramanian Ramamoorthy mentioned that from the ground up, it is a machine learning problem. 
-An example: cataloging the findings - a radiologist's process...This is based on automated interpretation of radiology imaging...
- 
-What you find best models in terms of machine learning is subsymbolic neural networks-based models. What the models are looking for is essentially small cues integrated together through some sort of  probabilistic fusion or other forms of integrating the information towards an overall diagnosis. This is very different from how the human experts are today being trained. A neural network is picking up cues completely different from that. So if you want to make a specification we have to first understand what is going on, and also the ways in which these systems fail (e.g. machine learning not picking up images accurately)... you need to pay attention to right cues. But you do not know what precisely to specify because all the measures that I apply in the model such as accuracy, recall and precision and sensitivity,  they all can be fooled if you don't get it right...
 
-Deep learning has revolutionised what is possible in terms of segmentation, classification and prognostics. However, there are many caveats!
-Usual and unprecedented forms of edge cases, e.g. did the model even look for disease in the first place?!
+Healthcare is a broad application domain which already enjoys the many benefits arising from the use of AI and AI-enabled autonomy. This has ranged from more accurate and automated diagnostics, to a greater degree of autonomy in robot surgery, and entirely new approaches to drub discovery and design. The use of AI in medical diagnosis has advanced to an extent that in some settings, e.g. mammography screening, automated interpretation seems to match human expert performance in some trials. However, there remains a gap in test accuracy , although it has been argued that the automated systems are not sufficiently specific to replace radiologist double reading in screening programmes \cite{Freemann1872}. These gaps also highlight the main specification challenges in this domain. Historically, the human expertise in this domain has not been explicitly codified, so that it can be hard to enumerate desired characteristics. It is clear that the specifications must include notions of invariance - to instrument and operator variations, coverage of condition and severity level, etc. Beyond that, the `semantics' of the biological features used to make fine determinations are subject to both ambiguity or informality, and variability across experts and systems. Moreover, the use of deep learning to achieve automated interpretation brings with it the challenges of explainability. This manifests itself in the challenge of guarding against `shortcuts' \cite{degrave2021ai}, wherein the AI system exploits irrelevant side variables to achieve high accuracy without solving the primary diagnostic problem. In response, some have argued for other forms of internal and external validation of the AI system based on current practice for evaluating performance and efficacy \cite{ghassemi2021false}.
 
-How to specify with respect to black box models?:
-1) The design domain for operation and notions of coverage: camera properties. model features, semantics of biological features; 2) role of explainability and faithfulness of interpretation of semantics; 3) role of pre-trained models in pipelines
+%\textbf{AI-based Medical Diagnosis:} Subramanian Ramamoorthy mentioned that from the ground up, it is a machine learning problem. 
+%An example: cataloging the findings - a radiologist's process...This is based on automated interpretation of radiology imaging...
+% 
+%What you find best models in terms of machine learning is subsymbolic neural networks-based models. What the models are looking for is essentially small cues integrated together through some sort of  probabilistic fusion or other forms of integrating the information towards an overall diagnosis. This is very different from how the human experts are today being trained. A neural network is picking up cues completely different from that. So if you want to make a specification we have to first understand what is going on, and also the ways in which these systems fail (e.g. machine learning not picking up images accurately)... you need to pay attention to right cues. But you do not know what precisely to specify because all the measures that I apply in the model such as accuracy, recall and precision and sensitivity,  they all can be fooled if you don't get it right...
+%
+%Deep learning has revolutionised what is possible in terms of segmentation, classification and prognostics. However, there are many caveats!
+%Usual and unprecedented forms of edge cases, e.g. did the model even look for disease in the first place?!
+%
+%How to specify with respect to black box models?:
+%1) The design domain for operation and notions of coverage: camera properties. model features, semantics of biological features; 2) role of explainability and faithfulness of interpretation of semantics; 3) role of pre-trained models in pipelines
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{Swarm Robotics}
@@ -434,27 +440,40 @@ Now we discuss intellectual challenges for the research community towards creati
 \noindent[\textit{Note: In order to guide the initial writing process, we have organized the different contributions to different subsections.}]
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-\subsection{TAS Regulation and Governance}
+\subsection{TAS Governance and Regulation}
 \noindent\textbf{[Responsible Author:  Subramanian Ramamoorthy]}\\
 \noindent\textbf{[Source: Subramanian Ramamoorthy's presentation]}\\\\
 \noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\\\
-Two issues most salient within the two case studies described previously are:
-\begin{itemize}
-	\item \textbf{Environment and other agents' dynamics can be unknown, but crucial}
-	\item \textbf{How to establish real intent behind requirements, vagueness and preferences?}
-\end{itemize}
 
-At the high-level the issue for us is the gap between formal specification way of thinking what systems got to do and how everybody else think systems should be thought of...if you take the definitions of fairness, there can be twenty valid definitions...
+Computer scientists treat specifications as precise objects, often derived from requirements by purging features such that they are defined with respect to environment properties that can be relied on regardless of the machine's behaviour. Emerging autonomous systems applications  in human-centred environments can challenge this way of thinking, particularly so because the environment properties may not be fully understood, or because it is hard to establish if the real intent behind a requirement can be verified. These gaps should be addressed in governance frameworks in order to engender trust.
 
-How and why are AI-based systems different?... we are concerned more specifically about data-driven machine learning methods, more specifically neural networks etc that are becoming the norm...
+For instance, in all of the domains mentioned above, we are increasingly seeing systems that are data-first and subject to continuous deployment. This has the interesting consequence that sometimes even the task requirements are really only given in terms of fit to observed human behaviour \cite{topol2019high}, e.g. what does an expert say in radiology interpretation and does the AI-based autonomous system match that \cite{Freemann1872}. Furthermore, many emerging concerns such as fairness are not only difficult to formalise in the sense of software specification, but also their many definitions can such that it is impossible to satisfy all of them in any system \cite{narayanan21fairness}. 
 
-Shift from specification -> design to data -> specifications many gaps!...task is implicitly specified in data and specifications are implicit inside that data, or derived from that data....if you take the design processes that involve continuous deployment pipeline, it is challenging traditional modes of regulation...The issue in some of the models is inscrutability with respect to performance, error characteristics, etc.; contingency in any statements about behaviour.
+It is clear that autonomous systems of the future will need a combination of informal and formal mechanisms for governance. In domains such as autonomous vehicles, trustworthiness of the system may require a complete ecosystem approach \cite{koopman2019certification} involving community-defined scenario libraries, enabling the greater use of simulation in verification, and independent audits via independent third parties. This calls for the development of new computational tools for performance and error characterisation, systematic adversarial testing with respect to a range of different specification types, and causal explanations that address not only a single instance of a decision but better expose informational dependencies that are useful for identifying edge cases and delineating operational design domains. 
 
-To try to be more specific, 1) environment and other agents' dynamics can be unknown, but critical; 2) how to establish real intent behind requirements, vagueness and preferences...
-We are interested in open environments and open systems. There are other decision makers or entities in our environment and we have to take them into account. Typically these other environments are humans or machines operated by humans. This means we don't have very good models of what they do. We have to figure out how to specify something in the absence of this....conservative approximations do not make sense in domains like autonomous vehicles... conservative approximations can be too conservative and not very useful functionality wise. Other issue is the real intention is vague (fairness which is not vague, but it is difficult). It is hard to pin it down and when we try to pin it down, it does not capture what we try to say...these are high-level issues.
+In addition to all of these technical tools, there is a need to understand the human-machine context in a more holistic manner, as this is really the target of effective governance. People's trust in an autonomous system is not determined by technical reliability alone. Instead, the expectations of responsibility and accountability are associated with the human team involved in the design and deployment of the system, and the organisational design behind the system. A vast majority of system failures are really failures arising from mistakes made in this `outer-loop'. Therefore, effective regulations must first begin with a comprehensive mapping of responsibilities that must be governed, so that computational solutions can be tailored to address some of these needs. Furthermore, there is a need for ethnographic understanding of autonomous systems being used in context, which could help focus technical effort on the real barriers to trustworthiness.
 
-\noindent\textbf{[Source: Subramanian Ramamoorthy's abstract of talk]}\\
-Computer scientists treat specifications as precise objects, often derived from requirements by purging features such that they are defined with respect to environment properties that can be relied on regardless of the machine's behaviour. Emerging autonomous systems applications can sometimes challenge this way of thinking, particularly so because the environment properties may not be fully understood, or because it is hard to establish if the real intent behind a requirement can be verified. These gaps should be addressed in governance frameworks. I'll try to quickly develop this idea using two use case examples - one from autonomous vehicles, and another from AI-based medical diagnostics.
+%\subsection{TAS Regulation and Governance}
+%\noindent\textbf{[Responsible Author:  Subramanian Ramamoorthy]}\\
+%\noindent\textbf{[Source: Subramanian Ramamoorthy's presentation]}\\\\
+%\noindent\textbf{\textit{Author Guidelines: Word count: 300-580 (maximum)}}\\\\
+%Two issues most salient within the two case studies described previously are:
+%\begin{itemize}
+%	\item \textbf{Environment and other agents' dynamics can be unknown, but crucial}
+%	\item \textbf{How to establish real intent behind requirements, vagueness and preferences?}
+%\end{itemize}
+
+%At the high-level the issue for us is the gap between formal specification way of thinking what systems got to do and how everybody else think systems should be thought of...if you take the definitions of fairness, there can be twenty valid definitions...
+%
+%How and why are AI-based systems different?... we are concerned more specifically about data-driven machine learning methods, more specifically neural networks etc that are becoming the norm...
+%
+%Shift from specification -> design to data -> specifications many gaps!...task is implicitly specified in data and specifications are implicit inside that data, or derived from that data....if you take the design processes that involve continuous deployment pipeline, it is challenging traditional modes of regulation...The issue in some of the models is inscrutability with respect to performance, error characteristics, etc.; contingency in any statements about behaviour.
+%
+%To try to be more specific, 1) environment and other agents' dynamics can be unknown, but critical; 2) how to establish real intent behind requirements, vagueness and preferences...
+%We are interested in open environments and open systems. There are other decision makers or entities in our environment and we have to take them into account. Typically these other environments are humans or machines operated by humans. This means we don't have very good models of what they do. We have to figure out how to specify something in the absence of this....conservative approximations do not make sense in domains like autonomous vehicles... conservative approximations can be too conservative and not very useful functionality wise. Other issue is the real intention is vague (fairness which is not vague, but it is difficult). It is hard to pin it down and when we try to pin it down, it does not capture what we try to say...these are high-level issues.
+%
+%\noindent\textbf{[Source: Subramanian Ramamoorthy's abstract of talk]}\\
+%Computer scientists treat specifications as precise objects, often derived from requirements by purging features such that they are defined with respect to environment properties that can be relied on regardless of the machine's behaviour. Emerging autonomous systems applications can sometimes challenge this way of thinking, particularly so because the environment properties may not be fully understood, or because it is hard to establish if the real intent behind a requirement can be verified. These gaps should be addressed in governance frameworks. I'll try to quickly develop this idea using two use case examples - one from autonomous vehicles, and another from AI-based medical diagnostics.
 
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \subsection{TAS Functionality (Specification)}
