@@ -4,6 +4,7 @@
 
 \documentclass[sigconf,nonacm]{acmart}%[sigconf,review]{acmart}
 \usepackage{enumitem}
+\usepackage{multirow}
 \usepackage{verbatim}
 %
 %\ifdefined\directlua
@@ -256,13 +257,40 @@
 	%%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
 	\section{Autonomous Systems Domains and their Specification Challenges}\label{as-domains}
-	In this section, we discuss the specification challenges of a number of different AS domains (see Fig.~\ref{AS-challenges}).	
-	\begin{figure*}
-		\centering
-		\includegraphics[width=0.9\textwidth]{figures/AS-Challenges.png}
-		\caption{AS domains and their specification challenges.}
-		\label{AS-challenges}
-	\end{figure*}
+	In this paper, we classify the AS domains based on two criteria: the number of autonomous agents (single or multiple) in the cooperation, and whether there are humans involved \cite{Schneiders2022}. 
+	As a result, the domain of AS can be classified as: (i) a single autonomous agent (e.g. automated driving, UAV); (ii) a group of autonomous agents (e.g. swarms); (iii) an autonomous agent with a human (e.g. AI in healthcare, human-robot interaction); and (iv) a group of autonomous agents with humans (e.g. emergency situations and disaster relief). 
+	First and foremost, this exercise is not intended to be exhaustive.
+	Due to the space considerations, we now discuss specification challenges of a representative set of key domains which are being investigated by the different Nodes of TAS (see Table.~\ref{AS-challenges}). 
+%\footnotesize
+%\begin{center}
+%	\begin{table*}
+%	\begin{tabular}{ |p{1.6cm}||p{1.5cm}|p{15cm}| } 
+%			\hline
+%			\textbf{Classification} & \textbf{Domain} & \textbf{Specification Challenges} \\
+%			\hline
+%			\multirow{2}{1.6cm}{Single Autonomous Agent} & \multirow{2}{1cm}{Automated Driving} & How to address the lack of machine-readable specifications that formally express acceptable driving behaviour? \\ \cline{3-3} & & How to specify the actions of other road users? \\ \cline{2-3}
+%			& UAV & How to specify how the UAV should deal with situations that go beyond the limits of its training? \\ 
+%			\hline
+%			Multiple Autonomous Agents & Swarms & How to specify the emergent behaviour of a swarm that is a consequence of the interaction of individual agents with each other and the environment? \\
+%			\hline
+%			\multirow{2}{1.6cm}{An Autonomous Agent with a Human} 
+%			& \multirow{3}{1.5cm}{AI in Healthcare} & How to specify `black box' models? \\ \cline{3-3} & & What is the role of explainability and faithfulness of interpretation of semantics? \\ \cline{3-3}& & What is the role of pre-trained models in pipelines? \\ \cline{2-3}
+%			& \multirow{2}{1.5cm}{Human-Robot Interaction} & How to specify the perceptual, reasoning and behavioural processes of robot systems? \\ \cline{3-3} & & How to infer human mental states interactively? \\ \cline{2-3}
+%			\hline
+%			\multirow{2}{1.6cm}{Multiple Autonomous Agents with Humans} & Emergency Situations  & How to specify collaboration between autonomous agents and different human agents in emergency settings? \\ \cline{2-3}
+%			& Disaster Relief & How to specify security in disaster relief settings where large amounts of data needs to be collected, shared and stored? \\ 
+%			\hline
+%		\end{tabular}
+%	\end{table*}
+%\end{center}
+%\normalsize	
+%	In this section, we discuss the specification challenges of a number of different AS domains (see Fig.~\ref{AS-challenges}).	
+%	\begin{figure*}
+%		\centering
+%		\includegraphics[width=0.9\textwidth]{figures/AS-Challenges.png}
+%		\caption{AS domains and their specification challenges.}
+%		\label{AS-challenges}
+%	\end{figure*}
 	
 	\begin{itemize}[leftmargin=0.5cm]
 		\item \textbf{Automated Driving} 
@@ -280,7 +308,18 @@
 	
 	%Original contribution by the author/s:
 	%Autonomous driving refers to a class of autonomous systems that vary in the extent to which they make decisions independently (SAE J3016 standard taxonomy). The higher levels of autonomy, levels 3-5, refer to functionality ranging from traffic jam chauffeur to completely hand-free driving in all conditions. Despite an explosion of activity in this domain in recent years, the majority of systems being considered for deployments depend on careful delineation of the operating design domain (ODD) to make the specification of appropriate behaviour tractable. Even so, the specification problem remains difficult for a number of reasons. Firstly, the traffic regulations which were originally written in plain English, assuming human interpretation rather than machine implementation. So, although the highway codes are written with a view to legal enforcement, they are not formal specifications. This means that the code contains many exceptions, rule conflicts and guidance of an `open texture', requiring interpretation in context. An example might be the specification of ``right of way''. Secondly, driving in urban environments is an intrinsically interactive and multi-agent activity, involving several actors whose internal states may be opaque to the autonomous vehicle. As an example, the UK highway code asks drivers to not ``pull out into traffic so as to cause another driver to slow down''. Without further constraint on what the other drivers could possibly do, specifying appropriate behaviour would be difficult, and any assumptions made in that process would call into question the safety of the overall system when those assumptions are violated. 
-	
+
+\begin{table}
+	\caption{AS domains and their specification challenges.} \label{AS-challenges}   
+	\includegraphics[width=0.5\textwidth]{figures/Domains.png}
+\end{table} 
+
+%	\begin{figure}
+%	\centering
+%	\includegraphics[width=0.5\textwidth]{figures/Domains.png}
+%	\caption{AS domains and their specification challenges.}
+%	\label{AS-challenges}
+%\end{figure}		
 	%%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	%\subsection{Emergency Situations and Disaster Relief}
 	
