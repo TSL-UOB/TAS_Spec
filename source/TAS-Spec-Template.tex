@@ -170,12 +170,14 @@
 	%% The abstract is a short summary of the work to be presented in the
 	%% article.
 	\begin{abstract}
-		As autonomous systems are becoming part of our daily lives, ensuring their trustworthiness is crucial. 
-		There are a number of techniques for demonstrating trustworthiness. 
-		Common to all these techniques is the need to articulate \emph{specifications}. 
-		In this paper, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties. 
-		The main contribution of this article is a set of high-level intellectual challenges for the autonomous systems community related to specifying for trustworthiness.
-		We also describe unique specification challenges concerning a number of application domains for autonomous systems.
+As autonomous systems (AS) are becoming part of our daily lives, ensuring their trustworthiness is crucial. There are a number of techniques for demonstrating trustworthiness, and common to all these techniques is the need to formulate specifications. The main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. Instead of dealing with a wide range of topics, we focus on several key open research problems that are being investigated within the different Nodes of the UKRI Trustworthy Autonomous Systems (TAS) programme in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. We take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security, and other non-functional properties. As another key contribution, we discuss specification challenges that are unique to key AS domains currently being investigated within our community. This roadmap paper is a result of a workshop we conducted on specifying for trustworthiness in AS which took place in September 2021.
+% Original reviewed abstract:		
+%		As autonomous systems are becoming part of our daily lives, ensuring their trustworthiness is crucial. 
+%		There are a number of techniques for demonstrating trustworthiness. 
+%		Common to all these techniques is the need to articulate \emph{specifications}. 
+%		In this paper, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties. 
+%		The main contribution of this article is a set of high-level intellectual challenges for the autonomous systems community related to specifying for trustworthiness.
+%		We also describe unique specification challenges concerning a number of application domains for autonomous systems.
 	\end{abstract}
 	
 	%%
@@ -251,6 +253,9 @@
 	%	
 	To address this, specifications will need to go beyond typical functionality and safety aspects. Thus, in this context, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties that contribute to trustworthiness of AS. 
 	Also, we intentionally leave the discussion on the formalisation of these specifications for the future, when understanding of what is required to specify for trustworthiness is more mature.
+	
+	% New content - need to fit in appropriately - 2022-11-25
+	The main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. Instead of dealing with a wide range of topics associated with the field, this paper focuses on several key open research problems and challenges that are currently being investigated within the different Nodes of the UKRI Trustworthy Autonomous Systems (TAS) programme in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. As another key contribution, we discuss specification challenges that are unique to a representative set of AS domains currently being investigated within our community. This roadmap paper is a result of a workshop we conducted on specifying for trustworthiness in AS which took place in September 2021.
 	
 	%
 	In this paper, we explore what it means to specify for trustworthiness, considering a number of AS domains, each with its unique specification challenges. We then present a set of intellectual challenges for the AS community comprising both academia and industry, specifically focusing on specification for trustworthy AS.
@@ -460,11 +465,18 @@ There are also challenges for specifying security in the context of disaster rel
 	In addition, there is also a range of purely software-based AS, i.e. systems without physical embodiment. Besides the medical diagnostic tools already mentioned earlier under AI in healthcare, such AS are also sometimes used in justice for sentencing, in recruitment for filtering and shortlisting job applicants, and in education for proctoring, for marking and for personalising tuition. These systems are also routinely used in finance to make recommendations on investments and manage funds. In its proposed regulations for AI, the EU \cite{EU:2021} introduces a classification of such systems according to their risk levels. While many of these systems pose limited to no risk and can contribute to solving many societal challenges, some present risks that designers and deployers alike must address to avoid undesirable outcomes to individuals and society. %\vspace{1.5mm}
 	
 	\section{Intellectual Challenges for the Autonomous Systems Community}\label{as-challenges}
-	We now discuss open research questions, termed intellectual challenges, related to specifying for trustworthiness in AS (see Fig.~\ref{Intellectual-challenges}). For each challenge, we aim to identify high priority research directions. 
+	%We now discuss open research questions, termed intellectual challenges, related to specifying for trustworthiness in AS (see Fig.~\ref{Intellectual-challenges}). For each challenge, we aim to identify high priority research directions. 
+In the UK Research and Innovation (UKRI) Trustworthy Autonomous Systems (TAS) programme, we conduct cross-disciplinary fundamental research to ensure that AS are safe, reliable, resilient, ethical, and trusted. 
+TAS is organised around six research projects called Nodes and a Hub, and each Node focuses on individual aspects of trust in AS, such as governance and regulation, functionality, resilience, trust, security, and verifiability. 
+Undertaking a community approach, this paper is a result of a workshop, which gathered a diverse group of high-quality researchers from all the Nodes and the Hub in September 2021. 
+Co-authored by a representative sample of the AS community in the UK, the goal of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. 
+Instead of dealing with a wide range of topics associated with the field, this paper focuses on several key open research problems and challenges that are currently being investigated within the different Nodes in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. 
+For instance, establishing environmental properties and real intent behind requirements in governance frameworks is a key research problem that is being investigated within the TAS Node in governance and regulation. 
+For each research question, termed intellectual challenge, we provide an overview, identify high priority directions, and suggest future directions.	
 	
 	\begin{figure*}
 		\centering
-		\includegraphics[width=0.95\textwidth]{figures/Intellectual-Challenges.png}
+		\includegraphics[width=0.85\textwidth]{figures/Intellectual-Challenges.png}%[width=0.95\textwidth]{figures/Intellectual-Challenges.png}
 		\caption{Intellectual challenges for the AS community.}
 		\label{Intellectual-challenges}
 	\end{figure*}		
@@ -831,6 +843,8 @@ There are also challenges for specifying security in the context of disaster rel
 	A case study addressing regulatory requirements on explainability of automated decisions in the context of a loan application~\cite{Huynh:DGOV21} provided foundations for a systematic approach. Within this context, explanations can act as external detective controls, as they provide
 	specific information to justify the decision reached and help the user take corrective actions~\cite{Tsakalakis:CLSR21}. But explanations can also act as internal detective controls, i.e. a mechanism for organisations to demonstrate compliance to the regulatory frameworks they have to implement. 
 	Both~\cite{Huynh:DGOV21} and~\cite{Tsakalakis:CLSR21} provide systematic questions that an explanation designer needs to consider: What is the purpose of an explanation? What is the audience of an explanation? What is the information that it should contain? However, to adequately address these questions, explainability should not be seen as an after-thought, but as an integral part of the specification and design of a system, leading to explainability requirements to be given the same level of importance as all other aspects of a system. 
+	
+	The study and design of autonomous systems include many facets: not only black-box or grey-box AI systems, but also the various software and hardware components of the system, the curation and cleansing of datasets used for training and validation, the governance of such systems, their user interface and crucially the users of such systems with a view of ensuring that they do not harm but provide benefits to these users and society in general. There are typically a range of stakeholders involved, from the designers of the systems, to their hosts and/or owners, their users (consumers and operators), third-parties and increasingly regulators. In this context, many questions related to trustworthy autonomous systems (such as what is an actual explanation and how should an explanation be constructed? What is the purpose of an explanation? What is the audience of an explanation? What is the information that it should contain?) have to be addressed holistically, it no longer suffices to focus on the explainability of a black-box decision system, its behaviour needs to be explained, with more and less details, in the context of the overall AS.	
 	
 	In the context of trustworthy AS, emerging AS regulations could be used to drive the socio-technical analysis of explainability. A particular emphasis would have to be on the autonomy and the hand-over between systems and humans that characterise trustworthy AS. The audience of explanations will also be critical, from users and consumers to businesses, organisations and regulators. Finally, considerations for post-mortem explanations, in case of crash or disaster situations involving AS, should lead to adequate architectural design for explainability.
 	
