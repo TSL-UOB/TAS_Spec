@@ -171,7 +171,6 @@
 	%% article.
 	\begin{abstract}
 As autonomous systems (AS) are becoming part of our daily lives, ensuring their trustworthiness is crucial. There are a number of techniques for demonstrating trustworthiness, and common to all these techniques is the need to formulate \emph{specifications}. The main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. Instead of dealing with a wide range of topics, we focus on several key open research problems that are being investigated within the UKRI Trustworthy Autonomous Systems (TAS) programme in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. 
-%We take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security, and other non-functional properties. 
 As another key contribution, we discuss specification challenges that are unique to key AS domains currently being investigated within our community. 
 This roadmap paper is a result of a workshop we conducted on specifying for trustworthiness in AS in September 2021.
 % Original reviewed abstract:		
@@ -268,15 +267,15 @@ This roadmap paper is a result of a workshop we conducted on specifying for trus
 	% New content - Dhaminda 2022/11/25	
 	In the UK Research and Innovation (UKRI) Trustworthy Autonomous Systems (TAS) programme, we conduct cross-disciplinary fundamental research to ensure that AS are safe, reliable, resilient, ethical, and trusted. 
 	TAS is organised around six research projects called Nodes and a Hub, and each Node focuses on individual aspects of trust in AS, such as governance and regulation, functionality, resilience, trust, security, and verifiability. 
-	Undertaking a community approach, this roadmap paper is a result of a workshop, which gathered a diverse group of high-quality researchers from all the Nodes and the Hub in September 2021. 
-	
-	Co-authored by a representative sample of the AS community in the UK, the main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. 
-	We take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties that contribute to trustworthiness of AS. 
+
+	Undertaking a community approach, this roadmap paper is a result of a workshop, which gathered a diverse group of high-quality researchers from all the TAS Nodes and the Hub in Sept. 2021. Co-authored by a representative sample of the AS community in the UK, the main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. 
+	We take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security, and other non-functional properties that contribute to trustworthiness of AS. 
 	Also, we intentionally leave the discussion on the formalisation of these specifications for the future, when understanding of what is required to specify for trustworthiness is more mature.	
 	As another key contribution, we discuss specification challenges that are unique to a representative set of AS domains currently being investigated within our community. 
 	%Instead of dealing with a wide range of topics associated with the field, this paper focuses on several key open research problems and challenges that are currently being investigated within the different Nodes of the UKRI Trustworthy Autonomous Systems (TAS) programme in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. 
 	%This roadmap paper is a result of a workshop we conducted on specifying for trustworthiness in AS which took place in September 2021.
-		
+	
+	In order to motivate and present a set of research challenges associated with specifying for trustworthiness in AS, this paper is divided into two parts. Section~\ref{as-domains} discusses a number of AS domains, each with its unique specification challenges. Section~\ref{as-challenges} presents several key open research problems that are currently being investigated within our community. Finally, Section~\ref{conclusions} summarises our findings.
 	%
 	%	In this paper, we explore what it means to specify for trustworthiness, considering a number of AS domains, each with its unique specification challenges. We then present a set of intellectual challenges for the AS community comprising both academia and industry, specifically focusing on specification for trustworthy AS.
 	%%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -406,7 +405,7 @@ The specific challenge here is how to specify with respect to `black box' models
 \begin{table}
 	\caption{AS domains and their specification challenges.} \label{AS-challenges}   
 	\vspace{-4mm}
-	\begin{tabular}[width=0.4\textwidth]{ |p{1.22cm}||p{1.2cm}|p{6cm}| } 
+	\begin{tabular}[width=0.4\textwidth]{ |p{1.22cm}|p{1.2cm}|p{6cm}| } 
 		\hline
 		\textbf{Class} & \textbf{Domain} & \textbf{Specification Challenge/s} \\
 		\hline
@@ -650,7 +649,7 @@ Many of the specification challenges discussed below are shared by systems such 
 	When AS operate in uncontrolled environments, where there is a need for autonomy, learning and adaptation, the need for runtime V\&V emerges. 
 	There, a significant challenge is finding rigorous techniques for the specification and V\&V of safety-critical AS where requirements are often vague, flexible and may contain uncertainty and fuzziness. 
 	V\&V at design time can only provide a partial solution, and more research is needed to understand how best to specify and verify learning and adaptive systems by combining design time with runtime techniques. 
-	Finally, identifying the design principles that enable V\&V of AS is a key pre-requisite to promote verifiability to a first-class design goal alongside functionality, safety, security and performance.
+	Finally, identifying the design principles that enable V\&V of AS is a key pre-requisite to promote verifiability to a first-class design goal alongside functionality, safety, security, and performance.
 	
 	% Jan Ringert and Mohammad Mousavi's edited version of Dhaminda's and Kerstin's version:
 	%In order to provide holistic and verification results for an autonomous system, different aspects of the system design need to be modelled and their interactions need to be analysed. These aspects are heterogeneous in nature and involve diverse domain abstractions. Hence, an autonomous system’s specification should accommodate this heterogeneity and support the diverse domain abstraction. Ideally, such abstractions should be captured in notations that are most natural to domain experts. In addition to providing a rich and diverse specification framework, the underlying verification framework should connect these diverse domain abstractions and should be able to analyse their interaction. This is a key challenge in specification for verifiability in autonomous systems.   
@@ -904,7 +903,7 @@ Many of the specification challenges discussed below are shared by systems such 
 	
 	
 	\section{Summary and Conclusions}\label{conclusions}
-	As AS are becoming part of our daily lives and interacting more closely with humans, we need to build systems worthy of trust regarding safety, security and other non-functional properties. In this paper we have first examined AS domains of different levels of maturity and then identified their specification challenges and related research directions. 
+	As AS are becoming part of our daily lives and interacting more closely with humans, we need to build systems worthy of trust regarding safety, security, and other non-functional properties. In this paper we have first examined AS domains of different levels of maturity and then identified their specification challenges and related research directions. 
 	One of these challenges is the formalisation of knowledge easily grasped by humans so that it becomes interpretable by machines. Prominent examples include the specification of driving regulations for AVs, and the specification of human knowledge expertise in the context of AI-based medical diagnostics. 
 	%
 	How to specify and model human behaviour, intent and mental state is a further challenge that is common to all domains where humans interact closely with AS, such as in human-robot collaborative environments as found in smart manufacturing. 
