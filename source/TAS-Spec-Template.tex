@@ -170,9 +170,10 @@
 	%% The abstract is a short summary of the work to be presented in the
 	%% article.
 	\begin{abstract}
-As autonomous systems (AS) are becoming part of our daily lives, ensuring their trustworthiness is crucial. There are a number of techniques for demonstrating trustworthiness, and common to all these techniques is the need to formulate \emph{specifications}. The main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. Instead of dealing with a wide range of topics, we focus on several key open research problems that are being investigated within the different Nodes of the UKRI Trustworthy Autonomous Systems (TAS) programme in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. 
+As autonomous systems (AS) are becoming part of our daily lives, ensuring their trustworthiness is crucial. There are a number of techniques for demonstrating trustworthiness, and common to all these techniques is the need to formulate \emph{specifications}. The main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. Instead of dealing with a wide range of topics, we focus on several key open research problems that are being investigated within the UKRI Trustworthy Autonomous Systems (TAS) programme in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. 
 %We take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security, and other non-functional properties. 
-As another key contribution, we discuss specification challenges that are unique to key AS domains currently being investigated within our community. This roadmap paper is a result of a workshop we conducted on specifying for trustworthiness in AS in September 2021.
+As another key contribution, we discuss specification challenges that are unique to key AS domains currently being investigated within our community. 
+This roadmap paper is a result of a workshop we conducted on specifying for trustworthiness in AS in September 2021.
 % Original reviewed abstract:		
 %		As autonomous systems are becoming part of our daily lives, ensuring their trustworthiness is crucial. 
 %		There are a number of techniques for demonstrating trustworthiness. 
@@ -242,56 +243,46 @@ As another key contribution, we discuss specification challenges that are unique
 	\emph{Trust} may vary, as it can be gained and lost over time. Different research disciplines define trust in different ways. This article focuses on the notion of trust that concerns the relationship between humans and AS. 
 	AS are considered \emph{trustworthy} when the design, engineering, and operation of these systems generate positive outcomes and mitigate outcomes which can be harmful~\cite{Naiseh2022}.
 	Trustworthiness of AS can be dependent on many factors such as: (i) explainability, accountability and understandability to different users; (ii) robustness of AS in dynamic and uncertain environments; (iii) assurance of their design and operation through verification and validation (V\&V) activities; (iv) confidence in their ability to adapt their functionality as required; (v) security against attacks on the systems, users, and deployed environment; (vi) governance and regulation of their design and operation; and (vii) consideration of ethics and human values in their deployment and use~\cite{Naiseh2022}. 
-	
-	In the UK Research and Innovation (UKRI) Trustworthy Autonomous Systems (TAS) programme, we conduct cross-disciplinary fundamental research to ensure that AS are safe, reliable, resilient, ethical, and trusted. 
-	TAS is organised around six research projects called Nodes and a Hub, and each Node focuses on individual aspects of trust in AS, such as governance and regulation, functionality, resilience, trust, security, and verifiability. 
-	
+		
 	There are various techniques for demonstrating trustworthiness of AS, such as synthesis, formal verification at design time, runtime verification or monitoring, and test-based methods. 
 	But, common to all these techniques is the need to formulate \emph{specifications}. 	
 	According to the ISO standard for systems and software engineering vocabulary~\cite{ISO24765:2017}, a \emph{specification} is a detailed formulation that provides a definitive description of a system for the purpose of developing or validating the system. 
-	
+
+% Reviewed version:	
+%	Writing specifications that inspire trust is challenging~\cite{Kress-Gazit2021}. 
+%	A human may trust an AS to perform its actions, if it demonstrably acts in an effective and safe manner. 
+%	Thus, the AS not only needs to be safe and effective, but also needs to be perceived as such by humans. 
+%	%
+%	In the same manner, in human-robot interaction, it is equally important to ensure that the AS can trust humans. 
+%	%	
+%	To address this, specifications will need to go beyond typical functionality and safety aspects. Thus, in this context, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties that contribute to trustworthiness of AS. 
+%	Also, we intentionally leave the discussion on the formalisation of these specifications for the future, when understanding of what is required to specify for trustworthiness is more mature.
+
 	Writing specifications that inspire trust is challenging~\cite{Kress-Gazit2021}. 
 	A human may trust an AS to perform its actions, if it demonstrably acts in an effective and safe manner. 
 	Thus, the AS not only needs to be safe and effective, but also needs to be perceived as such by humans. 
 	%
 	In the same manner, in human-robot interaction, it is equally important to ensure that the AS can trust humans. 
 	%	
-	To address this, specifications will need to go beyond typical functionality and safety aspects. Thus, in this context, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties that contribute to trustworthiness of AS. 
+	To address this, specifications will need to go beyond typical functionality and safety aspects. 	
+	Thus, in this context, we take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security and other non-functional properties that contribute to trustworthiness of AS. 
 	Also, we intentionally leave the discussion on the formalisation of these specifications for the future, when understanding of what is required to specify for trustworthiness is more mature.
-	
-	% New content 
-Undertaking a community approach, this paper is a result of a workshop, which gathered a diverse group of high-quality researchers from all the Nodes and the Hub in September 2021. 
-Co-authored by a representative sample of the AS community in the UK, the main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. Instead of dealing with a wide range of topics associated with the field, this paper focuses on several key open research problems and challenges that are currently being investigated within the different Nodes of the UKRI Trustworthy Autonomous Systems (TAS) programme in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. As another key contribution, we discuss specification challenges that are unique to a representative set of AS domains currently being investigated within our community. This roadmap paper is a result of a workshop we conducted on specifying for trustworthiness in AS which took place in September 2021.
-	
+
+	% New content - Dhaminda 2022/11/25	
+	In the UK Research and Innovation (UKRI) Trustworthy Autonomous Systems (TAS) programme, we conduct cross-disciplinary fundamental research to ensure that AS are safe, reliable, resilient, ethical, and trusted. 
+	TAS is organised around six research projects called Nodes and a Hub, and each Node focuses on individual aspects of trust in AS, such as governance and regulation, functionality, resilience, trust, security, and verifiability. 
+	Undertaking a community approach, this roadmap paper is a result of a workshop, which gathered a diverse group of high-quality researchers from all the Nodes and the Hub in September 2021. 
+	Co-authored by a representative sample of the AS community in the UK, the main contribution of this roadmap paper is to go beyond summarising the current state-of-the-art and discussing its limitations, by identifying key challenges for specifying for trustworthiness in AS. 
+	As another key contribution, we discuss specification challenges that are unique to a representative set of AS domains currently being investigated within our community. 
+	%Instead of dealing with a wide range of topics associated with the field, this paper focuses on several key open research problems and challenges that are currently being investigated within the different Nodes of the UKRI Trustworthy Autonomous Systems (TAS) programme in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. 
+	%This roadmap paper is a result of a workshop we conducted on specifying for trustworthiness in AS which took place in September 2021.
+		
 	%
-%	In this paper, we explore what it means to specify for trustworthiness, considering a number of AS domains, each with its unique specification challenges. We then present a set of intellectual challenges for the AS community comprising both academia and industry, specifically focusing on specification for trustworthy AS.
+	%	In this paper, we explore what it means to specify for trustworthiness, considering a number of AS domains, each with its unique specification challenges. We then present a set of intellectual challenges for the AS community comprising both academia and industry, specifically focusing on specification for trustworthy AS.
 	%%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
 	\section{Autonomous Systems Domains and their Specification Challenges}\label{as-domains}
 In this paper, by taking inspiration from \cite{Schneiders2022}, we classify the AS domains based on two criteria: the number of autonomous agents (single or multiple), and whether there are humans involved in the interaction. Accordingly, typical domains of AS can take one of four forms: (i) a single autonomous agent (e.g. automated driving, UAV); (ii) a group of autonomous agents (e.g. swarms); (iii) an autonomous agent with a human (e.g. AI in healthcare, human-robot interaction); and (iv) a group of autonomous agents with humans (e.g. emergency situations and disaster relief). First and foremost, this exercise is not intended to be exhaustive. We now discuss specification challenges of a representative set of domains which are being investigated within our community in TAS (see Table.~\ref{AS-challenges}). 
-%\footnotesize
-%\begin{center}
-%	\begin{table*}
-%	\begin{tabular}{ |p{1.6cm}||p{1.5cm}|p{15cm}| } 
-%			\hline
-%			\textbf{Classification} & \textbf{Domain} & \textbf{Specification Challenges} \\
-%			\hline
-%			\multirow{2}{1.6cm}{Single Autonomous Agent} & \multirow{2}{1cm}{Automated Driving} & How to address the lack of machine-readable specifications that formally express acceptable driving behaviour? \\ \cline{3-3} & & How to specify the actions of other road users? \\ \cline{2-3}
-%			& UAV & How to specify how the UAV should deal with situations that go beyond the limits of its training? \\ 
-%			\hline
-%			Multiple Autonomous Agents & Swarms & How to specify the emergent behaviour of a swarm that is a consequence of the interaction of individual agents with each other and the environment? \\
-%			\hline
-%			\multirow{2}{1.6cm}{An Autonomous Agent with a Human} 
-%			& \multirow{3}{1.5cm}{AI in Healthcare} & How to specify `black box' models? \\ \cline{3-3} & & What is the role of explainability and faithfulness of interpretation of semantics? \\ \cline{3-3}& & What is the role of pre-trained models in pipelines? \\ \cline{2-3}
-%			& \multirow{2}{1.5cm}{Human-Robot Interaction} & How to specify the perceptual, reasoning and behavioural processes of robot systems? \\ \cline{3-3} & & How to infer human mental states interactively? \\ \cline{2-3}
-%			\hline
-%			\multirow{2}{1.6cm}{Multiple Autonomous Agents with Humans} & Emergency Situations  & How to specify collaboration between autonomous agents and different human agents in emergency settings? \\ \cline{2-3}
-%			& Disaster Relief & How to specify security in disaster relief settings where large amounts of data needs to be collected, shared and stored? \\ 
-%			\hline
-%		\end{tabular}
-%	\end{table*}
-%\end{center}
-%\normalsize	
 %	In this section, we discuss the specification challenges of a number of different AS domains (see Fig.~\ref{AS-challenges}).	
 %	\begin{figure*}
 %		\centering
@@ -312,15 +303,15 @@ In this paper, by taking inspiration from \cite{Schneiders2022}, we classify the
 	Secondly, driving in urban environments is an intrinsically interactive activity, involving several actors whose internal states may be opaque to the automated vehicle. As an example, the UK Highway Code asks drivers to not ``pull out into traffic so as to cause another driver to slow down''. 
 	%
 	Without further constraint on what the other drivers could possibly do, specifying appropriate behaviour becomes difficult, and any assumptions made in that process would call into question the safety of the overall system when those assumptions are violated. 
-	Thus, two key challenges in the area of automated driving are the lack of machine-readable specifications that formally express acceptable driving behaviour and the need to specify the actions of other road users (see also Fig.~\ref{AS-challenges}). To some extent, these issues arise in all open environments. However, in autonomous driving, the task is so intricately coupled with the other actors that even the default assumptions may not be entirely clear, and the relative variation in behaviour due to different modelling assumptions could be qualitatively significant.
+	Thus, two key challenges in the area of automated driving are the lack of machine-readable specifications that formally express acceptable driving behaviour and the need to specify the actions of other road users (see also Table.~\ref{AS-challenges}). To some extent, these issues arise in all open environments. However, in autonomous driving, the task is so intricately coupled with the other actors that even the default assumptions may not be entirely clear, and the relative variation in behaviour due to different modelling assumptions could be qualitatively significant.
 	
 	%Original contribution by the author/s:
 	%Autonomous driving refers to a class of autonomous systems that vary in the extent to which they make decisions independently (SAE J3016 standard taxonomy). The higher levels of autonomy, levels 3-5, refer to functionality ranging from traffic jam chauffeur to completely hand-free driving in all conditions. Despite an explosion of activity in this domain in recent years, the majority of systems being considered for deployments depend on careful delineation of the operating design domain (ODD) to make the specification of appropriate behaviour tractable. Even so, the specification problem remains difficult for a number of reasons. Firstly, the traffic regulations which were originally written in plain English, assuming human interpretation rather than machine implementation. So, although the highway codes are written with a view to legal enforcement, they are not formal specifications. This means that the code contains many exceptions, rule conflicts and guidance of an `open texture', requiring interpretation in context. An example might be the specification of ``right of way''. Secondly, driving in urban environments is an intrinsically interactive and multi-agent activity, involving several actors whose internal states may be opaque to the autonomous vehicle. As an example, the UK highway code asks drivers to not ``pull out into traffic so as to cause another driver to slow down''. Without further constraint on what the other drivers could possibly do, specifying appropriate behaviour would be difficult, and any assumptions made in that process would call into question the safety of the overall system when those assumptions are violated. 
 
-\begin{table}
-	\caption{AS domains and their specification challenges.} \label{AS-challenges}   
-	\includegraphics[width=0.5\textwidth]{figures/Domains.png}
-\end{table} 
+%\begin{table}
+%	\caption{AS domains and their specification challenges.} \label{AS-challenges}   
+%	\includegraphics[width=0.5\textwidth]{figures/Domains.png}
+%\end{table} 
 
 %	\begin{figure}
 %	\centering
@@ -336,7 +327,7 @@ An uncrewed aerial vehicle (UAV) or drone is a type of aerial vehicle that is ca
 For instance, in parcel delivery using UAVs in urban environments, there can be uncertain flight conditions (e.g.\ wind gradients), and highly dynamic and uncertain airspace (e.g.\ other UAVs in operation). 
 Recent advances in machine learning offer the potential to increase the autonomy of UAVs in uncertain environments by allowing them to learn from experience. 
 For example, machine learning can be used to enable UAVs to learn novel manoeuvres to achieve perched landings in uncertain windy conditions~\cite{Fletcher2021}. 
-In these contexts, a key challenge is how to specify how the system should deal with situations that go beyond the limits of its training (Fig.~\ref{AS-challenges}).
+In these contexts, a key challenge is how to specify how the system should deal with situations that go beyond the limits of its training (Table.~\ref{AS-challenges}).
 
 %Original contribution by the author/s:
 %A uncrewed aerial vehicle (UAV) or drone is a type of aerial vehicle that is capable of autonomous flight without a pilot on board.
@@ -389,7 +380,7 @@ This emergent functionality poses a challenge for specification. The properties 
 %The functionality of a swarm is emergent (e.g. aggregation, coherent ad hoc network, taxis, obstacle avoidance and object encapsulation \cite{Winfield2006}), and evolves based on the capabilities of the robots and the numbers of robots used. 
 %The overall desired behaviours of a swarm are not explicitly engineered in the system, but they are an emergent consequence of the interaction of individual agents with each other and the environment.
 %This evolving functionality across many individual robots poses a challenge in how to specify a swarm that is safe, trustworthy by design, useful, and acceptable to users?
-%%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+%%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \begin{itemize}[leftmargin=0.5cm]
 	\item \textbf{Human-Robot Interaction}%{Trustworthy Interactive Robot Systems}
 \end{itemize}
@@ -400,13 +391,38 @@ While several human-in-the-loop systems employ mental state inference, the neces
 
 %Original contribution by the author/s:
 %Trustworthy Interactive Robot Systems aim to complete their tasks while explicitly considering states, goals and intentions of the human agents they collaborate with, and aiming to calibrate the trust humans have for them to an appropriate level.  This form of human-in-the-loop real-time interaction is required in several application domains including assistive robotics for activities of daily living \cite{GaoEtAl2020}, healthcare robotics, shared control of smart mobility devices \cite{SohDemiris2015}, and collaborative manufacturing among others. Most specification challenges arise from the need to provide specifications for the perceptual, reasoning and behavioural processes of robot systems that will need to acquire models of, and deal with, the high variability exhibited in human behaviour. The necessity to infer human internal states (such as beliefs and intentions\cite{Demiris2007}) interactively, typically through sparse and/or sensor data from multimodal interfaces, imposes further challenges for the principled incorporation of human factors and data-driven adaptation processes in robots operating in close proximity to humans, where safety and reliability are of particular importance. 
-
 %%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\footnotesize
+%\begin{center}
+\begin{table}
+	\caption{AS domains and their specification challenges.} \label{AS-challenges}   
+	\vspace{-4mm}
+	\begin{tabular}[width=0.4\textwidth]{ |p{1.22cm}||p{1.2cm}|p{6cm}| } 
+		\hline
+		\textbf{Class} & \textbf{Domain} & \textbf{Specification Challenge/s} \\
+		\hline
+		\multirow{2}{1.6cm}{Single Autonomous Agent} & \multirow{2}{1cm}{Automated Driving} & How to address the lack of machine-readable specifications that formally express acceptable driving behaviour? \\ \cline{3-3} & & How to specify the actions of other road users? \\ \cline{2-3}
+		& UAV & How to specify how the UAV should deal with situations that go beyond the limits of its training? \\ 
+		\hline
+		Multiple Autonomous Agents & Swarms & How to specify the emergent behaviour of a swarm that is a consequence of the interaction of individual agents with each other and the environment? \\
+		\hline
+		\multirow{2}{1.6cm}{An Autonomous Agent with a Human} 
+		& \multirow{3}{1.5cm}{AI in Healthcare} & How to specify `black box' models? \\ \cline{3-3} & & What is the role of explainability and faithfulness of interpretation of semantics? \\ \cline{3-3}& & What is the role of pre-trained models in pipelines? \\ \cline{2-3}
+		& \multirow{2}{1.5cm}{Human-Robot Interaction} & How to specify the perceptual, reasoning and behavioural processes of robot systems? \\ \cline{3-3} & & How to infer human mental states interactively? \\ \cline{2-3}
+		\hline
+		\multirow{2}{1.6cm}{Multiple Autonomous Agents with Humans} & Emergency Situations  & How to specify collaboration between autonomous agents and different human agents in emergency settings? \\ \cline{2-3}
+		& Disaster Relief & How to specify security in disaster relief settings where large amounts of data needs to be collected, shared and stored? \\ 
+		\hline
+	\end{tabular}
+\vspace{-4mm}
+\end{table}
+%\end{center}
+\normalsize	
 \begin{itemize}[leftmargin=0.5cm]
 	\item \textbf{AI in Healthcare}
 \end{itemize}
 Healthcare is a broad application domain which already enjoys the many benefits arising from the use of Artificial Intelligence (AI) and AI-enabled autonomy. This has ranged from more accurate and automated diagnostics, to a greater degree of autonomy in robot surgery, and entirely new approaches to drug discovery and design. The use of AI in medical diagnosis has advanced to an extent that in some settings, e.g. mammography screening, automated interpretation seems to match human expert performance in some trials. However, there remains a gap in test accuracy. It has been argued that the automated systems are not sufficiently specific to replace radiologist double reading in screening programmes~\cite{Freemann1872}. These gaps also highlight the main specification challenges in this domain. Historically, the human expertise in this domain has not been explicitly codified, so that it can be hard to enumerate desired characteristics. It is clear that the specifications must include notions of invariance to instrument and operator variations, coverage of condition and severity level, etc. Beyond that, the `semantics' of the biological features used to make fine determinations are subject to both ambiguity or informality, and variability across experts and systems. Moreover, the use of deep learning to achieve automated interpretation brings with it the need for explainability. This manifests itself in the challenge of guarding against `shortcuts'~\cite{degrave2021ai}, wherein the AI diagnostic system achieves high accuracy by exploiting irrelevant side variables instead of identifying the primary problem (e.g. radiographic COVID-19 detection using AI~\cite{degrave2021ai}). 
-The specific challenge here is how to specify with respect to `black box' models. In this regard, we can highlight the role of explainability and faithfulness of interpretation of semantics, and the role of pre-trained models in pipelines (see Fig.~\ref{AS-challenges}). 
+The specific challenge here is how to specify with respect to `black box' models. In this regard, we can highlight the role of explainability and faithfulness of interpretation of semantics, and the role of pre-trained models in pipelines (see Table.~\ref{AS-challenges}). 
 
 %Original contribution by the author/s:
 %Healthcare is a broad application domain which already enjoys the many benefits arising from the use of AI and AI-enabled autonomy. This has ranged from more accurate and automated diagnostics, to a greater degree of autonomy in robot surgery, and entirely new approaches to drub discovery and design. The use of AI in medical diagnosis has advanced to an extent that in some settings, e.g. mammography screening, automated interpretation seems to match human expert performance in some trials. However, there remains a gap in test accuracy, although it has been argued that the automated systems are not sufficiently specific to replace radiologist double reading in screening programmes \cite{Freemann1872}. These gaps also highlight the main specification challenges in this domain. Historically, the human expertise in this domain has not been explicitly codified, so that it can be hard to enumerate desired characteristics. It is clear that the specifications must include notions of invariance - to instrument and operator variations, coverage of condition and severity level, etc. Beyond that, the `semantics' of the biological features used to make fine determinations are subject to both ambiguity or informality, and variability across experts and systems. Moreover, the use of deep learning to achieve automated interpretation brings with it the challenges of explainability. This manifests itself in the challenge of guarding against `shortcuts' \cite{degrave2021ai}, wherein the AI system exploits irrelevant side variables to achieve high accuracy without solving the primary diagnostic problem. In response, some have argued for other forms of internal and external validation of the AI system based on current practice for evaluating performance and efficacy \cite{ghassemi2021false}. 
@@ -483,7 +499,7 @@ There are also challenges for specifying security in the context of disaster rel
 
 In this section, instead of dealing with a wide range of topics associated with the field, we focus on several key open research problems and challenges that are currently being investigated within the different Nodes in relation to governance and regulation, functionality, resilience, trust, security, and verifiability. 
 For instance, establishing environmental properties and real intent behind requirements in governance frameworks is a key research problem that is being investigated within the TAS Node in governance and regulation. 
-For each research question, termed intellectual challenge, we provide an overview, identify high priority directions, and suggest future directions.	
+For each research question, termed \emph{intellectual challenge}, we provide an overview, identify high priority directions, and suggest future directions.	
 	
 	\begin{figure*}
 		\centering
