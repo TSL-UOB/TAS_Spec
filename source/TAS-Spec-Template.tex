@@ -274,7 +274,7 @@ Engineering trustworthy and trusted AS involves different processes, technology,
 	%%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
 	\section{Autonomous Systems Domains and their Specification Challenges}\label{as-domains}
-	In this paper, by taking inspiration from~\cite{Schneiders2022}, we classify the AS domains based on two criteria: the number of autonomous agents (single or multiple), and whether humans are involved in the interaction. Accordingly, the typical domains of AS can take one of four forms: (i) a single autonomous agent (e.g. automated driving, UAV); (ii) a group of autonomous agents (e.g. swarms); (iii) an autonomous agent with a human (e.g. AI in healthcare, human–robot interaction); and (iv) a group of autonomous agents with humans (e.g. emergency situations and disaster relief). First and foremost, this exercise is not intended to be exhaustive. We now discuss the specification challenges of a representative set of domains which are being investigated within our community in TAS (see Table.~\ref{AS-challenges}). 
+	In this paper we classify AS domains based on two criteria: the number of autonomous agents (single or multiple), and whether humans are involved in the interaction, following from ~\cite{Schneiders2022}. Accordingly, the typical domains of AS can take one of four forms: (i) a single autonomous agent (e.g. automated driving, UAV); (ii) a group of autonomous agents (e.g. swarms); (iii) an autonomous agent with a human (e.g. AI in healthcare, human–robot interaction); and (iv) a group of autonomous agents with humans (e.g. emergency situations and disaster relief). We discuss the specification challenges involved with AS using illustrations from a representative set of domains, as being investigated within our community in TAS (see Table.~\ref{AS-challenges}), rather than attempting to cover all possible AS domains. 
 %
 %	In this section, we discuss the specification challenges of a number of different AS domains (see Fig.~\ref{AS-challenges}).	
 %	\begin{figure*}
@@ -287,7 +287,7 @@ Engineering trustworthy and trusted AS involves different processes, technology,
 	\begin{itemize}[leftmargin=0.5cm]
 		\item \textbf{Automated Driving} 
 	\end{itemize}
-	Automated driving (self-driving) refers to a class of AS that vary in the extent to which they make decisions independently (SAE J3016 standard taxonomy). The higher levels of autonomy, levels 3-5, refer to functionality ranging from traffic jam chauffeur to completely hands-free driving in all conditions. Despite an explosion of activity in this domain in recent years, the majority of systems being considered for deployments depend on careful delineation of the operation design domain (ODD) to make the specification of appropriate behaviour tractable. Even so, the specification problem remains difficult for a number of reasons. 
+	Automated driving (self-driving) refers to a class of AS that vary in the extent to which they make decisions independently (SAE J3016 standard taxonomy). The higher levels of autonomy, levels 3-5, refer to functionality ranging from traffic jam chauffeur to completely hands-free driving in all conditions. Despite an explosion of activity in this domain in recent years, the majority of systems being considered for deployments depend on careful delineation of the operation design domain to make the specification of appropriate behaviour tractable. Even so, the specification problem remains difficult for a number of reasons. 
 	%
 	Firstly, traffic regulations are written in natural language, ready for human interpretation. Although the highway code rules are intended for legal enforcement, they are not specifications that are suitable for machines. 
 	%
@@ -396,7 +396,7 @@ The specific challenge here is how to specify with respect to `black box' models
 	%%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 \footnotesize
 %\begin{center}
-\begin{table}
+\begin{table} % Shane - Is it possible to move this to the previoius page where it is first mentioned?
 	\caption{AS domains and their specification challenges.} \label{AS-challenges}   
 	\vspace{-4mm}
 	\begin{tabular}[width=0.4\textwidth]{ |p{1.22cm}|p{1.25cm}|p{5.7cm}| } 
@@ -477,8 +477,9 @@ There are also challenges for specifying security in the context of disaster rel
 %	In emergency and disaster settings, enhancing collaboration between autonomous agents and different human agents, and specifying human behaviour are demanding. 
 %	The high variability exhibited by human behaviour is a key challenge in interactive robot systems, while in healthcare, specifying with respect to black box models is challenging. 
 %	Meanwhile, in swarm robotics and UAVs, two key challenges are: specifying properties of emerging behaviour at the swarm level, and specifying how the system must handle situations that go beyond its training, respectively. 
-	
-	\noindent In addition, there is also a range of purely software-based AS, i.e. systems without physical embodiment. Besides the medical diagnostic tools already mentioned earlier under AI in healthcare, such AS are also sometimes used in justice for sentencing, in recruitment for filtering and shortlisting job applicants, and in education for proctoring, for marking and for personalising tuition. These systems are also routinely used in finance to make recommendations on investments and manage funds. In its proposed regulations for AI, the EU \cite{EU:2021} introduces a classification of such systems according to their risk levels. While many of these systems pose limited to no risk and can contribute to solving many societal challenges, some present risks that designers and deployers alike must address to avoid undesirable outcomes to individuals and society. %\vspace{1.5mm}
+
+ %Shane - I feel this paragraph doesn't fit in with the rest of the section and can be removed to reduce the overall page count.
+	%\noindent In addition, there is also a range of purely software-based AS, i.e. systems without physical embodiment. Besides the medical diagnostic tools already mentioned earlier under AI in healthcare, such AS are also sometimes used in justice for sentencing, in recruitment for filtering and shortlisting job applicants, and in education for proctoring, for marking and for personalising tuition. These systems are also routinely used in finance to make recommendations on investments and manage funds. In its proposed regulations for AI, the EU \cite{EU:2021} introduces a classification of such systems according to their risk levels. While many of these systems pose limited to no risk and can contribute to solving many societal challenges, some present risks that designers and deployers alike must address to avoid undesirable outcomes to individuals and society. %\vspace{1.5mm}
 	
 	\section{Intellectual Challenges for the Autonomous Systems Community}\label{as-challenges}
 	%We now discuss open research questions, termed intellectual challenges, related to specifying for trustworthiness in AS (see Fig.~\ref{Intellectual-challenges}). For each challenge, we aim to identify high priority research directions. 
