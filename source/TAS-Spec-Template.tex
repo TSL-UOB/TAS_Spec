@@ -298,7 +298,7 @@ As autonomous systems (AS) increasingly become part of our daily lives, ensuring
 	
 	Undertaking a community approach, this roadmap paper is the result of the ``Specifying for Trustworthiness'' workshop held during the TAS All Hands Meeting in September 2021. The workshop gathered a diverse group of researchers from all parts of the TAS programme. 
 	Co-authored by a representative sample of the AS community in the UK, in this paper, we highlight the specification challenges for AS with illustrations from a representative set of domains currently being investigated within our community. 
-	The main contribution of this roadmap paper is to identify key open research problems termed ``intellectual challenges'' that are involved with specifying for trustworthiness in AS that cut across domains, and are exacerbated by the inherent uncertainty involved with the environments in which AS need to operate. 
+	The main contribution of this roadmap paper is to identify key open research problems termed `intellectual challenges' that are involved with specifying for trustworthiness in AS that cut across domains, and are exacerbated by the inherent uncertainty involved with the environments in which AS need to operate. 
 	We take a broad view of specification, concentrating on top-level requirements including but not limited to functionality, safety, security, and other non-functional properties that contribute to the trustworthiness of AS. 
 	Also, we intentionally leave the discussion on the formalisation of these specifications for the future, when the understanding of what is required to specify for trustworthiness is more mature. 
 
@@ -316,7 +316,7 @@ As autonomous systems (AS) increasingly become part of our daily lives, ensuring
 	% REVIEWED version:	
 	%	In this paper, we explore what it means to specify for trustworthiness, considering a number of AS domains, each with its unique specification challenges. We then present a set of intellectual challenges for the AS community comprising both academia and industry, specifically focusing on specification for trustworthy AS.
 	%%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	\vspace{-4pt}
+	%\vspace{-4pt}
 	\section{Autonomous Systems Domains and their Specification Challenges}\label{as-domains}
 	In this paper we classify AS domains based on two criteria: the number of autonomous agents (single or multiple), and whether humans are involved in the interaction, following from ~\cite{Schneiders2022}. Accordingly, the typical domains of AS can take one of four forms: (i) a single autonomous agent (e.g. automated driving, UAV); (ii) a group of autonomous agents (e.g. swarms); (iii) an autonomous agent with a human (e.g. AI in healthcare, human–robot interaction); and (iv) a group of autonomous agents with humans (e.g. emergency situations and disaster relief). We discuss the specification challenges involved with AS using illustrations from a representative set of domains, as being investigated within our community in TAS (see Table~\ref{AS-challenges}), rather than attempting to cover all possible AS domains. 
 %
@@ -536,7 +536,8 @@ The specific challenge here is how to specify with respect to `black box' models
 
  %Shane - I feel this paragraph doesn't fit in with the rest of the section and can be removed to reduce the overall page count.
 	%\noindent In addition, there is also a range of purely software-based AS, i.e. systems without physical embodiment. Besides the medical diagnostic tools already mentioned earlier under AI in healthcare, such AS are also sometimes used in justice for sentencing, in recruitment for filtering and shortlisting job applicants, and in education for proctoring, for marking and for personalising tuition. These systems are also routinely used in finance to make recommendations on investments and manage funds. In its proposed regulations for AI, the EU \cite{EU:2021} introduces a classification of such systems according to their risk levels. While many of these systems pose limited to no risk and can contribute to solving many societal challenges, some present risks that designers and deployers alike must address to avoid undesirable outcomes to individuals and society. 
-	
+
+%	\vspace{-3.8pt}	
 	\section{Intellectual Challenges for the Autonomous Systems Community}\label{as-challenges}
 	%We now discuss open research questions, termed intellectual challenges, related to specifying for trustworthiness in AS (see Fig.~\ref{Intellectual-challenges}). For each challenge, we aim to identify high priority research directions. 
 %In the UK Research and Innovation (UKRI) Trustworthy Autonomous Systems (TAS) programme, we conduct cross-disciplinary fundamental research to ensure that AS are safe, reliable, resilient, ethical, and trusted. 
@@ -548,22 +549,25 @@ The specific challenge here is how to specify with respect to `black box' models
 %For each research question, termed intellectual challenge, we provide an overview, identify high priority directions, and suggest future directions.	
 
 % Dhaminda: to address review #18, #8, AE #4. Considered comments by co-authors.
-The preceding section discussed specification challenges that are unique to a representative set of domains investigated within our community. Now we discuss ten ``intellectual challenges'' that are involved with specifying for trustworthiness in AS that can cut across domains, and are exacerbated by the inherent uncertainty involved with the environments in which AS need to operate. 
+The preceding section discussed specification challenges that are unique to a representative set of domains investigated within our community. Now we discuss ten `intellectual challenges' that are involved with specifying for trustworthiness in AS that can cut across domains, and are exacerbated by the inherent uncertainty involved with the environments in which AS need to operate. 
 %With consideration of the resilience, trust, functionality, verifiability, security, and governance and regulation of AS, these challenges were identified out of simulating discussions among the speakers and participants of the breakout groups at the ``Specifying for Trustworthiness'' workshop. 
 These challenges were identified out of simulating discussions among the speakers and participants of the breakout groups at the ``Specifying for Trustworthiness'' workshop. 
 
 The intellectual challenges 1--6 are in the six \emph{focus areas} of trust in AS (i.e. resilience, trust, functionality, verifiability, security, and governance and regulation), as identified by their respective speakers.
+Meanwhile, the remaining four challenges have either a \emph{common} focus (7) across the TAS programme, or they are \emph{emerging} in nature (8--10) (see Fig.~\ref{Intellectual-challenges}). 
+For each challenge we provide an overview, identify high-priority research questions, and suggest future directions.
+%
 %The six intellectual challenges (1--6) were identified by the speakers in their respective focus areas of trust in AS, i.e. resilience, trust, functionality, verifiability, security, and governance and regulation.  
 %The six intellectual challenges (1--6) were identified by the speakers in their respective focus areas of resilience, trust, functionality, verifiability, security, and governance and regulation of AS. 
 %The six intellectual challenges (1––3, 5, 7––9) were identified by the invited speakers from the six Nodes, in their respective focus areas of resilience, trust, functionality, verifiability, security, and governance and regulation of AS. 
-Meanwhile, the remaining four challenges have either a \emph{common} focus (7) across the TAS programme, or they are \emph{emerging} in nature (8--10) (see Fig.~\ref{Intellectual-challenges}). %as identified during the breakout sessions. %challenges were identified during the breakout sessions. 
+%as identified during the breakout sessions. %challenges were identified during the breakout sessions. 
 %The invited speakers from the six Nodes identified six intellectual challenges (1––3, 5, 7––9), as investigated in their respective focus areas of resilience, trust, functionality, verifiability, security, and governance and regulation of AS. 
 %discussions in the breakout session identified three more emerging challenges which can cross-cut between the Nodes.
 %which are  investigated within their nodes.
 %As currently being investigated, the intellectual challenges 1––6 were identified by the invited speakers from each Node in ... as  Nodes in . 
 %The last three challenges were identified during the breakout sessions of the Workshop. 
-For each challenge we provide an overview, identify high-priority research questions, and suggest future directions.
-
+%
+%
 %1–7 Intellectual Challenges:
 %During the WS all seven speakers, each representing a Node and the Hub, were asked to present unresolved specification challenges within their Node / Hub, and, where applicable, its use cases. 
 %
@@ -577,8 +581,9 @@ For each challenge we provide an overview, identify high-priority research quest
 
 % Review #3: Amel Bennaceur
 % Amel, I have integrated your response here. Please check whether you are fine with it here. Dhaminda 2022-11-26.
-Many of the specification challenges discussed below are shared by systems such as multi-agents systems, cyber-physical-social systems, or AI-based systems. Autonomy is an important characteristic of these systems, and so is the need for trustworthiness. Specification challenges have also received a lot of attention in ‘non-AS’, e.g. safety-critical systems. Yet, many of the challenges are exacerbated in AS because of the inherent uncertainty of their operating environment: they are long-lived, continuously running systems that interact with the environment and humans in ways that can hardly be fully anticipated at design time and continuously evolve at runtime. In other words, while those challenges are not specific to AS, AS exacerbate them.
-	
+Many of the specification challenges discussed below are shared by systems such as multi-agents systems, cyber-physical-social systems, or AI-based systems. Autonomy is an important characteristic of these systems, and so is the need for trustworthiness. Specification challenges have also received a lot of attention in ‘non-AS’, e.g. safety-critical systems. Yet, many of the challenges are exacerbated in AS because of the inherent uncertainty of their operating environment: they are long-lived, continuously running systems that interact with the environment and humans in ways that can hardly be fully anticipated at design time and continuously evolve at runtime. In other words, while those challenges are not specific to AS, AS exacerbate them. 
+
+
 %	\begin{figure*}
 %		\centering
 %		\includegraphics[width=0.85\textwidth]{figures/Intellectual-Challenges.png}%[width=0.95\textwidth]{figures/Intellectual-Challenges.png}
@@ -849,7 +854,7 @@ Initial specifications of the AS may no longer reflect the desired properties of
 % new part on trustworthy AS emphasis
 While any non-trivial system requires evolution and maintenance~\cite{Mens08}, some challenges are exacerbated for trustworthy AS. As an example, observed changes in trust towards the AS might require changes to behaviour specifications, even if the AS operations are perfectly safe. Conversely, required changes to specifications might have negative impacts on future trust towards the AS. New methods will be required to efficiently deal with the various dimensions of trust in evolution of specifications.
 
-One dimension of trust relates to transparency towards developers of AS specifications. Approaches that compare evolving specifications on a syntactical level, as currently done for code, or on based on metrics, as currently done for AI models, are likely no longer sufficient for effective maintenance. Analysis will need to scale beyond syntactic differences to include also semantic differences~\cite{MaozR18} and allow for efficient analysis of the impact of changes on the level of systems rather than artefacts. New techniques to compare specifications of AS are required that identify, present, and explain differences as well as their potential impact on the system's trustworthiness.
+One dimension of trust relates to transparency towards developers of AS specifications. Approaches that compare evolving specifications on a syntactical level as currently done for code, or based on metrics as currently done for AI models, are unlikely to be sufficient for effective maintenance. Analysis will need to scale beyond syntactic differences to include also semantic differences~\cite{MaozR18} and allow for efficient analysis of the impact of changes on the level of systems rather than artefacts. New techniques to compare specifications of AS are required that identify, present, and explain differences as well as their potential impact on the system's trustworthiness.
 
 %Original contribution by the author/s:
 %Every non-trivial system undergoes changes over its lifetime. The evolution of trusted autonomous systems may concern changes of the requirements of their functional or non-functional properties, changes of the environment that it operates in, and changes in the trust of users towards the system. Initial specifications of the system may no longer reflect the desired properties of the system and fail to represent its actual environment.
@@ -871,22 +876,35 @@ One dimension of trust relates to transparency towards developers of AS specific
 		\setcounter{enumi}{8}
 	\item \textbf{How to address incompleteness of specifications of AS?}
 \end{enumerate}
-Incompleteness is a common property of specifications. Only the use of suitable abstractions allows for coping with the complexity of systems~\citep{Kramer07}. However, there is an important difference in the incompleteness introduced by abstractions, the process of eliminating unnecessary detail to focus e.g.\ on behavioural, structural, or security-related aspects of a system, and the incompleteness related to the purpose of the specification, i.e.\ the faithful representation of the system in an abstraction.
+Incompleteness is a common property of specifications. Only the use of suitable abstractions allows for coping with the complexity of systems~\citep{Kramer07}. However, there is an important difference in the incompleteness introduced by abstractions, the process of eliminating unnecessary detail to focus, e.g.\ on behavioural, structural, or security-related aspects of a system, and the incompleteness related to the purpose of the specification, i.e.\ the faithful representation of the system in an abstraction.
 
 On the one hand, if the purpose of creating and analysing a specification is to examine an AS and to learn about possible constraints, then incompleteness of the AS representation in the specification is important as it allows for obtaining feedback with low investment in specification development~\cite{Jackson19}, e.g. for the reduction of ambiguities. 
 %
-On the other hand, if the purpose of the specification is to prove a property, then incompleteness of the AS representation may lead to incorrect analyses results manifesting in false positives or false negatives. False positives are often treated by adding the missing knowledge to the specification of AS. For example, verifying the specification of an infusion pump reported a false positive due to (incompleteness)~\cite{HarrisonMCC17}. The specification had to be changed to a ``much more complex''~\cite{HarrisonMCC17} one to remove the false positive.
+On the other hand, if the purpose of the specification is to prove a property, then incompleteness of the AS representation may lead to incorrect analyses results manifesting in false positives or false negatives. False positives are often treated by adding the missing knowledge to the specification of AS. For example, verifying the specification of an infusion pump reported a false positive due to incompleteness~\cite{HarrisonMCC17}. The specification had to be changed to a ``much more complex''~\cite{HarrisonMCC17} one to remove the false positive.
 
 One way of addressing incompleteness are partial models~\cite{WeiGC11,FamelisSC12,FischbeinDBCU12} where models and analyses are extended with modalities qualifying their completeness. The various approaches provide analysis of either syntactic properties~\cite{FamelisSC12} or behaviour refinements~\cite{WeiGC11,FischbeinDBCU12}. Combinations and extensions to rich specification languages for AS are part of this research challenge.
 
-In the context of synthesis rather than verification the incompleteness of AS specifications can manifest itself in the construction of biased or incorrect systems. 
-%Potentially, synthesis may simply fail if necessary assumptions on the environment are missing. 
-%
-As an example, consider the specification of a robot operating in a warehouse~\cite{MaozR18robot}. The specification requires that the robot never hit a wall. With no assumptions about the environment, the synthesizer would take the worst-case view, i.e.\ walls move and hit the robot, and consequently report that no implementation exists. Adding the assumption that walls cannot changes the outcome of the synthesis. 
-%Similarly, without this assumption, a false positive result can also be expected during verification. 
+In addition to analysis tasks, specifications are also used in synthesis tasks, and this is where the incompleteness of AS specifications can manifest itself in the construction of biased or incorrect systems. 
+As an example, consider the specification of a robot operating in a warehouse~\cite{MaozR18robot}. The specification requires that the robot never hits a wall. With no assumptions about the environment, the synthesiser would take the worst-case view, i.e.\ walls move and hit the robot, and consequently report that the specification is not realisable and no implementation exists. Adding the assumption that walls cannot move as an environment constraint changes the outcome of the synthesis. 
 Interestingly, when formulating requirements for humans, common sense allows us to cope with this type of incompleteness. 
 %
 However, the automated analysis of specifications for AS brings with it the challenge of identifying and handling (all) areas of incompleteness.
+
+% Jan Ringert's version addressing Reviewer comments on 28/11/2022 and 23/11/2022 :
+%Incompleteness is a common property of specifications. Only the use of suitable abstractions allows for coping with the complexity of systems~\citep{Kramer07}. However, there is an important difference in the incompleteness introduced by abstractions, the process of eliminating unnecessary detail to focus e.g.\ on behavioural, structural, or security-related aspects of a system, and the incompleteness related to the purpose of the specification, i.e.\ the faithful representation of the system in an abstraction.
+%
+%On the one hand, if the purpose of creating and analysing a specification is to examine an AS and to learn about possible constraints, then incompleteness of the AS representation in the specification is important as it allows for obtaining feedback with low investment in specification development~\cite{Jackson19}, e.g. for the reduction of ambiguities. 
+%%
+%On the other hand, if the purpose of the specification is to prove a property, then incompleteness of the AS representation may lead to incorrect analyses results manifesting in false positives or false negatives. False positives are often treated by adding the missing knowledge to the specification of AS. For example, verifying the specification of an infusion pump reported a false positive due to (incompleteness)~\cite{HarrisonMCC17}. The specification had to be changed to a ``much more complex''~\cite{HarrisonMCC17} one to remove the false positive.
+%
+%One way of addressing incompleteness are partial models~\cite{WeiGC11,FamelisSC12,FischbeinDBCU12} where models and analyses are extended with modalities qualifying their completeness. The various approaches provide analysis of either syntactic properties~\cite{FamelisSC12} or behavior refinements~\cite{WeiGC11,FischbeinDBCU12}. Combinations and extensions to rich specification languages for AS are part of this research challenge.
+%
+%In the context of synthesis rather than verification the incompleteness of AS specifications can manifest itself in the construction of biased or incorrect systems. 
+%%
+%As an example, consider the specification of a robot operating in a warehouse~\cite{MaozR18robot}. The specification requires that the robot never hit a wall. With no assumptions about the environment, the synthesizer would take the worst-case view, i.e.\ walls move and hit the robot, and consequently report that no implementation exists. Adding the assumption that walls cannot changes the outcome of the synthesis. 
+%Interestingly, when formulating requirements for humans, common sense allows us to cope with this type of incompleteness. 
+%%
+%However, the automated analysis of specifications for AS brings with it the challenge of identifying and handling (all) areas of incompleteness.
 
 %----------------------------------------------------------------------------------------------------------------
 %Reviewed Version - 2022-06-22:
@@ -1034,7 +1052,7 @@ Specifications would need to be written with reference to these standards, regul
 	
 	We conclude that specifying for trustworthiness requires advances on the technical and engineering side, informed by new insights from social sciences and humanities research. Thus, tackling this specification challenge necessitates tight collaboration of engineers, roboticists and computer scientists with experts from psychology, sociology, law, politics and economics, as well as ethics and philosophy. Most importantly, continuous engagement with regulators and the general public will be key to trustworthy AS.
 	
-	\vspace{-4pt}
+	\vspace{-3.6pt}
 	\begin{acks}
 		This work has been supported by the UK EPSRC under the grants: [EP/V026518/1], [EP/V026607/1], [EP/V026747/1], [EP/V026763/1], [EP/V026682/1], [EP/V026801/2] and [EP/S027238/1]. Y.D. is also supported by a RAEng Chair in Emerging Technologies [CiET1718\textbackslash46].
 	\end{acks}
