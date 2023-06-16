@@ -18,3 +18,7 @@ Targetted Journal: Communications of the ACM (contributed article).
 Responses to Reviews (Rebuttal): https://docs.google.com/document/d/1H0SYHQEYPx-dGXDExyaqQHeFIxhARYM9tf1aZOF--nw/edit?usp=sharing 
 
 Please push your changes to the repository (TAS-Spec-Template.tex, TAS-Spec-Bibliography.bib)
+
+**Minor Revision Submitted on 15 June, 2023**
+
+Please see source folder for latest .tex and .bib file.
